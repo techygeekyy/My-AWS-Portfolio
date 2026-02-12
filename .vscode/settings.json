@@ -1,0 +1,22 @@
+{
+    "editor.inlineSuggest.enabled": false,
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.inlineSuggest.edits.allowCodeShifting": "always",
+    "editor.inlineSuggest.edits.renderSideBySide": "auto",
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.inlineSuggest.edits.showLongDistanceHint": false,
+    "editor.inlineSuggest.experimental.emptyResponseInformation": false,
+    "editor.inlineSuggest.showToolbar": "never",
+    "editor.inlineSuggest.suppressInSnippetMode": false,
+    "editor.inlineSuggest.syntaxHighlightingEnabled": false,
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "editor.quickSuggestionsDelay": 100,
+    "editor.screenReaderAnnounceInlineSuggestion": false,
+    "editor.suggest.filterGraceful": false,
+    "editor.suggest.showInlineDetails": true,
+    "editor.suggest.showSnippets": false,
+    "editor.suggest.showVariables": true
+}

@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Craftivo Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Craftivo
+  * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
+  * Updated: Oct 04 2025 with Bootstrap v5.3.8
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!--ChatBot CSS-->
+<style>
+
+/* Launcher container moves */
+#chat-launcher {
+  position: fixed;
+  right: -40px;   /* 👈 move RIGHT of chatbox */
+  bottom: 05px;
+  width: 250px;
+  height: 200px;
+  z-index: 9999;
+  cursor: pointer;
+  pointer-events: none;
+  /* background: red;  */
+}
+
+  /* Force animation to follow parent */
+#chat-launcher lottie-player {
+  pointer-events: auto;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  
+}
+
+  /* Header stays top */
+  #chat-header {
+  background: #007b9e;    /* Ask My Vertual Assistant */
+  color: #ffffff;
+  padding: 14px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 0px solid #007b9e;
+  }
+
+  /* Messages take available space */
+  #chatBody {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+  position: relative;
+  height: 360px;
+  
+  
+  background: #f9fafb;
+  color: #111111;
+  }
+
+
+  #chatBody .user {
+  background: #007b9e;
+  color: #ffffff;
+  padding: 8px 10px;
+  margin: 10px 0;
+  border-radius: 12px 12px 0 12px;  
+  text-align: left;
+  }
+
+  #chatBody .bot {
+  background: #007b9e;
+  color: #ffffff;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border-radius: 12px 12px 12px 0;
+  }
+
+  #chat-input button {
+  background: #007b9e;  /* For Send Button */
+  color: #ffffff;       /* For Send Button */
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+  }
+
+/* CHAT BOX */
+#chat-widget {
+  position: fixed;
+  right: 200px;
+  bottom: 05px;
+  width: 360px;
+  height: 520px;
+  background: #111;
+  border-radius: 14px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#assistant-anim {
+  position: fixed;
+  right: 10px;  /* PUSHES IT BESIDE CHATBOX */
+  bottom: 40px;
+  width: 10px;
+  height: 10px;
+  z-index: 9999; /* ABOVE CHATBOX */
+  cursor: pointer;
+  pointer-events: none;
+  
+}
+
+/* Input field */
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+}
+
+/* Send button */
+#sendBtn {
+  padding: 10px 14px;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Input always at bottom */
+  #chat-input {
+  display: flex;
+  border-top: 0px solid #ddd;
+  }
+
+  /* Input always at bottom */
+  #chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  }
+
+</style>
+  
+  <!--LottieAnimator-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Craftivo</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/profile/2.jpg" alt="" data-aos="fade-in">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Hi, I'm Amol Raut</h2>
+            <p>I'm a System Admin → Cloud Engineer (AWS Solutions Architect Associates in Progress) <span class="typed" data-typed-items="System Administrator, Cloud Engineer/Architect  "></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/login" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">About Me</span>
+        <h2>About Me</h2>
+        <p>I began my career as a System Administrator, where I built a strong foundation in managing servers, networks, and IT infrastructure. Inspired by the possibilities of cloud computing, I am now starting my journey as a Cloud Engineer. As a fresher in the cloud industry, I am focused on learning, experimenting, and growing my skills to one day design scalable and secure cloud architectures. My goal is to combine my system admin experience with cloud technologies to help organizations embrace digital transformation.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-avatar">
+                  <img src="assets/img/profile/profile.jpg" class="img-fluid" alt="">
+                  <div class="status-indicator"></div>
+                </div>
+                <h3>Amol Raut</h3>
+                <span class="role">I'm a System Administrator → Cloud Engineer (AWS Solutions Architect Associates in Progress)</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span>4.8</span>
+                </div>
+              </div>
+
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <h4>10</h4>
+                  <p>Projects</p>
+                </div>
+                <div class="stat-item">
+                  <h4>08+</h4>
+                  <p>Years</p>
+                </div>
+                <div class="stat-item">
+                  <h4>01</h4>
+                  <p>Awards</p>
+                </div>
+              </div>
+
+              <div class="profile-actions">
+                <a href="cv.pdf" class="btn-primary" target="_blank"><i class="bi bi-download"></i> Download CV</a>
+                <a href="mailto:example@gmail.com" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+              </div>
+
+              <div class="social-connect">
+                <a href="https://www.linkedin.com/login" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/topics/login" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="content-wrapper">
+              <div class="bio-section">
+                <div class="section-tag">Professional Summary</div>
+                <h2>Transforming Ideas into Digital Reality</h2>
+                <p>With 8+ years of professional experience, I bring a strong foundation in IT systems and infrastructure, having spent 6+ years managing servers, networks, and enterprise environments. Today, I am channeling that expertise into cloud computing, actively working with AWS and modern DevOps tools.</p>
+                <p>I am passionate about creating resilient, scalable architectures and am on the path to becoming a Cloud Architect. My journey reflects adaptability, continuous learning, and a drive to deliver innovative solutions. </p>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
+                  <i class="bi bi-briefcase"></i>
+                  <div class="detail-content">
+                    <span>Experience</span>
+                    <strong>08+ Years</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-mortarboard"></i>
+                  <div class="detail-content">
+                    <span>Degree</span>
+                    <strong>Bachelor of Arts</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="350">
+                  <i class="bi bi-geo-alt"></i>
+                  <div class="detail-content">
+                    <span>Based In</span>
+                    <strong>Nagpur, Maharashtra, IN</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-envelope"></i>
+                  <div class="detail-content">
+                    <span>Email</span>
+                    <strong>example@gmail.com</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
+                  <i class="bi bi-phone"></i>
+                  <div class="detail-content">
+                    <span>Phone</span>
+                    <strong>+91 (555) 234-5678</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-calendar-check"></i>
+                  <div class="detail-content">
+                    <span>Availability</span>
+                    <strong>Open to Work</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-showcase" data-aos="fade-up" data-aos-delay="250">
+                <div class="section-tag">Core Skills</div>
+                <h3>Technical Proficiency</h3>
+
+                <div class="skills-list skills-animation">
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Windows, Linux(Ubuntu), Active Directory(AD) User Management &amp; MS office, VirtualBox System Backup and Recovery.</span>
+                      <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Networking: TCP/IP, LAN/WAN, VPN, Firewalls</span>
+                      <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">AWS Cloud Technoligies: EC2, VPC, IAM, Security Group,S3, ASG, ALB, Cloud Watch </span>
+                      <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Version Control: Git/GitHub</span>
+                      <span class="skill-percent">65%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Automation & Scripting: Python, Bash, PowerShell and Terraform</span>
+                      <span class="skill-percent">55%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">DevOps: CI/CD pipelines, Docker containers, and Kubernetes orchestration.</span>
+                      <span class="skill-percent">40%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Resume</span>
+        <h2>Resume</h2>
+        <p>Fresher in cloud computing with prior experience in system administration. Skilled in IT infrastructure management and eager to learn cloud technologies such as AWS, Azure, and DevOps practices. Looking forward to contributing to innovative projects while growing into a Cloud Engineer/Architect role.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="experience-section">
+              <div class="section-header" data-aos="fade-right" data-aos-delay="200">
+                <div class="header-content">
+                  <span class="section-badge">Experience</span>
+                  <h2>Professional Journey</h2>
+                  <p>From managing on-premise systems to exploring cloud platforms, my journey reflects a passion for growth and adaptability. As a fresher in the cloud industry, I am committed to continuous learning and applying my system admin background to build secure and scalable cloud solutions.</p>
+                </div>
+              </div>
+              <!--Professional Devlopement -->
+              <div class="experience-cards">
+                <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-buildings"></i>
+                    </div>
+                    <div class="period-badge">Current</div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Professional Devlopement</h3>
+                    <p class="company-name">Self Learning</p>
+                    <span class="duration">2024 - Present</span>
+                    <ul class="description">
+                      <li><i class="bi bi-arrow-right-circle"></i> Built sample AWS EC2 deployment with custom domain</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Automated user account creation with PowerShell</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Automated user account creation with PowerShell</li>
+                    </ul>
+                    <div class="skills-tags">
+                      <span class="skill-tag">Leadership</span>
+                      <span class="skill-tag">Strategy</span>
+                      <span class="skill-tag">Innovation</span>
+                    </div>
+                  </div>
+                </div>
+                <!--Previous Cumpany 05 -->
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>US IT Bench Sales Recruiter</h3>
+                    <p class="company-name">ABCO Ltd.</p>
+                    <span class="duration">May-2023 to Dec-2023</span>
+                    <ul class="description">
+                      <li><i class="bi bi-arrow-right-circle"></i> Marketed bench consultants and negotiated contracts.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Collaborated with account managers for placements.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Maintained documentation and tracked performance metrics.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!--Company 04 -->
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-palette"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Affiliate Marketinig Executive</h3>
+                    <p class="company-name">Altus Customer Service Ltd.</p>
+                    <span class="duration">2017 - 2019</span>
+                    <ul class="description">
+                      <li><i class="bi bi-arrow-right-circle"></i> Managed affiliate partnerships and ensured compliance.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Analyzed campaign performance and optimized strategies.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Used tracking tools and e-commerce platforms.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!--Company 03 -->
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-palette"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>System Administrator</h3>
+                    <p class="company-name">Honda Automobile</p>
+                    <span class="duration">2015 - 2017</span>
+                    <ul class="description">
+                      <li><i class="bi bi-arrow-right-circle"></i> Installed and maintained hardware and network systems.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Managed user access, backups, and system performance.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Provided technical support and training to staff.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Collaborated with vendors for hardware procurement and service contracts.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!--Company 02 -->
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-palette"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>IT Executive</h3>
+                    <p class="company-name">Chevrolet Automobile</p>
+                    <span class="duration">2012 - 2015</span>
+                    <ul class="description">
+                      <li><i class="bi bi-arrow-right-circle"></i> Managed Windows systems and user accounts.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Performed regular backups of DMS applications.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Provided technical support and ensured system security.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!--Company 01 -->
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-palette"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Sytem Admin cum Supervisor</h3>
+                    <p class="company-name">Central Admission Committee</p>
+                    <span class="duration">2011 - 2012</span>
+                    <ul class="description">
+                      <li><i class="bi bi-arrow-right-circle"></i> Installed and configured Windows OS and networks.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Managed backups and troubleshooting across client systems.</li>
+                      <li><i class="bi bi-arrow-right-circle"></i> Monitored network performance and supported basic infrastructure tasks.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+ 
+           <div class="col-lg-6">
+            <div class="education-section">
+              <div class="section-header" data-aos="fade-left" data-aos-delay="200">
+                <div class="header-content">
+                  <span class="section-badge">Education</span>
+                  <h2>Academic Background</h2>
+                  <p>Graduated with a degree in year 2026. Currently pursuing cloud certifications such as AWS, Azure, and Google Cloud to strengthen my skills and prepare for a career in cloud engineering.</p>
+                </div>
+              </div>
+              
+               <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
+                <div class="timeline-track">
+                  <!-- Certifications -->
+                   <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2025-2026</span>
+                        <span class="degree-level">Certifications</span>
+                      </div>
+                      <h4>Certifications & Training</h4>
+                      <ul class="description">
+                        <li><i class="bi bi-star-fill"></i> Completed Internship & Job Preparation Training (Internshala, Nov 2025) — Scored 95%, Top Performer.</li>
+                        <a href="https://trainings.internshala.com/s/v/3804391/fcbcd498" target="_blank">Verify Certificate</a>
+                        <li><i class="bi bi-star-fill"></i> Cloud Computing with AWS- Internshala</li>
+                        <a href="https://trainings.internshala.com/s/v/3789285/3789f01c" target="_blank">Verify Certificate</a>
+                        <li><i class="bi bi-star-fill"></i> Cloud Computing with AWS- Internshala & Skill India(N.S.D.C)</li>
+                        <a href="https://trainings.internshala.com/s/v/3789965/783a0822" target="_blank">Verify Certificate</a>
+                        <li><i class="bi bi-star-fill"></i> Using Python to Interact with the Operating System — Google IT Python (Coursera). <a href="https://coursera.org/share/4bca41870cbae35c78c4134cc013bc97" target="_blank">Verify Certificate</a></li>
+                        <li><i class="bi bi-star-fill"></i> Crash Course on Python (Coursera) <a href="https://coursera.org/share/b1e175e0207c8159a4c52a9cb2fb8a23" target="_blank">Verify Certificate</a></li>
+                        <li><i class="bi bi-star-fill"></i> Git/GitHub <a href="https://git-scm.com/" target="_blank">Verify Certificate</a></li>
+                        <li><i class="bi bi-star-fill"></i> Ultimate AWS Certified Cloud Practitioner CLF-CO2 2025- Udemy <a href="https://www.udemy.com/certificate/UC-8d73ccfd-f20f-4edb-a13d-a3d2b45fde73/" target="_blank">Verify Certificate</a></li>
+                        <li><i class="bi bi-star-fill"></i> Introduction to Cloud Computing- SimpliLearn <a href="https://simpli-web.app.link/e/HZCxKCiF5Zb" target="_blank">Verify Certificate</a></li>
+                        <li><i class="bi bi-star-fill"></i> Getting Started with AWS- SimpliLearn <a href="https://simpli-web.app.link/e/Ilyu76DE5Zb" target="_blank">Verify Certificate</a></li>
+                        <li><i class="bi bi-star-fill"></i> AWS Cloud Practitioner Essential- SimpliLearn <a href="https://simpli-web.app.link/e/LCwHIOoF5Zb" target="_blank">Verify Certificate</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Degree -->
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2023 - 2026</span>
+                        <span class="degree-level">Degree</span>
+                      </div>
+                      <h4>Bachelor of Arts</h4>
+                      <p class="institution">YCMOU</p>
+                      <p class="description">Currently pursuing degree.</p>
+                      <div class="achievement">
+                        <i class="bi bi-award"></i>
+                        <span>Nagpur MH, IN</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Awards -->
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2013</span>
+                        <span class="degree-level">Awards</span>
+                      </div>
+                      <h4>Awards & Recognition</h4>
+                      <p class="description">Employee of the Year | Chevrolet Automobile | IT Dept.</p>
+                      <p class="description">“Recognized for outstanding performanc in IT operations, system reliability, and proactive support across dealership infrastructure.”</p> 
+                    </div>
+                  </div>
+                  <!-- Skills -->
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2012 - 2013</span>
+                        <span class="degree-level">Skills</span>
+                      </div>
+                      <h4>Soft Skills</h4>
+                      <ul class="description">
+                        <li><i class="bi bi-check-circle"></i> Self-Learning </li>
+                        <li><i class="bi bi-check-circle"></i> Active Listening </li>
+                        <li><i class="bi bi-check-circle"></i> Time Management </li>
+                      </ul> 
+                    </div>
+                  </div>
+                  <!-- Strenghts -->
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2012 - 2013</span>
+                        <span class="degree-level">Strenghts</span>
+                      </div>
+                      <h4>Strenghts</h4>
+                      <ul class="description">
+                        <li><i class="bi bi-check-circle"></i> Problem solving mindset </li>
+                        <li><i class="bi bi-check-circle"></i> Self-motivated </li>
+                        <li><i class="bi bi-check-circle"></i> Strong work ethic </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Interests -->
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2012 - 2013</span>
+                        <span class="degree-level">Interests</span>
+                      </div>
+                      <h4>Interests</h4>
+                      <ul class="description">
+                        <li><i class="bi bi-check-circle"></i> Exploring Cloud Technologies & Automation </li>
+                        <li><i class="bi bi-check-circle"></i> Playing Guitar </li>
+                        <li><i class="bi bi-check-circle"></i> Listening to Music </li>
+                      </ul>                       
+                    </div>
+                  </div>
+                  <!-- Languages -->
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2012-2013</span>
+                        <span class="degree-level">Languages</span>
+                      </div>
+                      <h4>Languages</h4>
+                      <ul class="description">
+                        <li><i class="bi bi-check-circle"></i> English(Professional Proficiency) </li>
+                        <li><i class="bi bi-check-circle"></i> Hindi(Fluent) </li>
+                        <li><i class="bi bi-check-circle"></i> Marathi(Native)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Learning & Focus Areas</span>
+        <h2>Learning & Focus Areas</h2>
+        <p>As I grow from System Administration into Cloud Engineering, here are the areas I’m actively building expertise in:</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4>System Administration</h4>
+              <p>Managing Linux/Windows servers, virtualization, and monitoring tools.</p>
+              <a href="portfolio-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item featured">
+              <div class="featured-tag">Featured</div>
+              <div class="icon-wrapper">
+                <i class="bi bi-layout-text-window-reverse"></i>
+              </div>
+              <h4>Cloud Computing</h4>
+              <p>Exploring AWS, Azure, and GCP to deploy and manage scalable applications.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4>Virtualization & Cloud Infrastructure</h4>
+              <p>Learning how to set up and manage virtual machines, containers, and cloud environments to optimize resources.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h4>Networking & Security</h4>
+              <p>Strengthening fundamentals in firewalls, VPNs, and cloud security best practices.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <h4>Automation & Scripting</h4>
+              <p>Learning Python, Bash, PowerShell and Terraform to automate infrastructure tasks.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-search"></i>
+              </div>
+              <h4>Version Control & Collaboration</h4>
+              <p>Building skills with Git and GitHub to manage code, track changes, and collaborate effectively on projects.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h4>DevOps Practices</h4>
+              <p>Understanding CI/CD pipelines, Docker containers, and Kubernetes orchestration.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>Security & Compliance </h4>
+              <p>Strengthening skills in identity management, encryption, and cloud security best practices.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="cta-box">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <h3>Transform Your Vision Into Reality</h3>
+                  <p>Partner with us to bring your ideas to life with innovative solutions tailored to your needs</p>
+                </div>
+                <div class="col-lg-4 text-lg-end text-center">
+                  <a href="portfolio-details.html" class="cta-btn">Start Your Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Portfolio</span>
+        <h2>Portfolio</h2>
+        <p>My portfolio highlights hands-on projects and learning experiences in IT and cloud computing. From managing servers to deploying applications in the cloud, these works demonstrate my technical foundation and commitment to continuous growth.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All Work</li>
+            <li data-filter=".filter-creative">Cloud Computing</li>
+            <li data-filter=".filter-digital">Automation</li>
+            <li data-filter=".filter-strategy">DevOps</li>
+            <li data-filter=".filter-development">Web Development</li>
+            <li data-filter=".filter-development">Certifications</li>
+          </ul>
+
+          <!--Portfolio Image-->
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/1.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Creative Design</span>
+                      <h4>Visual Identity System</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/1.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Branding</span>
+                    <span class="tag">Identity</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/2.jpg" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Digital Experience</span>
+                      <h4>Interactive Web Platform</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/2.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Web Design</span>
+                    <span class="tag">Development</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/3.jpg" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Brand Strategy</span>
+                      <h4>Market Positioning</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/3.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Strategy</span>
+                    <span class="tag">Consulting</span>
+                  </div>
+                  <div class="project-year">2023</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/4.jpg" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Full Stack</span>
+                      <h4>Custom Application</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/4.jpg" class="glightbox portfolio-link">
+                      <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/5.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Art Direction</span>
+                      <h4>Campaign Design</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/5.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Creative</span>
+                    <span class="tag">Campaign</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/6.jpg" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Digital Product</span>
+                      <h4>Mobile Experience</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/6.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Mobile</span>
+                    <span class="tag">UI/UX</span>
+                  </div>
+                  <div class="project-year">2023</div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h3>Like what you see?</h3>
+              <p>Looking for a dedicated fresher in cloud computing and IT? I’d be glad to discuss how I can contribute to your team.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn btn-accent">Let's Work Together</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Contact</span>
+        <h2>Contact</h2>
+        <p>Looking forward to opportunities in cloud computing and IT. You can reach me via email for collaborations, job opportunities, or networking.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <h3>Address</h3>
+                <p>Ngpur Maharashtra, India</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div>
+                <h3>Call Me</h3>
+                <p>+91 (555) 234-5678</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <h3>Email Me</h3>
+                <p>example@gmail.com</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Aspiring Cloud Engineer</span>
+          </a>
+          <p>“From servers to the cloud — building my future step by step.”</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>Hanuman Nagar</p>
+          <p>Nagpur Maharashtra</p>
+          <p>India</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>example@gmail.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.1456.0.min.js"></script>
+
+
+<script>
+
+  AWS.config.region = "us-east-1"; // MUST match Lex region
+
+  AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: "us-east-1:1ca37299-2f20-46c2-bb43-55cdea8e353d"          
+  });
+const lexruntime = new AWS.LexRuntimeV2();
+
+document.getElementById("chat-launcher").addEventListener("click", toggleChat);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const assistant = document.getElementById("assistantAnim")
+  
+  // DOM references
+  const input = document.getElementById("userInput");
+  const sendBtn = document.getElementById("sendBtn");
+  const chatBody = document.getElementById("chatBody");
+
+// helper function (NEW)
+function escapeHtml(text) {
+  const map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+  return text.replace(/[&<>"']/g, m => map[m]);
+}
+
+function linkify(text) {
+  if (!text) return "";
+  const urlPattern = /(https?:\/\/[^\s]+)/g;
+  return text.replace(urlPattern, url =>
+    `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
+  );
+}
+
+  // main function (EXISTING)
+  function sendMessage() {
+    const text = input.value.trim();
+    if (!text) return;
+    // Show user message immediately
+    const userDiv = document.createElement('div');
+    userDiv.className = 'message user';
+    userDiv.innerHTML = `<strong>You:</strong> ${escapeHtml(text)}`;
+    chatBody.appendChild(userDiv);
+   input.value = "";  
+          
+    chatBody.scrollTop = chatBody.scrollHeight;
+
+    const params = {
+      botId: "MNTDZ1VUVY", // RecruiterAssistantBot ID
+      botAliasId: "QI5Y7WC4CK", // RecruiterAssistantBot ID
+      localeId: "en_US",
+      sessionId: "web-session-" + Date.now(),
+      text: text
+    };
+
+    lexruntime.recognizeText(params, function (err, data) {
+      if (err) {
+        console.error("Lex error:", err);
+        return;
+      }
+      if (data.messages && data.messages.length > 0) {
+        const botReply = data.messages[0].content;
+        // Show bot reply
+        chatBody.innerHTML += `
+  <div class="message bot">
+    <strong>Bot:</strong> ${linkify(botReply)}
+  </div>
+`;
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+    });
+  }
+
+  sendBtn.addEventListener("click", sendMessage);
+
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      sendMessage();
+     }
+     });
+  });
+
+ function toggleChat() {
+  const chat = document.getElementById("chat-widget");
+  if (!chat) return;
+
+  chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+  chat.style.flexDirection = "column";
+}
+
+
+</script>
+
+</body>
+</html>
