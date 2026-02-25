@@ -21,7 +21,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #191919; /* Background color for the entire website, including individual sections */
+  --background-color: #0a0a0a;; /* Background color for the entire website, including individual sections */
   --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ededed; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #c02b2b; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -773,6 +773,21 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* Find this in main.css */
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;   /* ← change this from 2 to 1 */
+  border-radius: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;  /* keep this as 3 so text stays on top */
+}
+
 .hero {
   padding-top: 80px;
   min-height: 100vh;
@@ -792,6 +807,16 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  animation: kenBurns 5s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+@keyframes kenBurns {
+  0%   { transform: scale(1)    translateX(0px)   translateY(0px);  }
+  25%  { transform: scale(1.05) translateX(-20px) translateY(-10px);}
+  50%  { transform: scale(1.08) translateX(10px)  translateY(-15px);}
+  75%  { transform: scale(1.05) translateX(20px)  translateY(10px); }
+  100% { transform: scale(1)    translateX(0px)   translateY(0px);  }
 }
 
 .hero:before {
@@ -799,8 +824,33 @@ section,
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 1;
   border-radius: 0;
+}
+
+/* ✅ Light sweep effect */
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.04) 45%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.04) 55%,
+    transparent 70%
+  );
+  background-size: 200% 200%;
+  animation: lightSweep 8s ease-in-out infinite;
+}
+
+@keyframes lightSweep {
+  0%   { background-position: 200% 0%; }
+  50%  { background-position: -50% 0%; }
+  100% { background-position: 200% 0%; }
 }
 
 .hero .container {
@@ -1505,8 +1555,8 @@ section,
   background: var(--surface-color);
   padding: 1.8rem;
   border-radius: 12px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 95%);
-  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  transition: aborder-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .resume .education-section .education-timeline .timeline-track .timeline-item .timeline-content:hover {
@@ -2301,15 +2351,36 @@ section,
   margin-bottom: 40px;
 }
 
+/* ✅ Fixed frame for all slides */
+.portfolio-details .portfolio-details-slider .swiper-slide {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  background: #000;
+}
+
+/* ✅ Images fill the frame */
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
-.portfolio-details .swiper-wrapper {
-  height: auto !important;
+/* ✅ Videos fit without cropping */
+.portfolio-details .portfolio-details-slider video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
 }
+
+/* ✅ Remove auto height override */
+.portfolio-details .swiper-wrapper {
+  height: 450px;        /* ← must match slide height above */
+}
+
 
 .portfolio-details .swiper-pagination {
   position: relative;
@@ -4241,7 +4312,11 @@ section,
  
 /* 06 Jan */
 /* Clickable cursor */
+.swiper-slide video,
 .swiper-slide img {
+  width: 100%;
+  height: 480px; /* set a fixed height */
+  object-fit: cover; /* ensures content scales nicely */
   cursor: zoom-in;
 }
 
@@ -4364,13 +4439,14 @@ section,
   cursor: pointer;
   }
 
+
 /* CHAT BOX */
 #chat-widget {
   position: fixed;
   right: 200px;
-  bottom: 05px;
-  width: 360px;
-  height: 520px;
+  bottom: 20px;
+  width: 380px;
+  height: 560px;
   background: #111;
   border-radius: 20px 20px 10px 10px; /* top-left, top-right, bottom-right, bottom-left */
   overflow: hidden; /* ensures children respect rounded corners */
@@ -4437,4 +4513,242 @@ padding: 5px 14px;
   border: 1px solid #ccc;
   border-radius: 0;
   }
+
+  /* ================================================
+   Global Red Border Hover Effect
+   ================================================ */
+
+.detail-item,
+.profile-card,
+.exp-card,
+.timeline-content,
+.service-item,
+.portfolio-card,
+.info-item,
+.php-email-form {
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-item:hover,
+.profile-card:hover,
+.exp-card:hover,
+.timeline-content:hover,
+.service-item:hover,
+.portfolio-card:hover,
+.info-item:hover,
+.php-email-form:hover {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 12px rgba(192, 43, 43, 0.4) !important;
+}
+
+
+/* ================================================
+   Animated Moving Border Effect
+   ================================================ */
+
+.detail-item,
+.profile-card,
+.exp-card,
+.timeline-content,
+.service-item,
+.portfolio-card,
+.info-item,
+.php-email-form,
+blockquote {
+  position: relative;
+  border: 1px solid transparent;
+  transition: box-shadow 0.3s ease;
+  background-clip: padding-box;
+}
+
+/* ✅ Moving animated border on hover */
+.detail-item:hover,
+.profile-card:hover,
+.exp-card:hover,
+.timeline-content:hover,
+.service-item:hover,
+.portfolio-card:hover,
+.info-item:hover,
+.php-email-form:hover,
+blockquote:hover {
+  box-shadow: 0 0 15px rgba(192, 43, 43, 0.3);
+}
+
+.detail-item::before,
+.profile-card::before,
+.exp-card::before,
+.timeline-content::before,
+.service-item::before,
+.portfolio-card::before,
+.info-item::before,
+.php-email-form::before,
+blockquote::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(
+    var(--angle, 0deg),
+    transparent 40%,
+    var(--accent-color) 50%,
+    transparent 60%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;  /* ✅ clicks pass through */
+  z-index: 0;            /* ✅ stays behind inputs */
+}
+
+/* ✅ Keep form inputs always clickable */
+.php-email-form input,
+.php-email-form textarea,
+.php-email-form button {
+  position: relative;
+  z-index: 1;
+}
+
+
+.detail-item:hover::before,
+.profile-card:hover::before,
+.exp-card:hover::before,
+.timeline-content:hover::before,
+.service-item:hover::before,
+.portfolio-card:hover::before,
+.info-item:hover::before,
+.php-email-form:hover::before,
+blockquote:hover::before {
+  opacity: 1;
+  animation: rotateBorder 15s linear infinite;
+}
+
+@keyframes rotateBorder {
+  0%   { --angle: 0deg;   }
+  100% { --angle: 360deg; }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+#heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 1;    /* ← keep it subtle so your text is readable */
+}
+
+/* ── Slide-in Message Animations ── */
+.message.bot {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInLeft 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  border-radius: 4px 16px 16px 16px !important;
+}
+
+.message.user {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideInRight 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  border-radius: 16px 4px 16px 16px !important;
+}
+
+@keyframes slideInLeft {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Card Slide-in ── */
+/* ── Chatbot Card Buttons ── */
+.card-wrap {
+  background: #252525;
+  border-left: 3px solid #007b9e;
+  border-radius: 4px 16px 16px 16px;
+  padding: 10px 13px;
+  font-size: 13px;
+  color: #eee;
+  max-width: 88%;
+  align-self: flex-start;
+  opacity: 0;
+  transform: translateX(-30px) scale(0.97);
+  animation: slideInCard 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slideInCard {
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+/* ── Button wrap ── */
+.card-wrap div[style*="margin-top"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px !important;
+}
+
+/* ── Individual buttons ── */
+.card-wrap button {
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid #007b9e !important;
+  padding: 6px 12px !important;
+  border-radius: 16px !important;
+  font-size: 12px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* ── Red border glow on hover ── */
+.card-wrap button:hover {
+  background: #007b9e !important;
+  border-color: #c02b2b !important;
+  box-shadow: 0 0 10px rgba(192, 43, 43, 0.5) !important;
+  transform: translateY(-2px) !important;
+  color: #fff !important;
+}
+
+/* ── Red border glow on hover ── */
+.card-wrap button:hover {
+  background: #007b9e !important;
+  border-color: #c02b2b !important;
+  box-shadow: 0 0 10px rgba(192, 43, 43, 0.5) !important;
+  transform: translateY(-2px) !important;
+  color: #fff !important;
+}
+
+.card-wrap button:active {
+  transform: scale(0.96) !important;
+  box-shadow: 0 0 6px rgba(192, 43, 43, 0.3) !important;
+}
+
+
+
+
+.card-wrap button:hover {
+  background: #005f7a !important;
+  transform: translateY(-2px) !important;
+}
+
+.card-wrap button:active {
+  transform: scale(0.96) !important;
+}
 
