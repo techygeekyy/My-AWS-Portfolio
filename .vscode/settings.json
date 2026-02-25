@@ -18,5 +18,6 @@
     "editor.suggest.filterGraceful": false,
     "editor.suggest.showInlineDetails": true,
     "editor.suggest.showSnippets": false,
-    "editor.suggest.showVariables": true
+    "editor.suggest.showVariables": true,
+    "liveServer.settings.port": 5501
 }

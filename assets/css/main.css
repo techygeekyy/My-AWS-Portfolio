@@ -39,7 +39,7 @@
   --nav-dropdown-hover-color: #ff4d4f; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the same color scheme. */
 
 .light-background {
   --background-color: rgba(41, 41, 41, 0.8);
@@ -1368,7 +1368,7 @@ section,
 
 .resume .experience-section .experience-cards .exp-card.featured {
   border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
-  background: linear-gradient(135deg, #000000), color-mix(in srgb, var(--accent-color), transparent 100%));
+  background: linear-gradient(135deg, var(--surface-color), color-mix(in srgb, var(--accent-color), transparent 95%));
 }
 
 .resume .experience-section .experience-cards .exp-card.featured::before {
@@ -4235,8 +4235,206 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Starter Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+ 
+/* 06 Jan */
+/* Clickable cursor */
+.swiper-slide img {
+  cursor: zoom-in;
 }
+
+/* Modal container */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Zoomable image */
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+/* Zoomed state */
+.image-modal img.zoomed {
+  transform: scale(2.5);
+  cursor: zoom-out;
+}
+
+/* Close button */
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 100000;
+}
+
+
+.portfolio-image-container img:not(:first-child) {
+  display: none;
+}
+
+/* Show all images only in the lightbox/modal */
+.glightbox-container img {
+  display: block !important;
+}
+
+
+ /*ChatBot CSS */ /* Launcher container moves */
+#chat-launcher {
+  position: fixed;
+  right: -40px;   /* 👈 move RIGHT of chatbox */
+  bottom: 05px;
+  width: 250px;
+  height: 200px;
+  z-index: 9999;
+  cursor: pointer;
+  pointer-events: none;
+  /* background: red;  */
+}
+
+  /* Force animation to follow parent */
+#chat-launcher lottie-player {
+  pointer-events: auto;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  
+}
+
+  /* Header stays top */
+  #chat-header {
+  background: #007b9e;    /* Ask My Vertual Assistant */
+  color: #ffffff;
+  padding: 14px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 0px solid #007b9e;
+  }
+
+  /* Messages take available space */
+  #chatBody {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+  position: relative;
+  height: 360px;
+  
+  
+  background: #f9fafb;
+  color: #111111;
+  }
+
+
+  #chatBody .user {
+  background: #007b9e;
+  color: #ffffff;
+  padding: 8px 10px;
+  margin: 10px 0;
+  border-radius: 12px 12px 0 12px;  
+  text-align: left;
+  }
+
+  #chatBody .bot {
+  background: #007b9e;
+  color: #ffffff;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border-radius: 12px 12px 12px 0;
+  }
+
+  #chat-input button {
+  background: #007b9e;  /* For Send Button */
+  color: #ffffff;       /* For Send Button */
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+  }
+
+/* CHAT BOX */
+#chat-widget {
+  position: fixed;
+  right: 200px;
+  bottom: 05px;
+  width: 360px;
+  height: 520px;
+  background: #111;
+  border-radius: 20px 20px 10px 10px; /* top-left, top-right, bottom-right, bottom-left */
+  overflow: hidden; /* ensures children respect rounded corners */
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  }
+
+#assistant-anim {
+  position: fixed;
+  right: 10px;  /* PUSHES IT BESIDE CHATBOX */
+  bottom: 40px;
+  width: 10px;
+  height: 10px;
+  z-index: 9999; /* ABOVE CHATBOX */
+  cursor: pointer;
+  pointer-events: none;
+  
+}
+
+/* Input field */
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+}
+
+/* Send button */
+#sendBtn {
+  padding: 10px 14px;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+}
+
+#chatWindow {
+flex: 1;
+overflow-y: auto;
+padding: 14px;
+background: #f9fafb;
+color: #111;
+}
+
+#typingIndicator {
+display: none; /* hidden by default */
+font-style: italic;
+color: #2bbcfff9;
+padding: 5px 14px;
+}
+
+
+/* Input always at bottom */
+  #chat-input {
+  display: flex;
+  border-top: 0px solid #ddd;
+  }
+
+  /* Input always at bottom */
+  #chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  }
+

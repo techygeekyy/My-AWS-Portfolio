@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Work in Progress</title>
+  <title>Without ChatBot Main- For CHATBOT Updation</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -34,159 +34,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-
-  <!--ChatBot CSS-->
-<style>
-
-/* Launcher container moves */
-#chat-launcher {
-  position: fixed;
-  right: -40px;   /* 👈 move RIGHT of chatbox */
-  bottom: 05px;
-  width: 250px;
-  height: 200px;
-  z-index: 9999;
-  cursor: pointer;
-  pointer-events: none;
-  /* background: red;  */
-}
-
-  /* Force animation to follow parent */
-#chat-launcher lottie-player {
-  pointer-events: auto;
-  width: 100% !important;
-  height: 100% !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
-  
-}
-
-  /* Header stays top */
-  #chat-header {
-  background: #007b9e;    /* Ask My Vertual Assistant */
-  color: #ffffff;
-  padding: 14px;
-  text-align: center;
-  font-weight: 600;
-  border-bottom: 0px solid #007b9e;
-  }
-
-  /* Messages take available space */
-  #chatBody {
-  flex: 1;
-  overflow-y: auto;
-  padding: 14px;
-  position: relative;
-  height: 360px;
-  
-  
-  background: #f9fafb;
-  color: #111111;
-  }
-
-
-  #chatBody .user {
-  background: #007b9e;
-  color: #ffffff;
-  padding: 8px 10px;
-  margin: 10px 0;
-  border-radius: 12px 12px 0 12px;  
-  text-align: left;
-  }
-
-  #chatBody .bot {
-  background: #007b9e;
-  color: #ffffff;
-  padding: 8px 10px;
-  margin: 6px 0;
-  border-radius: 12px 12px 12px 0;
-  }
-
-  #chat-input button {
-  background: #007b9e;  /* For Send Button */
-  color: #ffffff;       /* For Send Button */
-  border: none;
-  padding: 0 16px;
-  cursor: pointer;
-  }
-
-/* CHAT BOX */
-#chat-widget {
-  position: fixed;
-  right: 200px;
-  bottom: 05px;
-  width: 360px;
-  height: 520px;
-  background: #111;
-  border-radius: 20px 20px 10px 10px; /* top-left, top-right, bottom-right, bottom-left */
-  overflow: hidden; /* ensures children respect rounded corners */
-  display: none;
-  flex-direction: column;
-  z-index: 1000;
-  }
-
-#assistant-anim {
-  position: fixed;
-  right: 10px;  /* PUSHES IT BESIDE CHATBOX */
-  bottom: 40px;
-  width: 10px;
-  height: 10px;
-  z-index: 9999; /* ABOVE CHATBOX */
-  cursor: pointer;
-  pointer-events: none;
-  
-}
-
-/* Input field */
-#userInput {
-  flex: 1;
-  padding: 10px;
-  border-radius: 0px;
-  border: none;
-  outline: none;
-}
-
-/* Send button */
-#sendBtn {
-  padding: 10px 14px;
-  border-radius: 0px;
-  border: none;
-  cursor: pointer;
-}
-
-#chatWindow {
-flex: 1;
-overflow-y: auto;
-padding: 14px;
-background: #f9fafb;
-color: #111;
-}
-
-#typingIndicator {
-display: none; /* hidden by default */
-font-style: italic;
-color: #2bbcfff9;
-padding: 5px 14px;
-}
-
-
-/* Input always at bottom */
-  #chat-input {
-  display: flex;
-  border-top: 0px solid #ddd;
-  }
-
-  /* Input always at bottom */
-  #chat-input input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  }
-
-</style>
-
-
+   
 </head>
 
 <body class="index-page">
@@ -197,7 +45,7 @@ padding: 5px 14px;
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Amol's Portfolio</h1>
+        <h1 class="sitename">Without ChatBot Main</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -205,25 +53,30 @@ padding: 5px 14px;
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#services">Projects</a></li>   <!--Services to Projects-->
           <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> <!--Dropdown to More-->
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li><a href="about.html">About Us</a></li>   <!--Dropdown 1 to About Us-->
+              <li class="dropdown"><a href="#"><span>Quick Links</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
+                  <li><a href="project-01.html">Project-01</a></li>   <!--Deep Dropdown 2 to Cloud Computing-->
+                  <li><a href="project-02.html">Project-02</a></li>     <!--Deep Dropdown 2 to System Admin-->
+                  <li><a href="project-03.html">Project-03</a></li>
+                  <li><a href="project-04.html">Project-04</a></li>
+                  <li><a href="project-05.html">Project-05</a></li>
+                  <li><a href="project-06.html">Project-06</a></li>
+                  <li><a href="project-07.html">Project-07</a></li>
+                  <li><a href="project-08.html">Project-08</a></li>
                 </ul>
               </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="index.html#portfolio">Certifications</a></li>                    <!--Dropdown 2 to Certifications-->
+              <li><a href="terms.html">Terms of service</a></li>                    <!--Dropdown 3 to Terms of service-->
+              <li><a href="privacy.html">Privacy policy</a></li>     <!--Dropdown 4 to Privacy policy-->
             </ul>
           </li>
+          
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -237,9 +90,15 @@ padding: 5px 14px;
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <!-- <section id="hero" class="hero section dark-background">  
+      <video autoplay muted loop playsinline id="heroBg">
+    <source src="assets/video/hero-bg.mp4" type="video/mp4">
+  </video> --This Code is for Video Background-->
 
-      <img src="assets/img/profile/2.jpg" alt="" data-aos="fade-in">
+  <section id="hero" class="hero section dark-background">
+    <img src="assets/img/profile/2.jpg" alt="" data-aos="fade-in">
+        
+
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
@@ -275,9 +134,9 @@ padding: 5px 14px;
             <div class="profile-card">
               <div class="profile-header">
                 <div class="profile-avatar">
-                  <img src="assets/img/profile/profile.jpg" class="img-fluid" alt="">
-                  <div class="status-indicator"></div>
-                </div>
+                    <img src="assets/img/profile/me.jpg" class="img-fluid" alt="Amol Raut Profile">
+                    <div class="status-indicator"></div>
+                  </div>
                 <h3>Amol Raut</h3>
                 <span class="role">I'm a System Administrator → Cloud Engineer (AWS Solutions Architect Associates in Progress)</span>
                 <div class="rating">
@@ -292,7 +151,7 @@ padding: 5px 14px;
 
               <div class="profile-stats">
                 <div class="stat-item">
-                  <h4>10</h4>
+                  <h4>08</h4>
                   <p>Projects</p>
                 </div>
                 <div class="stat-item">
@@ -306,8 +165,20 @@ padding: 5px 14px;
               </div>
 
               <div class="profile-actions">
-                <a href="cv.pdf" class="btn-primary" target="_blank"><i class="bi bi-download"></i> Download CV</a>
-                <a href="mailto:example@gmail.com" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+                <a href="javascript:void(0)" class="btn-primary" onclick="openCVModal()"><i class="bi bi-download"></i> Get My Resume</a>
+                <a href="#contact" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+              </div>
+              <div id="cvModal" class="modal" style="display:none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
+                <div class="modal-content" style="background-color: #000000; margin: 10% auto; padding: 20px; border-radius: 8px; width: 80%; max-width: 450px; position: relative;">
+                  <span onclick="closeCVModal()" style="position: absolute; right: 20px; cursor: pointer; font-size: 24px;">&times;</span>
+                  <h4 style="margin-bottom: 15px;">Secure Resume Download</h4>
+                  <p style="font-size: 14px; color: #666; margin-bottom: 20px;">Please Enter your details to receive a secure 48-hour download link via email.</p>
+                  <input type="text" id="hrName" class="form-control mb-3" placeholder="Your Name" required style="width: 100%; margin-bottom: 10px; padding: 8px;">
+                  <input type="email" id="hrEmail" class="form-control mb-3" placeholder="Your Email" required style="width: 100%; margin-bottom: 10px; padding: 8px;">
+                  <input type="text" id="hrSubject" class="form-control mb-3" placeholder="Company / Subject" required style="width: 100%; margin-bottom: 10px; padding: 8px;">
+                  <textarea id="hrMessage" class="form-control mb-3" placeholder="Message (Optional)" style="width: 100%; margin-bottom: 15px; padding: 8px;"></textarea>
+                  <button type="button" id="getCVBtn" onclick="sendCVRequest()" style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Get Resume Link</button>
+                </div>
               </div>
 
               <div class="social-connect">
@@ -338,10 +209,10 @@ padding: 5px 14px;
                 </div>
 
                 <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-mortarboard"></i>
+                  <i class="bi bi-calendar-check"></i>
                   <div class="detail-content">
-                    <span>Degree</span>
-                    <strong>Bachelor of Arts</strong>
+                    <span> Availability</span>
+                    <strong>Open to Work</strong>
                   </div>
                 </div>
 
@@ -349,7 +220,7 @@ padding: 5px 14px;
                   <i class="bi bi-geo-alt"></i>
                   <div class="detail-content">
                     <span>Based In</span>
-                    <strong>Nagpur, Maharashtra, IN</strong>
+                    <strong>Nagpur, Maharashtra, INDIA</strong>
                   </div>
                 </div>
 
@@ -362,18 +233,18 @@ padding: 5px 14px;
                 </div>
 
                 <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
-                  <i class="bi bi-phone"></i>
+                  <i class="bi bi-mortarboard"></i>
                   <div class="detail-content">
-                    <span>Phone</span>
-                    <strong>+91 (555) 234-5678</strong>
+                    <span>Degree</span>
+                    <strong>Bachelor of Arts</strong>
                   </div>
                 </div>
 
                 <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi bi-calendar-check"></i>
+                  <i class="bi bi-phone"></i>
                   <div class="detail-content">
-                    <span>Availability</span>
-                    <strong>Open to Work</strong>
+                    <span>Phone</span>
+                    <strong>+91 (555) 234-5678</strong>
                   </div>
                 </div>
               </div>
@@ -405,7 +276,7 @@ padding: 5px 14px;
 
                   <div class="skill-item">
                     <div class="skill-info">
-                      <span class="skill-name">AWS Cloud Technoligies: EC2, VPC, IAM, Security Group,S3, ASG, ALB, Cloud Watch </span>
+                      <span class="skill-name">AWS Cloud Technologies: EC2, VPC, IAM, Security Group,S3, ASG, ALB, Cloud Watch </span>
                       <span class="skill-percent">80%</span>
                     </div>
                     <div class="progress">
@@ -473,58 +344,61 @@ padding: 5px 14px;
                   <p>From managing on-premise systems to exploring cloud platforms, my journey reflects a passion for growth and adaptability. As a fresher in the cloud industry, I am committed to continuous learning and applying my system admin background to build secure and scalable cloud solutions.</p>
                 </div>
               </div>
-              <!--Professional Devlopement -->
-              <div class="experience-cards">
-                <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="card-header">
-                    <div class="company-logo">
-                      <i class="bi bi-buildings"></i>
+
+                <!--Professional Devlopement -->
+                <div class="experience-cards">
+                  <div class="exp-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-header">
+                      <div class="company-logo">
+                        <i class="bi bi-cloud"></i>
+                      </div>
+                      <div class="period-badge">Current</div> 
                     </div>
-                    <div class="period-badge">Current</div>
-                  </div>
-                  <div class="card-body">
-                    <h3>Professional Devlopement</h3>
-                    <p class="company-name">Self Learning</p>
-                    <span class="duration">2024 - Present</span>
-                    <ul class="description">
-                      <li><i class="bi bi-arrow-right-circle"></i> Built sample AWS EC2 deployment with custom domain</li>
-                      <li><i class="bi bi-arrow-right-circle"></i> Automated user account creation with PowerShell</li>
-                      <li><i class="bi bi-arrow-right-circle"></i> Automated user account creation with PowerShell</li>
-                    </ul>
-                    <div class="skills-tags">
-                      <span class="skill-tag">Leadership</span>
-                      <span class="skill-tag">Strategy</span>
-                      <span class="skill-tag">Innovation</span>
-                    </div>
-                  </div>
-                </div>
-                <!--Previous Cumpany 05 -->
-                <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
-                  <div class="card-header">
-                    <div class="company-logo">
-                      <i class="bi bi-laptop"></i>
+                    <div class="card-body">
+                      <h3>Professional Development</h3>
+                      <p class="company-name">Self Learning</p>
+                      <span class="duration">2024 - Present</span>
+                      <ul class="description">
+                        <li><i class="bi bi-arrow-right-circle"></i> Built sample AWS EC2 deployment with custom domain</li>
+                        <li><i class="bi bi-arrow-right-circle"></i> Automated user account creation with PowerShell</li>
+                        <li><i class="bi bi-arrow-right-circle"></i> Created infrastructure documentation and runbooks</li>
+                      </ul>
+                      <div class="skills-tags">
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Strategy</span>
+                        <span class="skill-tag">Innovation</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <h3>US IT Bench Sales Recruiter</h3>
-                    <p class="company-name">ABCO Ltd.</p>
-                    <span class="duration">May-2023 to Dec-2023</span>
-                    <ul class="description">
-                      <li><i class="bi bi-arrow-right-circle"></i> Marketed bench consultants and negotiated contracts.</li>
-                      <li><i class="bi bi-arrow-right-circle"></i> Collaborated with account managers for placements.</li>
-                      <li><i class="bi bi-arrow-right-circle"></i> Maintained documentation and tracked performance metrics.</li>
-                    </ul>
+
+                  <!--Previous Company 05 -->
+                  <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="card-header">
+                      <div class="company-logo">
+                        <i class="bi bi-laptop"></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3>US IT Bench Sales Recruiter</h3>
+                      <p class="company-name">ABCO Ltd.</p>
+                      <span class="duration">May-2023 to Dec-2023</span>
+                      <ul class="description">
+                        <li><i class="bi bi-arrow-right-circle"></i> Marketed bench consultants and negotiated contracts.</li>
+                        <li><i class="bi bi-arrow-right-circle"></i> Collaborated with account managers for placements.</li>
+                        <li><i class="bi bi-arrow-right-circle"></i> Maintained documentation and tracked performance metrics.</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+
                 <!--Company 04 -->
                 <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
                   <div class="card-header">
                     <div class="company-logo">
-                      <i class="bi bi-palette"></i>
+                      <i class="bi bi-people"></i>
                     </div>
                   </div>
                   <div class="card-body">
-                    <h3>Affiliate Marketinig Executive</h3>
+                    <h3>Affiliate Marketing Executive</h3>
                     <p class="company-name">Altus Customer Service Ltd.</p>
                     <span class="duration">2017 - 2019</span>
                     <ul class="description">
@@ -534,11 +408,12 @@ padding: 5px 14px;
                     </ul>
                   </div>
                 </div>
+
                 <!--Company 03 -->
                 <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
                   <div class="card-header">
                     <div class="company-logo">
-                      <i class="bi bi-palette"></i>
+                      <i class="bi bi-terminal"></i>
                     </div>
                   </div>
                   <div class="card-body">
@@ -553,11 +428,12 @@ padding: 5px 14px;
                     </ul>
                   </div>
                 </div>
+
                 <!--Company 02 -->
                 <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
                   <div class="card-header">
                     <div class="company-logo">
-                      <i class="bi bi-palette"></i>
+                      <i class="bi bi-hdd-network"></i>
                     </div>
                   </div>
                   <div class="card-body">
@@ -571,15 +447,16 @@ padding: 5px 14px;
                     </ul>
                   </div>
                 </div>
+
                 <!--Company 01 -->
                 <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
                   <div class="card-header">
                     <div class="company-logo">
-                      <i class="bi bi-palette"></i>
+                      <i class="bi bi-gear"></i>
                     </div>
                   </div>
                   <div class="card-body">
-                    <h3>Sytem Admin cum Supervisor</h3>
+                    <h3>System Admin cum Supervisor</h3>
                     <p class="company-name">Central Admission Committee</p>
                     <span class="duration">2011 - 2012</span>
                     <ul class="description">
@@ -608,7 +485,7 @@ padding: 5px 14px;
                   <!-- Certifications -->
                    <div class="timeline-item">
                     <div class="timeline-marker">
-                      <i class="bi bi-book"></i>
+                      <i class="bi bi-patch-check"></i>
                     </div>
                     <div class="timeline-content">
                       <div class="education-meta">
@@ -617,26 +494,16 @@ padding: 5px 14px;
                       </div>
                       <h4>Certifications & Training</h4>
                       <ul class="description">
-                        <li><i class="bi bi-star-fill"></i> Completed Internship & Job Preparation Training (Internshala, Nov 2025) — Scored 95%, Top Performer.</li>
-                        <a href="https://trainings.internshala.com/s/v/3804391/fcbcd498" target="_blank">Verify Certificate</a>
-                        <li><i class="bi bi-star-fill"></i> Cloud Computing with AWS- Internshala</li>
-                        <a href="https://trainings.internshala.com/s/v/3789285/3789f01c" target="_blank">Verify Certificate</a>
-                        <li><i class="bi bi-star-fill"></i> Cloud Computing with AWS- Internshala & Skill India(N.S.D.C)</li>
-                        <a href="https://trainings.internshala.com/s/v/3789965/783a0822" target="_blank">Verify Certificate</a>
-                        <li><i class="bi bi-star-fill"></i> Using Python to Interact with the Operating System — Google IT Python (Coursera).</li>
-                        <a href="https://coursera.org/share/4bca41870cbae35c78c4134cc013bc97" target="_blank">Verify Certificate</a>"
-                        <li><i class="bi bi-star-fill"></i> Crash Course on Python (Coursera)</li>
-                        <a href="https://coursera.org/share/b1e175e0207c8159a4c52a9cb2fb8a23" target="_blank">Verify Certificate</a>"
-                        <li><i class="bi bi-star-fill"></i> Git/GitHub</li>
-                        <a href="Git/GitHub" target="_blank">Verify Certificate</a>"
-                        <li><i class="bi bi-star-fill"></i> Ultimate AWS Certified Cloud Practitioner CLF-CO2 2025- Udemy</li>
-                        <a href="https://www.udemy.com/certificate/UC-8d73ccfd-f20f-4edb-a13d-a3d2b45fde73/" target="_blank">Verify Certificate</a>"
-                        <li><i class="bi bi-star-fill"></i> Introduction to Cloud Computing- SimpliLearn</li>
-                        <a href="https://simpli-web.app.link/e/HZCxKCiF5Zb" target="_blank">Verify Certificate</a>"
-                        <li><i class="bi bi-star-fill"></i> Getting Started with AWS- SimpliLearn</li>
-                        <a href="https://simpli-web.app.link/e/Ilyu76DE5Zb" target="_blank">Verify Certificate</a>"
-                        <li><i class="bi bi-star-fill"></i> AWS Cloud Practitioner Essential- SimpliLearn</li>
-                        <a href="https://simpli-web.app.link/e/LCwHIOoF5Zb" target="_blank">Verify Certificate</a>"
+                        <li>⭐ Introduction to Cloud Computing- SimpliLearn <a href="https://simpli-web.app.link/e/HZCxKCiF5Zb" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ Getting Started with AWS- SimpliLearn <a href="https://simpli-web.app.link/e/Ilyu76DE5Zb" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ AWS Cloud Practitioner Essential- SimpliLearn <a href="https://simpli-web.app.link/e/LCwHIOoF5Zb" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ <b>Ultimate AWS Certified Cloud Practitioner CLF-CO2 2025- Udemy</b><a href="https://www.udemy.com/certificate/UC-8d73ccfd-f20f-4edb-a13d-a3d2b45fde73/" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ Crash Course on Python (Coursera) <a href="https://coursera.org/share/b1e175e0207c8159a4c52a9cb2fb8a23" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ Cloud Computing with AWS- Internshala <a href="https://trainings.internshala.com/s/v/3789285/3789f01c" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ Cloud Computing with AWS- Internshala & Skill India(N.S.D.C) <a href="https://trainings.internshala.com/s/v/3789965/783a0822" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ Completed Internship & Job Preparation Training (Internshala, Nov 2025) — Scored 95%, Top Performer. <a href="https://trainings.internshala.com/s/v/3804391/fcbcd498" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ Using Python to Interact with the Operating System — Google IT Python (Coursera). <a href="https://coursera.org/share/4bca41870cbae35c78c4134cc013bc97" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ Git/GitHub <a href="https://coursera.org/share/63dbecf44f2ca1ca69d4e88c5df0d660" target="_blank">Verify Certificate</a></li>
                       </ul>
                     </div>
                   </div>
@@ -662,14 +529,14 @@ padding: 5px 14px;
                   <!-- Awards -->
                   <div class="timeline-item">
                     <div class="timeline-marker">
-                      <i class="bi bi-book"></i>
+                      <i class="bi bi-trophy"></i>
                     </div>
                     <div class="timeline-content">
                       <div class="education-meta">
                         <span class="year-range">2013</span>
                         <span class="degree-level">Awards</span>
                       </div>
-                      <h4>Awards & Recognition</h4>
+                      <h4>🏆Awards & Recognition</h4>
                       <p class="description">Employee of the Year | Chevrolet Automobile | IT Dept.</p>
                       <p class="description">“Recognized for outstanding performanc in IT operations, system reliability, and proactive support across dealership infrastructure.”</p> 
                     </div>
@@ -677,11 +544,11 @@ padding: 5px 14px;
                   <!-- Skills -->
                   <div class="timeline-item">
                     <div class="timeline-marker">
-                      <i class="bi bi-book"></i>
+                      <i class="bi bi-lightbulb"></i>
                     </div>
                     <div class="timeline-content">
                       <div class="education-meta">
-                        <span class="year-range">2012 - 2013</span>
+                        <span class="year-range">Skills</span>
                         <span class="degree-level">Skills</span>
                       </div>
                       <h4>Soft Skills</h4>
@@ -695,14 +562,14 @@ padding: 5px 14px;
                   <!-- Strenghts -->
                   <div class="timeline-item">
                     <div class="timeline-marker">
-                      <i class="bi bi-book"></i>
+                      <i class="bi bi-shield"></i>
                     </div>
                     <div class="timeline-content">
                       <div class="education-meta">
-                        <span class="year-range">2012 - 2013</span>
-                        <span class="degree-level">Strenghts</span>
+                        <span class="year-range">Strengths</span>
+                        <span class="degree-level">Strengths</span>
                       </div>
-                      <h4>Strenghts</h4>
+                      <h4>Strengths</h4>
                       <ul class="description">
                         <li><i class="bi bi-check-circle"></i> Problem solving mindset </li>
                         <li><i class="bi bi-check-circle"></i> Self-motivated </li>
@@ -713,11 +580,11 @@ padding: 5px 14px;
                   <!-- Interests -->
                   <div class="timeline-item">
                     <div class="timeline-marker">
-                      <i class="bi bi-book"></i>
+                      <i class="bi bi-star"></i>
                     </div>
                     <div class="timeline-content">
                       <div class="education-meta">
-                        <span class="year-range">2012 - 2013</span>
+                        <span class="year-range">Interests</span>
                         <span class="degree-level">Interests</span>
                       </div>
                       <h4>Interests</h4>
@@ -731,11 +598,11 @@ padding: 5px 14px;
                   <!-- Languages -->
                   <div class="timeline-item">
                     <div class="timeline-marker">
-                      <i class="bi bi-book"></i>
+                      <i class="bi bi-translate"></i>
                     </div>
                     <div class="timeline-content">
                       <div class="education-meta">
-                        <span class="year-range">2012-2013</span>
+                        <span class="year-range">Languages</span>
                         <span class="degree-level">Languages</span>
                       </div>
                       <h4>Languages</h4>
@@ -759,107 +626,147 @@ padding: 5px 14px;
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Learning & Focus Areas</span>
+        <span class="subtitle">Projects Details</span>
         <h2>Learning & Focus Areas</h2>
         <p>As I grow from System Administration into Cloud Engineering, here are the areas I’m actively building expertise in:</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
+        <!--Project 01-->
         <div class="row gy-4">
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="service-item">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item featured">
+              <div class="featured-tag">Featured</div>
               <div class="icon-wrapper">
                 <i class="bi bi-palette"></i>
               </div>
-              <h4>System Administration</h4>
-              <p>Managing Linux/Windows servers, virtualization, and monitoring tools.</p>
-              <a href="portfolio-details.html" class="read-more">
-                <span>Explore</span>
+              <h4>Terraform Advance</h4>
+              <p>Advance</p>
+              <a href="project-01.html" class="read-more">
+                <span>Project 01</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <!--Project 02-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item featured">
               <div class="featured-tag">Featured</div>
               <div class="icon-wrapper">
                 <i class="bi bi-layout-text-window-reverse"></i>
               </div>
-              <h4>Cloud Computing</h4>
-              <p>Exploring AWS, Azure, and GCP to deploy and manage scalable applications.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>AI-Powered Serverless Web Platform with CI/CD & Intelligent ChatBot (Amazon Lex)</h4>
+              <p>Project 02</p>
+              <a href="project-02.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <!--Project 03-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
+              <div class="featured-tag">Featured</div>
               <div class="icon-wrapper">
                 <i class="bi bi-code-slash"></i>
               </div>
-              <h4>Virtualization & Cloud Infrastructure</h4>
-              <p>Learning how to set up and manage virtual machines, containers, and cloud environments to optimize resources.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>     <!--Virtualization & Cloud Infrastructure-->
+              <p>Project 03</p>
+              <a href="project-03.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <!--Project 04-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="500">
             <div class="service-item">
+              <div class="featured-tag">Featured</div>
               <div class="icon-wrapper">
                 <i class="bi bi-phone"></i>
               </div>
-              <h4>Networking & Security</h4>
-              <p>Strengthening fundamentals in firewalls, VPNs, and cloud security best practices.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>        <!--Networking & Security-->
+              <p>Project 04</p>
+              <a href="project-04.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <!--Project 05-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="600">
             <div class="service-item">
               <div class="icon-wrapper">
                 <i class="bi bi-megaphone"></i>
               </div>
-              <h4>Automation & Scripting</h4>
-              <p>Learning Python, Bash, PowerShell and Terraform to automate infrastructure tasks.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Web Application with Amazon RDS in Private Subnet (Secure 2-Tier Architecture)</h4>         <!--Automation & Scripting to-->
+              <p>Project 05</p>
+              <a href="project-05.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <!--Project 06-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="700">
             <div class="service-item">
               <div class="icon-wrapper">
                 <i class="bi bi-search"></i>
               </div>
-              <h4>Version Control & Collaboration</h4>
-              <p>Building skills with Git and GitHub to manage code, track changes, and collaborate effectively on projects.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>        <!--Version Control & Collaboration to-->
+              <p>Project 06</p>
+              <a href="project-06.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <!--Project 07-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="800">
             <div class="service-item">
               <div class="icon-wrapper">
                 <i class="bi bi-graph-up-arrow"></i>
               </div>
-              <h4>DevOps Practices</h4>
-              <p>Understanding CI/CD pipelines, Docker containers, and Kubernetes orchestration.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Multi OS-Platform EC2 Web Hosting (Linux + Windows Servers)</h4>           <!--DevOps Practices to-->
+              <p>Project 07</p>
+              <a href="project-07.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--Project 08-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="900">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>VPC with Public & Private Subnets (Production-Ready Design) </h4>           <!--Security & Compliance to-->
+              <p>Project 08</p>
+              <a href="project-08.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--Security & Compliance to-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>Working On...</h4>           
+              <p>Working On...</p>
+              <a href="project-08.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -871,9 +778,37 @@ padding: 5px 14px;
               <div class="icon-wrapper">
                 <i class="bi bi-shield-check"></i>
               </div>
-              <h4>Security & Compliance </h4>
-              <p>Strengthening skills in identity management, encryption, and cloud security best practices.</p>
-              <a href="service-details.html" class="read-more">
+              <h4>Working On... </h4>           <!--Security & Compliance to-->
+              <p>Working On...</p>
+              <a href="project-08.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>Working On...</h4>           <!--Security & Compliance to-->
+              <p>Working On...</p>
+              <a href="project-08.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>Working On...</h4>           <!--Security & Compliance to-->
+              <p>Working On...</p>
+              <a href="project-08.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -887,11 +822,11 @@ padding: 5px 14px;
             <div class="cta-box">
               <div class="row align-items-center">
                 <div class="col-lg-8">
-                  <h3>Transform Your Vision Into Reality</h3>
-                  <p>Partner with us to bring your ideas to life with innovative solutions tailored to your needs</p>
+                  <h3>Available For Coffee & Cloud Discussion</h3>
+                  <h5><b>Warning:</b> "Coffee may lead to highly scalable architechture discussion!"</h5>
                 </div>
                 <div class="col-lg-4 text-lg-end text-center">
-                  <a href="portfolio-details.html" class="cta-btn">Start Your Project</a>
+                  <a href="#contact" class="cta-btn">Start Your Project</a>
                 </div>
               </div>
             </div>
@@ -901,6 +836,7 @@ padding: 5px 14px;
       </div>
 
     </section><!-- /Services Section -->
+    
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -917,29 +853,189 @@ padding: 5px 14px;
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
             <li data-filter="*" class="filter-active">All Work</li>
-            <li data-filter=".filter-creative">Cloud Computing</li>
-            <li data-filter=".filter-digital">Automation</li>
-            <li data-filter=".filter-strategy">DevOps</li>
-            <li data-filter=".filter-development">Web Development</li>
-            <li data-filter=".filter-development">Certifications</li>
+            <li data-filter=".filter-certifications">Certifications</li>  
+            <li data-filter=".filter-project01">Project 01</li>
+            <li data-filter=".filter-project02">Project 02</li>
+            <li data-filter=".filter-project03">Project 03</li>
+            <li data-filter=".filter-project04">Project 04</li>
+            <li data-filter=".filter-project05">Project 05</li>
+            <li data-filter=".filter-project06">Project 06</li>   
+            <li data-filter=".filter-project07">Project 07</li>
+            <li data-filter=".filter-project08">Project 08</li>
           </ul>
 
-          <!--Portfolio Image-->
+          <!--Portfolio Images  -->
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/1.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/1.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/2.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/3.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/4.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/5.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
-                      <span class="project-category">Creative Design</span>
-                      <h4>Visual Identity System</h4>
+                      <span class="project-category">Certifications</span>
+                      <h4>AWS</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/1.jpg" class="glightbox portfolio-link">
-                        <i class="bi bi-plus-lg"></i>
+                      <a href="assets/img/certs/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                        <a href="assets/img/certs/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                        <a href="assets/img/certs/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                        <a href="assets/img/certs/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                        <a href="assets/img/certs/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
                       </a>
-                      <a href="#" class="portfolio-details">
+                      <a href="portfolio.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">AWS</span>
+                  </div>
+                  <div class="project-year">2025</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/certs/6.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/7.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/8.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/9.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/10.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Certifications</span>
+                      <h4>AWS</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/certs/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                        <a href="assets/img/certs/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                        <a href="assets/img/certs/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                        <a href="assets/img/certs/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                        <a href="assets/img/certs/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
+                      </a>
+                      <a href="portfolio.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">AWS</span>
+                  </div>
+                  <div class="project-year">2025</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/certs/11.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/12.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/13.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/14.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/15.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Certifications</span>
+                      <h4>AWS</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/certs/11.png" class="glightbox portfolio-link">
+                        <span class="number-icon">11</span></a>
+                        <a href="assets/img/certs/12.png" class="glightbox portfolio-link">
+                        <span class="number-icon">12</span></a>
+                        <a href="assets/img/certs/13.png" class="glightbox portfolio-link">
+                        <span class="number-icon">13</span></a>
+                        <a href="assets/img/certs/14.png" class="glightbox portfolio-link">
+                        <span class="number-icon">14</span></a>
+                        <a href="assets/img/certs/15.png" class="glightbox portfolio-link">
+                        <span class="number-icon">15</span></a>
+                      </a>
+                      <a href="portfolio.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">AWS </span>
+                    <span class="tag">Python</span>
+                  </div>
+                  <div class="project-year">2025</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/certs/16.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/17.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Certifications</span>
+                      <h4>AWS</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/certs/16.png" class="glightbox portfolio-link">
+                        <span class="number-icon">16</span></a>
+                        <a href="assets/img/certs/17.png" class="glightbox portfolio-link">
+                        <span class="number-icon">17</span></a>
+                      </a>
+                      <a href="portfolio.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Git/GitHub</span>
+                  </div>
+                  <div class="project-year">2025-2026</div>
+                </div>
+              </div>
+            </div>
+
+          
+            <!--Project 01-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project01">  
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project1/1.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 01</span>
+                      <h4>Terraform</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project2/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                      </a>
+                      <a href="portfolio-details.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
                     </div>
@@ -950,25 +1046,38 @@ padding: 5px 14px;
                     <span class="tag">Branding</span>
                     <span class="tag">Identity</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2026</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+
+            <!--Project 02-->    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project02">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/2.jpg" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project2/1.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project2/2.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project2/3.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project2/4.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project2/5.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
-                      <span class="project-category">Digital Experience</span>
-                      <h4>Interactive Web Platform</h4>
+                      <span class="project-category">Project 02</span>
+                      <h4>AI-Powered Serverless Web Platform with CI/CD & Intelligent ChatBot (Amazon Lex)</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/2.jpg" class="glightbox portfolio-link">
-                        <i class="bi bi-plus-lg"></i>
-                      </a>
-                      <a href="#" class="portfolio-details">
+                      <a href="assets/img/project2/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                      <a href="assets/img/project2/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                      <a href="assets/img/project2/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                      <a href="assets/img/project2/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project2/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
+                      <a href="project-02.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
                     </div>
@@ -976,28 +1085,41 @@ padding: 5px 14px;
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Web Design</span>
-                    <span class="tag">Development</span>
-                  </div>
-                  <div class="project-year">2024</div>
+                    <span class="tag">Amazon S3</span>
+                    <span class="tag">CloudFront</span>
+                    <span class="tag">AWS CodePipeline</span>
+                    </div>
+                  <div class="project-year">2026</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+            <!--Project 03-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project03">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/3.jpg" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/1.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/2.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/3.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/4.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/5.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
-                      <span class="project-category">Brand Strategy</span>
-                      <h4>Market Positioning</h4>
+                      <span class="project-category">Project 03</span>
+                      <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/3.jpg" class="glightbox portfolio-link">
-                        <i class="bi bi-plus-lg"></i>
-                      </a>
-                      <a href="#" class="portfolio-details">
+                      <a href="assets/img/project3/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                      <a href="assets/img/project3/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                      <a href="assets/img/project3/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                      <a href="assets/img/project3/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project3/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
+                      <a href="project-03.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
                     </div>
@@ -1005,28 +1127,40 @@ padding: 5px 14px;
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Strategy</span>
-                    <span class="tag">Consulting</span>
-                  </div>
-                  <div class="project-year">2023</div>
+                    <span class="tag">Amazon S3</span>
+                    <span class="tag">CloudFront</span>
+                    <span class="tag">Cloud Watch</span>
+                    </div>
+                  <div class="project-year">2026</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project03">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/4.jpg" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/6.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/7.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/8.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/9.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/10.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
-                      <span class="project-category">Full Stack</span>
-                      <h4>Custom Application</h4>
+                      <span class="project-category">Project 03</span>
+                      <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/4.jpg" class="glightbox portfolio-link">
-                      <i class="bi bi-plus-lg"></i>
-                      </a>
-                      <a href="#" class="portfolio-details">
+                      <a href="assets/img/project3/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                      <a href="assets/img/project3/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project3/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project3/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project3/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
+                      <a href="project-03.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
                     </div>
@@ -1034,28 +1168,40 @@ padding: 5px 14px;
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">React</span>
-                    <span class="tag">Node.js</span>
+                    <span class="tag">Git/GitHub</span>
+                    <span class="tag">Origin Access Control (OAC)</span>
+                    <span class="tag">IAM Policies</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2026</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project03">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/5.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/11.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/12.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/13.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/14.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project3/15.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
-                      <span class="project-category">Art Direction</span>
-                      <h4>Campaign Design</h4>
+                      <span class="project-category">Project 03</span>
+                      <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/5.jpg" class="glightbox portfolio-link">
-                        <i class="bi bi-plus-lg"></i>
-                      </a>
-                      <a href="#" class="portfolio-details">
+                      <a href="assets/img/project3/11.png" class="glightbox portfolio-link">
+                        <span class="number-icon">11</span></a>
+                      <a href="assets/img/project3/12.png" class="glightbox portfolio-link">
+                        <span class="number-icon">12</span></a>
+                      <a href="assets/img/project3/13.png" class="glightbox portfolio-link">
+                        <span class="number-icon">13</span></a>
+                      <a href="assets/img/project3/14.png" class="glightbox portfolio-link">
+                        <span class="number-icon">14</span></a>
+                      <a href="assets/img/project3/15.png" class="glightbox portfolio-link">
+                        <span class="number-icon">15</span></a>
+                      <a href="project-03.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
                     </div>
@@ -1063,28 +1209,43 @@ padding: 5px 14px;
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Creative</span>
-                    <span class="tag">Campaign</span>
+                    <span class="tag">Code Pipeline</span>
+                    <span class="tag">SNS</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JAVA Script</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2026</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+            <!--Project 04-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project04">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/6.jpg" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/1.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/2.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/3.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/4.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/5.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
-                      <span class="project-category">Digital Product</span>
-                      <h4>Mobile Experience</h4>
+                      <span class="project-category">Project 04</span>
+                      <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/6.jpg" class="glightbox portfolio-link">
-                        <i class="bi bi-plus-lg"></i>
-                      </a>
-                      <a href="#" class="portfolio-details">
+                      <a href="assets/img/project4/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                      <a href="assets/img/project4/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                      <a href="assets/img/project4/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                      <a href="assets/img/project4/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project4/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
+                      <a href="project-04.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
                     </div>
@@ -1092,30 +1253,568 @@ padding: 5px 14px;
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Mobile</span>
-                    <span class="tag">UI/UX</span>
+                    <span class="tag">VPC</span>
+                    <span class="tag">EC2</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Apache</span>
+                    <span class="tag">NAT Gateway</span>
                   </div>
-                  <div class="project-year">2023</div>
+                  <div class="project-year">2026</div>
                 </div>
               </div>
             </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project04">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project4/6.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/7.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/8.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/9.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/10.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 04</span>
+                      <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project4/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                      <a href="assets/img/project4/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project4/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project4/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project4/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
+                      <a href="project-04.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">ALB</span>
+                    <span class="tag">ASG</span>
+                    <span class="tag">Target Group </span>
+                    <span class="tag">Launch Template</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project04">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project4/11.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/12.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/13.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/14.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project4/15.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 04</span>
+                      <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project4/11.png" class="glightbox portfolio-link">
+                        <span class="number-icon">11</span></a>
+                      <a href="assets/img/project4/12.png" class="glightbox portfolio-link">
+                        <span class="number-icon">12</span></a>
+                      <a href="assets/img/project4/13.png" class="glightbox portfolio-link">
+                        <span class="number-icon">13</span></a>
+                      <a href="assets/img/project4/14.png" class="glightbox portfolio-link">
+                        <span class="number-icon">14</span></a>
+                      <a href="assets/img/project4/15.png" class="glightbox portfolio-link">
+                        <span class="number-icon">15</span></a>
+                      <a href="project-04.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Security Group</span>
+                    <span class="tag">Golden AMI</span>
+                    <span class="tag">Snapshot</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
             
-          </div>
-
-        </div>
-
-        <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3>Like what you see?</h3>
-              <p>Looking for a dedicated fresher in cloud computing and IT? I’d be glad to discuss how I can contribute to your team.</p>
+            <!--Projrct 05-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project05">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project5/1.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/2.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/3.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/4.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/5.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 05</span>
+                      <h4>Web Application with Amazon RDS in Private Subnet (Secure 2-Tier Architecture)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project5/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                      <a href="assets/img/project5/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                      <a href="assets/img/project5/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                      <a href="assets/img/project5/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project5/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
+                      <a href="project-05.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">VPC</span>
+                    <span class="tag">Private Subnet</span>
+                    <span class="tag">Public Subnet</span>
+                    <span class="tag">Route Table</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="#contact" class="btn btn-accent">Let's Work Together</a>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project05">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project5/6.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/7.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/8.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/9.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/10.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 05</span>
+                      <h4>Web Application with Amazon RDS in Private Subnet (Secure 2-Tier Architecture)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      
+                        
+                      <a href="assets/img/project5/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                      <a href="assets/img/project5/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project5/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project5/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                        <a href="assets/img/project5/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
+                      <a href="project-05.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Internet Gateway</span>
+                    <span class="tag">NAT Gateway</span>
+                    <span class="tag">Elastic IP</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project05">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project5/10.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/11.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/12.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/13.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 05</span>
+                      <h4>Web Application with Amazon RDS in Private Subnet (Secure 2-Tier Architecture)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project5/11.png" class="glightbox portfolio-link">
+                        <span class="number-icon">11</span></a>
+                      <a href="assets/img/project5/12.png" class="glightbox portfolio-link">
+                        <span class="number-icon">12</span></a>
+                      <a href="project-05.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">RDS</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Security Group</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+                                       
+
+            <!--Project 06-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project06">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project6/1.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/2.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/3.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 06</span>
+                      <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project6/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                      <a href="assets/img/project6/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                      <a href="assets/img/project6/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                      <a href="project-06.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">EC2</span>
+                    <span class="tag">Windows Server</span>
+                    <span class="tag">IIS Web Server</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project06">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project6/4.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/5.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/6.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 06</span>
+                      <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project6/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project6/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
+                      <a href="assets/img/project6/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                     <a href="project-06.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Active Directory</span>
+                    <span class="tag">Domain Controller</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project06">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project6/7.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/8.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/9.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 06</span>
+                      <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                       <a href="assets/img/project6/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project6/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project6/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="project-06.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Security Group</span>
+                    <span class="tag">RDP</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--Project 07-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project07">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project7/1.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/2.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/3.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 07</span>
+                      <h4>Multi-OS Platform EC2 Web Hosting(Linux+Windows Server)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project7/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                      <a href="assets/img/project7/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                      <a href="assets/img/project7/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                      <a href="project-07.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">EC2</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Windows</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project07">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project7/4.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/5.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/6.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 07</span>
+                      <h4>Multi-OS Platform EC2 Web Hosting(Linux+Windows Server)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project7/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project7/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
+                      <a href="assets/img/project7/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                      <a href="project-07.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Apache</span>
+                    <span class="tag">NGINX</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project07">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project7/7.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/8.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/9.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/10.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 07</span>
+                      <h4>Multi-OS Platform EC2 Web Hosting(Linux+Windows Server)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project7/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project7/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project7/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project7/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
+                      <a href="project-07.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Security Group</span>
+                    <span class="tag">VPC</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--Project 08-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project08">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project8/1.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/2.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/3.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project-08</span>
+                      <h4>VPC with Public & Private Subnets (Production-Ready Design)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project8/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span>
+                      </a>
+                      <a href="assets/img/project8/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span>
+                      </a>
+                      <a href="assets/img/project8/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span>
+                      </a>
+                      
+                      <a href="project-08.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">VPC</span>
+                    <span class="tag">Public Subnet</span>
+                    <span class="tag">Private Subnet</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project08">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project8/4.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/5.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/6.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project-08</span>
+                      <h4>VPC with Public & Private Subnets (Production-Ready Design)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project8/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span>
+                      </a>
+                      <a href="assets/img/project8/5.png" class="glightbox portfolio-link"> 
+                        <span class="number-icon">5</span>
+                      </a>
+                      <a href="assets/img/project8/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span>
+                      </a>
+                      
+                      <a href="project-08.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Internet Gateway</span>
+                    <span class="tag">Route Table</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project08">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project8/7.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/8.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/9.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/10.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project-08</span>
+                      <h4>VPC with Public & Private Subnets (Production-Ready Design)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project8/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project8/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project8/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project8/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
+                      <a href="project-08.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Linux</span>
+                    <span class="tag">EC2</span>
+                    <span class="tag">Security Group</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h3>Like what you see?</h3>
+                <p>Looking for a dedicated fresher in cloud computing and IT? I’d be glad to discuss how I can contribute to your team.</p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a href="#contact" class="btn btn-accent">Let's Work Together</a>
             </div>
           </div>
         </div>
-
       </div>
 
     </section><!-- /Portfolio Section -->
@@ -1141,7 +1840,7 @@ padding: 5px 14px;
               </div>
               <div>
                 <h3>Address</h3>
-                <p>Ngpur Maharashtra, India</p>
+                <p>Nagpur Maharashtra, India</p>
               </div>
             </div>
 
@@ -1168,7 +1867,7 @@ padding: 5px 14px;
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form">
+            <form id="amolContactForm" action="#" method="post" class="php-email-form">  
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -1176,11 +1875,11 @@ padding: 5px 14px;
                 </div>
 
                 <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-md-12">
@@ -1229,26 +1928,26 @@ padding: 5px 14px;
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="about.html">About us</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="services.html">Projects</a></li> <!--Services to Projects-->
             <li><a href="terms.html">Terms of service</a></li>
             <li><a href="privacy.html">Privacy policy</a></li>
           </ul>
         </div>
 
+        <!--Our Services-->
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>My Focus Areas</h4>       <!--Our Services to My Focus Areas-->
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="index.html#portfolio">Certifications</a></li>       
+            <li><a href="index.html#portfolio">Cloud Computing</a></li>
+            <li><a href="index.html#portfolio">Automation</a></li>
+            <li><a href="index.html#portfolio">Web Deployment</a></li>
+            <li><a href="index.html#portfolio">DevOps</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>Hanuman Nagar</p>
           <p>Nagpur Maharashtra</p>
           <p>India</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+91 5589 55488 55</span></p>
@@ -1259,13 +1958,13 @@ padding: 5px 14px;
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Amol Raut</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed & Built By <a href="https://d2wzfn8f9c4zw5.cloudfront.net/">Amol Raut</a>
       </div>
     </div>
 
@@ -1279,7 +1978,7 @@ padding: 5px 14px;
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!--<script src="assets/vendor/php-email-form/validate.js"></script>-->    <!--To Avoide Conflict-->  
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
@@ -1287,15 +1986,28 @@ padding: 5px 14px;
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+  
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-
-
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script> 
+  
+  
   <!-- Chat Widget -->
    <div id="chat-widget">
-  <div id="chat-header">Ask My Virtual Assistant</div>
+   <div id="chat-header">
+    Ask My Virtual Assistant
+    <button id="clearBtn" title="Clear Chat" style="
+      float: right;
+      background: transparent;
+      border: 1px solid #ffffff55;
+      color: white;
+      border-radius: 6px;
+      padding: 2px 8px;
+      cursor: pointer;
+      font-size: 12px;
+      margin-top: -2px;
+    ">🗑️ Clear</button>
+  </div>
   <div id="typingIndicator">Bot is typing...</div>
   <div id="chatBody"></div>
   <div id="chat-input">
@@ -1303,7 +2015,6 @@ padding: 5px 14px;
     <button id="sendBtn">Send</button>
   </div>
 </div>
-
 
 <!-- CHAT LAUNCHER / ANIMATOR -->
 <div id="chat-launcher">
@@ -1320,13 +2031,11 @@ padding: 5px 14px;
 
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1456.0.min.js"></script>
 
-
 <!-- Lottie ANIMATOR -->
 <script
   src="https://unpkg.com/@lottiefiles/lottie-player@2.0.12/dist/lottie-player.js"
   defer
 ></script>
-
 
 <script>
 /* ================================
@@ -1365,22 +2074,50 @@ document.addEventListener("DOMContentLoaded", () => {
    TYPEWRITER EFFECT
 ================================ */
 function typeMessage(text, element) {
-  let i = 0;
-  element.textContent = "";
+  // Strip HTML tags to get plain text for typing
+    const temp = document.createElement("div");
+    temp.innerHTML = text;
+    const plainText = temp.innerHTML; // keeps <br> tags
+    let i = 0;
+    let output = "";
+  element.innerHTML = "";
 
   const interval = setInterval(() => {
-    if (i < text.length) {
-      element.textContent += text.charAt(i);
+    // Skip over HTML tags character by character
+    if (plainText[i] === "<") {
+      // Find the closing > and add the whole tag at once
+      const closeTag = plainText.indexOf(">", i);
+      output += plainText.substring(i, closeTag + 1);
+      i = closeTag + 1;
+      } else {
+      output += plainText[i];
       i++;
-    } else {
+    }
+      element.innerHTML = output;
+    if (i >= plainText.length) {
       clearInterval(interval);
     }
-  }, 30);
+  }, 25);
 }
 
 /* ================================
    SEND MESSAGE TO LEX
 ================================ */
+function getDelay(messages, currentIndex) {
+  let delay = 0;
+  for (let i = 0; i < currentIndex; i++) {
+    const msg = messages[i];
+    if (msg.contentType === "PlainText") {
+      // 30ms per character (matches your typewriter speed) + 500ms buffer
+      delay += (msg.content.length * 600) + 10000;
+    } else {
+      // Cards appear instantly so just small gap
+      delay += 11000;
+    }
+  }
+  return delay;
+}
+
 function sendMessage(textOverride = null) {
   const input = document.getElementById("userInput");
   const chatBody = document.getElementById("chatBody");
@@ -1420,15 +2157,27 @@ function sendMessage(textOverride = null) {
     }
 
     if (!data.messages) return;
+    // Calculate smart delay based on actual typing time
+    let cumulativeDelay = 0;
+    data.messages.forEach((msg) => {
+      const thisDelay = cumulativeDelay;
+      // Calculate how long THIS message takes so next one waits correctly
+      if (msg.contentType === "PlainText") {
+      cumulativeDelay += (msg.content.length * 30) + 600; // typing time + buffer
+  } else {
+      cumulativeDelay += 600; // cards appear instantly, just a small buffer
+  }
 
-    data.messages.forEach(msg => {
+      setTimeout(() => {
       const botMsg = document.createElement("div");
       botMsg.className = "message bot";
       chatBody.appendChild(botMsg);
 
       /* -------- TEXT -------- */
       if (msg.contentType === "PlainText") {
-        typeMessage("Bot: " + msg.content, botMsg);
+      // Convert newlines to <br> for proper line breaks
+      const formatted = "<strong>Bot:</strong> " + msg.content.replace(/\n/g, "<br>");
+      typeMessage(formatted, botMsg);
       }
 
       /* -------- CARDS -------- */
@@ -1476,27 +2225,314 @@ function sendMessage(textOverride = null) {
           botMsg.appendChild(btnWrap);
         }
       }
+      chatBody.scrollTop = chatBody.scrollHeight;
+      }, thisDelay);
     });
-
-    chatBody.scrollTop = chatBody.scrollHeight;
   });
 }
 
 /* ================================
    INPUT EVENTS
 ================================ */
-document.addEventListener("DOMContentLoaded", () => {
+  function clearChat() {
+  const chatBody = document.getElementById("chatBody");
+  chatBody.innerHTML = "";
+  const msg = document.createElement("div");
+  msg.className = "message bot";
+  msg.innerHTML = "<strong>Bot:</strong> 🗑️ Chat cleared! Type <b>hello</b> to start again.";
+  chatBody.appendChild(msg);
+}
+
+  document.addEventListener("DOMContentLoaded", () => {
   const sendBtn = document.getElementById("sendBtn");
   const input = document.getElementById("userInput");
+  const clearBtn = document.getElementById("clearBtn");
 
   sendBtn.addEventListener("click", () => sendMessage());
-
   input.addEventListener("keydown", e => {
     if (e.key === "Enter") sendMessage();
   });
+  clearBtn.addEventListener("click", clearChat);
 });
 </script>
 
 
+
+<!--Contact Form Lambda-API-->
+<script>
+document.getElementById('amolContactForm').addEventListener('submit', async function(e) {
+    e.preventDefault(); // Prevents the page from refreshing
+    e.stopImmediatePropagation(); // To stop previous script
+
+    // Get form elements
+    const nameInput = this.querySelector('input[name="name"]');
+    const emailInput = this.querySelector('input[name="email"]');
+    const subjectInput = this.querySelector('input[name="subject"]'); // Optional
+    const messageInput = this.querySelector('textarea[name="message"]');
+    
+    // Get UI feedback elements
+    const loading = this.querySelector('.loading');
+    const sentMessage = this.querySelector('.sent-message');
+    const errorMessage = this.querySelector('.error-message');
+
+    // Show loading state and hide previous messages
+    loading.style.display = 'block';
+    errorMessage.style.display = 'none';
+    sentMessage.style.display = 'none';
+
+    // Prepare the data packet for Lambda
+    const payload = {
+        name: nameInput.value,
+        email: emailInput.value,
+        subject: subjectInput ? subjectInput.value : "No Subject",
+        message: messageInput.value,
+        category: "GENERAL_CONTACT" // Matches the logic in your Lambda function
+    };
+
+    // --- CONFIGURATION ---
+    const API_URL = "https://q2ttk558g0.execute-api.us-east-1.amazonaws.com/Prod";
+
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            mode: 'cors',
+            headers: { 'Content-Type': 'application/json',
+            'x-api-key': AWS_CONFIG.API_KEY,
+        },
+            body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+            // Success
+            loading.style.display = 'none';
+            sentMessage.style.display = 'block';
+            this.reset();
+            setTimeout(() => { sentMessage.style.display = 'none'; }, 10000);  //<!--5000 to 10000-->
+        } else {
+            throw new Error('Server Error');
+        }
+            
+    } catch (error) {
+        // Network or Coding Error
+        loading.style.display = 'none';
+        errorMessage.innerText = "Error sending message. Please try again.";
+        errorMessage.style.display = 'block';
+        console.error("Submission Error:", error);
+    }
+});
+</script>
+
+
+<script>
+/* ── FULLSITE STARS & CLOUDS ── */
+const canvas = document.createElement('canvas');
+canvas.id = 'particleCanvas';
+canvas.style.cssText = `
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+`;
+document.body.prepend(canvas);
+
+const ctx = canvas.getContext('2d');
+
+function resize() {
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+/* ── STARS ── */
+const stars = Array.from({ length: 200 }, () => ({
+  x:           Math.random() * window.innerWidth,
+  y:           Math.random() * window.innerHeight,
+  r:           Math.random() * 2.5 + 1,
+  alpha:       Math.random() * 0.8 + 0.2,
+  twinkleSpeed: Math.random() * 0.015 + 0.005,
+  twinkleDir:  1,
+  dx:          (Math.random() - 0.5) * 0.25,
+  dy:          (Math.random() - 0.5) * 0.25,
+}));
+
+/* ── CLOUDS ── */
+const clouds = Array.from({ length: 5 }, (_, i) => ({
+  x:     (window.innerWidth / 5) * i,
+  y:     Math.random() * window.innerHeight * 0.5 + 50,
+  scale: Math.random() * 0.8 + 0.4,
+  alpha: Math.random() * 0.07 + 0.03,
+  dx:    Math.random() * 0.25 + 0.1,
+}));
+
+/* ── PROPER CLOUD SHAPE ── */
+function drawCloud(ctx, x, y, scale, alpha) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.fillStyle = 'rgba(255,255,255,1)';
+  ctx.beginPath();
+
+  const w = 120 * scale;
+  const h = 40  * scale;
+
+  // Base rectangle rounded
+  ctx.moveTo(x + 20 * scale, y + h);
+  ctx.lineTo(x + w - 20 * scale, y + h);
+
+  // Bottom right curve
+  ctx.quadraticCurveTo(x + w, y + h, x + w, y + h * 0.6);
+
+  // Right bump
+  ctx.quadraticCurveTo(x + w + 20 * scale, y + h * 0.6,
+                       x + w + 10 * scale, y + h * 0.3);
+  ctx.quadraticCurveTo(x + w + 10 * scale, y,
+                       x + w - 10 * scale, y);
+
+  // Middle top bump (biggest)
+  ctx.quadraticCurveTo(x + w * 0.8,  y - h * 0.8,
+                       x + w * 0.55, y - h * 0.6);
+  ctx.quadraticCurveTo(x + w * 0.5,  y - h * 1.1,
+                       x + w * 0.35, y - h * 0.7);
+
+  // Left top bump
+  ctx.quadraticCurveTo(x + 20 * scale, y - h * 0.9,
+                       x + 10 * scale, y);
+
+  // Bottom left curve
+  ctx.quadraticCurveTo(x - 10 * scale, y,
+                       x - 10 * scale, y + h * 0.4);
+  ctx.quadraticCurveTo(x - 10 * scale, y + h,
+                       x + 20 * scale, y + h);
+
+  ctx.closePath();
+  ctx.fill();
+  ctx.restore();
+}
+
+/* ── DRAW STAR ── */
+function drawStar(x, y, r, alpha) {
+  ctx.beginPath();
+  ctx.arc(x, y, r, 0, Math.PI * 2);
+  ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+  ctx.shadowBlur  = 10;
+  ctx.shadowColor = `rgba(255,255,255,${alpha * 0.8})`;
+  ctx.fill();
+  ctx.shadowBlur  = 0;
+}
+
+/* ── ANIMATE ── */
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Stars
+  stars.forEach(s => {
+    s.alpha += s.twinkleSpeed * s.twinkleDir;
+    if (s.alpha >= 1)   { s.alpha = 1;   s.twinkleDir = -1; }
+    if (s.alpha <= 0.1) { s.alpha = 0.1; s.twinkleDir =  1; }
+
+    s.x += s.dx;
+    s.y += s.dy;
+
+    if (s.x < 0 || s.x > canvas.width)  s.dx *= -1;
+    if (s.y < 0 || s.y > canvas.height) s.dy *= -1;
+
+    drawStar(s.x, s.y, s.r, s.alpha);
+  });
+
+  // Clouds
+  clouds.forEach(c => {
+    c.x += c.dx;
+    if (c.x - 200 > canvas.width) {
+      c.x = -200;
+      c.y = Math.random() * canvas.height * 0.5 + 50;
+    }
+    drawCloud(ctx, c.x, c.y, c.scale, c.alpha);
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
+
+<script>
+// Function to show the popup CV
+function openCVModal() {
+    document.getElementById('cvModal').style.display = 'block';
+}
+
+// Function to hide the popup
+function closeCVModal() {
+    document.getElementById('cvModal').style.display = 'none';
+}
+
+// Function to handle the API call
+async function sendCVRequest() {
+    const btn = document.getElementById('getCVBtn');
+    
+    // Capture Input Data
+    const name = document.getElementById('hrName').value;
+    const email = document.getElementById('hrEmail').value;
+    const subject = document.getElementById('hrSubject').value;
+    const message = document.getElementById('hrMessage').value;
+
+    if (!name || !email || !subject) {
+        alert("Please fill in Name, Email, and Subject.");
+        return;
+    }
+
+    // UI Feedback
+    btn.disabled = true;
+    btn.innerText = "Processing...";
+
+    const payload = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+    };
+
+    // Replace with your actual API Gateway Invoke URL
+    const API_URL = "https://ytct5gdwjj.execute-api.us-east-1.amazonaws.com/PROD_CV";
+
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            mode: 'cors',
+            headers: { 'Content-Type': 'application/json',
+            'x-api-key': AWS_CONFIG.API_KEY,
+        },  
+            body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+            alert("Success! Please Check your inbox for the Resume link. If you don't see it in a few minutes, kindly check your spam or junk folder");
+            closeCVModal(); // Hide modal on success
+        } else {
+            alert("Error: Could not process request. Please check API settings.");
+        }
+    } catch (error) {
+        console.error("Fetch Error:", error);
+        alert("Connectivity error. Is CORS enabled?");
+    } finally {
+        btn.disabled = false;
+        btn.innerText = "Get Resume Link";
+    }
+}
+
+// Close modal if user clicks outside of the box
+window.onclick = function(event) {
+    let modal = document.getElementById('cvModal');
+    if (event.target == modal) {
+        closeCVModal();
+    }
+}
+</script>
+
 </body>
+
 </html>
