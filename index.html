@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/1.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -42,10 +42,10 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Amol Raut</h1>
+      <a href="index.html" class="logo d-flex align-items-center" style="margin-right:auto; width:fit-content;">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="Amol Raut" style="height:150px; width:auto; margin-right:350px;">
+        </a>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -53,27 +53,29 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
-          <li><a href="#services">Projects</a></li>   <!--Services to Projects-->
+          <li><a href="#services">Projects</a></li>   
           <li><a href="#portfolio">Portfolio</a></li>
           
-          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> <!--Dropdown to More-->
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> 
             <ul>
-              <li><a href="about.html">About Us</a></li>   <!--Dropdown 1 to About Us-->
+              <li><a href="about.html">About Us</a></li>
               <li class="dropdown"><a href="#"><span>Quick Links</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="project-01.html">Project-01</a></li>   <!--Deep Dropdown 2 to Cloud Computing-->
-                  <li><a href="project-02.html">Project-02</a></li>     <!--Deep Dropdown 2 to System Admin-->
+                  <li><a href="project-01.html">Project-01</a></li>   
+                  <li><a href="project-02.html">Project-02</a></li>     
                   <li><a href="project-03.html">Project-03</a></li>
                   <li><a href="project-04.html">Project-04</a></li>
                   <li><a href="project-05.html">Project-05</a></li>
                   <li><a href="project-06.html">Project-06</a></li>
                   <li><a href="project-07.html">Project-07</a></li>
                   <li><a href="project-08.html">Project-08</a></li>
+                  <li><a href="project-09.html">Project-09</a></li>
+                  <li><a href="project-10.html">Project-10</a></li>
                 </ul>
               </li>
-              <li><a href="index.html#portfolio">Certifications</a></li>                    <!--Dropdown 2 to Certifications-->
-              <li><a href="terms.html">Terms of service</a></li>                    <!--Dropdown 3 to Terms of service-->
-              <li><a href="privacy.html">Privacy policy</a></li>     <!--Dropdown 4 to Privacy policy-->
+              <li><a href="index.html#portfolio">Certifications</a></li>                   
+              <li><a href="terms.html">Terms of service</a></li>     
+              <li><a href="privacy.html">Privacy policy</a></li>     
             </ul>
           </li>
           
@@ -96,15 +98,15 @@
   </video> --This Code is for Video Background-->
 
   <section id="hero" class="hero section dark-background">
-    <img src="assets/img/profile/2.jpg" alt="" data-aos="fade-in">
-        
+    <img src="assets/img/profile/2.jpg" alt="" data-aos="fade-in">      
 
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2>Hi, I'm Amol Raut</h2>
-            <p>I'm a System Admin → Cloud Engineer (AWS Solutions Architect Associates in Progress) <span class="typed" data-typed-items="System Administrator, Cloud Engineer/Architect  "></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <h2><b>Hi, I'm Amol Raut <br>Portfolio Under Development...</b></h2>
+            <p>Currently architecting a highly available and secure AWS-based portfolio. Full site launching soon! Stay tuned for more cloud-native projects.</p>
+            <p>I'm a System Admin → Cloud Engineer (AWS Solutions Architect Associates in Progress) <span class="typed" data-typed-items="System Administrator, Cloud Engineer/ DevOps  "></span><span class="typed-cursor" aria-hidden="true"></span></p>
             <div class="social-links">
               <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
               <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -151,7 +153,7 @@
 
               <div class="profile-stats">
                 <div class="stat-item">
-                  <h4>08</h4>
+                  <h4>10+</h4>
                   <p>Projects</p>
                 </div>
                 <div class="stat-item">
@@ -169,17 +171,57 @@
                 <a href="#contact" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
               </div>
               <div id="cvModal" class="modal" style="display:none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
-                <div class="modal-content" style="background-color: #000000; margin: 10% auto; padding: 20px; border-radius: 8px; width: 80%; max-width: 450px; position: relative;">
-                  <span onclick="closeCVModal()" style="position: absolute; right: 20px; cursor: pointer; font-size: 24px;">&times;</span>
-                  <h4 style="margin-bottom: 15px;">Secure Resume Download</h4>
-                  <p style="font-size: 14px; color: #666; margin-bottom: 20px;">Please Enter your details to receive a secure 48-hour download link via email.</p>
-                  <input type="text" id="hrName" class="form-control mb-3" placeholder="Your Name" required style="width: 100%; margin-bottom: 10px; padding: 8px;">
-                  <input type="email" id="hrEmail" class="form-control mb-3" placeholder="Your Email" required style="width: 100%; margin-bottom: 10px; padding: 8px;">
-                  <input type="text" id="hrSubject" class="form-control mb-3" placeholder="Company / Subject" required style="width: 100%; margin-bottom: 10px; padding: 8px;">
-                  <textarea id="hrMessage" class="form-control mb-3" placeholder="Message (Optional)" style="width: 100%; margin-bottom: 15px; padding: 8px;"></textarea>
-                  <button type="button" id="getCVBtn" onclick="sendCVRequest()" style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Get Resume Link</button>
-                </div>
-              </div>
+                <div class="modal-content" style="background:#1a1a1a; margin:8% auto; padding:36px; border-radius:20px; width:90%; max-width:450px; position:relative; border:1px solid #c02b2b; box-shadow:0 0 40px rgba(192,43,43,0.2); max-height:90vh; overflow-y:auto;">
+
+  <!-- Close button -->
+  <span onclick="closeCVModal()" style="position:absolute; right:18px; top:14px; cursor:pointer; font-size:22px; color:#aaa;">✕</span>
+
+  <!-- Form Section -->
+  <div id="cvFormSection">
+    <h4 style="color:#fff; margin-bottom:6px; font-size:18px;">📄 Download My Resume</h4>
+    <p style="font-size:13px; color:#aaa; margin-bottom:20px;">Fill in your details and I'll send you a secure download link valid for <strong style="color:#fff;">48 hours</strong>.</p>
+
+    <input type="text" id="hrName" placeholder="Your Full Name" required style="width:100%; padding:12px 14px; background:#252525; border:1px solid #333; border-radius:10px; color:#fff; outline:none; font-size:13px; margin-bottom:12px;">
+    <input type="email" id="hrEmail" placeholder="Your Email Address" required style="width:100%; padding:12px 14px; background:#252525; border:1px solid #333; border-radius:10px; color:#fff; outline:none; font-size:13px; margin-bottom:12px;">
+    <input type="text" id="hrSubject" placeholder="Company / Organization (Optional)" style="width:100%; padding:12px 14px; background:#252525; border:1px solid #333; border-radius:10px; color:#fff; outline:none; font-size:13px; margin-bottom:12px;">
+    <textarea id="hrMessage" placeholder="Message (Optional) — e.g. I'm hiring for a Cloud Engineer role..." style="width:100%; padding:12px 14px; background:#252525; border:1px solid #333; border-radius:10px; color:#fff; outline:none; font-size:13px; margin-bottom:16px; resize:none; height:85px; font-family:inherit;"></textarea>
+
+    <!-- Loading -->
+    <div id="cvLoading" style="display:none; text-align:center; padding:20px;">
+      <div style="width:50px; height:50px; border:3px solid rgba(0,123,158,0.2); border-top-color:#007b9e; border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 12px;"></div>
+      <div style="color:#2bbcff; font-size:13px; font-style:italic;">⏳ Generating your secure resume link...</div>
+    </div>
+
+    <button type="button" onclick="sendCVRequest()" style="width:100%; padding:14px; background:linear-gradient(135deg,#007b9e,#005f7a); color:#fff; border:none; border-radius:10px; font-size:15px; font-weight:700; cursor:pointer; letter-spacing:0.5px;">📨 Send Me The Resume</button>
+
+    <p style="color:#444; font-size:11px; text-align:center; margin-top:14px;">🔒 Secure · No spam · Link expires in 48 hours</p>
+  </div>
+
+  <!-- Success Section -->
+  <div id="cvSuccess" style="display:none;">
+    <div style="background:linear-gradient(135deg,#061a10,#0a2a18,#061a10);border:1px solid #2ecc71;border-radius:16px;padding:30px 22px;text-align:center;box-shadow:0 0 40px rgba(46,204,113,0.2);animation:successPop 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards;">
+      <div style="width:74px;height:74px;background:rgba(46,204,113,0.1);border:2px solid #2ecc71;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:34px;box-shadow:0 0 24px rgba(46,204,113,0.35);animation:checkBounce 0.7s 0.3s cubic-bezier(0.34,1.56,0.64,1) both;">✅</div>
+      <div style="color:#fff;font-size:18px;font-weight:700;margin-bottom:5px;">Resume Sent Successfully! 🎉</div>
+      <div style="color:#2ecc71;font-size:13px;margin-bottom:16px;">📧 Your secure download link is on its way!</div>
+      <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(46,204,113,0.4),transparent);margin:14px 0;"></div>
+      <div style="background:rgba(46,204,113,0.05);border:1px solid rgba(46,204,113,0.12);border-radius:10px;padding:14px 16px;text-align:left;margin-bottom:14px;">
+        <div style="color:#2ecc71;font-size:12px;font-weight:700;margin-bottom:10px;">📬 WHAT TO DO NEXT</div>
+        <div style="display:flex;gap:10px;margin-bottom:8px;font-size:12.5px;color:#bbb;">1️⃣ <span>Open your <strong style="color:#fff;">email inbox</strong> right now</span></div>
+        <div style="display:flex;gap:10px;margin-bottom:8px;font-size:12.5px;color:#bbb;">2️⃣ <span>Look for email from <strong style="color:#fff;">theamrual@gmail.com</strong></span></div>
+        <div style="display:flex;gap:10px;margin-bottom:8px;font-size:12.5px;color:#bbb;">⚠️ <span>Not found? Check your <strong style="color:#f39c12;">Spam / Junk</strong> folder!</span></div>
+        <div style="display:flex;gap:10px;font-size:12.5px;color:#bbb;">⏱️ <span>Link expires in <strong style="color:#e74c3c;">48 hours</strong> — download soon!</span></div>
+      </div>
+      <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-bottom:12px;">
+        <span style="background:rgba(46,204,113,0.07);border:1px solid rgba(46,204,113,0.2);color:#2ecc71;padding:5px 11px;border-radius:20px;font-size:11px;">🔒 Secure Link</span>
+        <span style="background:rgba(46,204,113,0.07);border:1px solid rgba(46,204,113,0.2);color:#2ecc71;padding:5px 11px;border-radius:20px;font-size:11px;">⏱️ 48hr Expiry</span>
+        <span style="background:rgba(46,204,113,0.07);border:1px solid rgba(46,204,113,0.2);color:#2ecc71;padding:5px 11px;border-radius:20px;font-size:11px;">📬 Check Spam</span>
+        <span style="background:rgba(46,204,113,0.07);border:1px solid rgba(46,204,113,0.2);color:#2ecc71;padding:5px 11px;border-radius:20px;font-size:11px;">✅ Sent via AWS SES</span>
+      </div>
+      <div style="color:#444;font-size:11px;">🔐 This link is personal — please don't share it with others</div>
+    </div>
+  </div>
+</div>
+</div>
 
               <div class="social-connect">
                 <a href="https://www.linkedin.com/login" target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -329,7 +371,7 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Resume</span>
         <h2>Resume</h2>
-        <p>Fresher in cloud computing with prior experience in system administration. Skilled in IT infrastructure management and eager to learn cloud technologies such as AWS, Azure, and DevOps practices. Looking forward to contributing to innovative projects while growing into a Cloud Engineer/Architect role.</p>
+        <p>Fresher in cloud computing with prior experience in system administration. Skilled in IT infrastructure management and eager to learn cloud technologies such as AWS, Azure, and DevOps practices. Looking forward to contributing to innovative projects while growing into a Cloud Engineer/ DevOps role.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -503,7 +545,8 @@
                         <li>⭐ Cloud Computing with AWS- Internshala & Skill India(N.S.D.C) <a href="https://trainings.internshala.com/s/v/3789965/783a0822" target="_blank">Verify Certificate</a></li>
                         <li>⭐ Completed Internship & Job Preparation Training (Internshala, Nov 2025) — Scored 95%, Top Performer. <a href="https://trainings.internshala.com/s/v/3804391/fcbcd498" target="_blank">Verify Certificate</a></li>
                         <li>⭐ Using Python to Interact with the Operating System — Google IT Python (Coursera). <a href="https://coursera.org/share/4bca41870cbae35c78c4134cc013bc97" target="_blank">Verify Certificate</a></li>
-                        <li>⭐ Git/GitHub <a href="https://coursera.org/share/63dbecf44f2ca1ca69d4e88c5df0d660" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ Introduction to Git and GitHub <a href="https://coursera.org/share/63dbecf44f2ca1ca69d4e88c5df0d660" target="_blank">Verify Certificate</a></li>
+                        <li>⭐ Hashicorp Certified -Terraform Associate 003<a href="https://www.udemy.com/certificate/UC-0246a23c-a1c8-4436-875d-e1da7583d9f6/" target="_blank">Verify Certificate</a></li>
                       </ul>
                     </div>
                   </div>
@@ -519,7 +562,7 @@
                       </div>
                       <h4>Bachelor of Arts</h4>
                       <p class="institution">YCMOU</p>
-                      <p class="description">Currently pursuing degree.</p>
+                      <p class="description">Currently pursuing final year</p>
                       <div class="achievement">
                         <i class="bi bi-award"></i>
                         <span>Nagpur MH, IN</span>
@@ -639,12 +682,12 @@
             <div class="service-item featured">
               <div class="featured-tag">Featured</div>
               <div class="icon-wrapper">
-                <i class="bi bi-tools"></i>
+                <i class="bi bi-robot"></i>
               </div>
-              <h4>Terraform Advance</h4>
-              <p>Advance</p>
+              <h4>AI-Powered Serverless Web Platform with CI/CD & Intelligent ChatBot<br>Amazon LEX</h4>
+              <p>Project 01</p>
               <a href="project-01.html" class="read-more">
-                <span>Project 01</span>
+                <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -655,9 +698,9 @@
             <div class="service-item featured">
               <div class="featured-tag">Featured</div>
               <div class="icon-wrapper">
-                <i class="bi bi-robot"></i>
+                <i class="bi bi-hourglass-split"></i>
               </div>
-              <h4>AI-Powered Serverless Web Platform with CI/CD & Intelligent ChatBot (Amazon Lex)</h4>
+              <h4>Secure Resume Delivery Platform with Time-Limited Access</h4>
               <p>Project 02</p>
               <a href="project-02.html" class="read-more">
                 <span>Explore</span>
@@ -671,9 +714,9 @@
             <div class="service-item">
               <div class="featured-tag">Featured</div>
               <div class="icon-wrapper">
-                <i class="bi bi-globe2"></i>
+                <i class="bi bi-clipboard-data"></i> 
               </div>
-              <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
+              <h4>Enterprise Serverless Lead Management Platform</h4>
               <p>Project 03</p>
               <a href="project-03.html" class="read-more">
                 <span>Explore</span>
@@ -687,9 +730,9 @@
             <div class="service-item">
               <div class="featured-tag">Featured</div>
               <div class="icon-wrapper">
-                <i class="bi bi-distribute-horizontal"></i>
+                <i class="bi bi-globe2"></i>
               </div>
-              <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
+              <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
               <p>Project 04</p>
               <a href="project-04.html" class="read-more">
                 <span>Explore</span>
@@ -701,10 +744,11 @@
           <!--Project 05-->
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="600">
             <div class="service-item">
+              <div class="featured-tag">Featured</div>
               <div class="icon-wrapper">
-                <i class="bi bi-database-lock"></i>
+                <i class="bi bi-arrow-repeat"></i>
               </div>
-              <h4>Web Application with Amazon RDS in Private Subnet (Secure 2-Tier Architecture)</h4>         
+              <h4>Automated Highly Available Web Infrastructure using Terraform Cloud & AWS</h4>         
               <p>Project 05</p>
               <a href="project-05.html" class="read-more">
                 <span>Explore</span>
@@ -717,9 +761,9 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="700">
             <div class="service-item">
               <div class="icon-wrapper">
-                <i class="bi bi-windows"></i>
+                <i class="bi bi-distribute-horizontal"></i>
               </div>
-              <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>        
+              <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>        
               <p>Project 06</p>
               <a href="project-06.html" class="read-more">
                 <span>Explore</span>
@@ -732,9 +776,9 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="800">
             <div class="service-item">
               <div class="icon-wrapper">
-                <i class="bi bi-hdd-stack"></i>
+                <i class="bi bi-database-lock"></i>
               </div>
-              <h4>Multi OS-Platform EC2 Web Hosting (Linux + Windows Servers)</h4>
+              <h4>Web Application with Amazon RDS in Private Subnet (Secure 2-Tier Architecture)</h4>
               <p>Project 07</p>
               <a href="project-07.html" class="read-more">
                 <span>Explore</span>
@@ -747,9 +791,9 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="900">
             <div class="service-item">
               <div class="icon-wrapper">
-                <i class="bi bi-diagram-3"></i>
+                <i class="bi bi-windows"></i>
               </div>
-              <h4>VPC with Public & Private Subnets (Production-Ready Design) </h4>
+              <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>
               <p>Project 08</p>
               <a href="project-08.html" class="read-more">
                 <span>Explore</span>
@@ -758,7 +802,52 @@
             </div>
           </div>
 
-          <!--Project 09 Workng On-->
+          <!--Project 09-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="900">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-hdd-stack"></i>
+              </div>
+              <h4>Multi OS-Platform EC2 Web Hosting (Linux + Windows Servers)</h4>
+              <p>Project 09</p>
+              <a href="project-09.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--Project 10-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="900">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <h4>VPC with Public & Private Subnets (Production-Ready Design)</h4>
+              <p>Project 10</p>
+              <a href="project-10.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--Project 11-->
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="900">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <h4>ONGOING PROJECT...<br>Production-Grade DevOps & Kubernetes (EKS)</h4>
+              <p>Project 11</p>
+              <a href="project-11.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--Next Projects Workng On-->
           
         
         </div>
@@ -808,6 +897,9 @@
             <li data-filter=".filter-project06">Project 06</li>   
             <li data-filter=".filter-project07">Project 07</li>
             <li data-filter=".filter-project08">Project 08</li>
+            <li data-filter=".filter-project09">Project 09</li>
+            <li data-filter=".filter-project10">Project 10</li>
+            <li data-filter=".filter-project11">Project 11 - ONGOING</li>
           </ul>
 
           <!--Portfolio Images  -->
@@ -928,6 +1020,8 @@
                   <div class="project-tags">
                     <span class="tag">AWS </span>
                     <span class="tag">Python</span>
+
+
                   </div>
                   <div class="project-year">2025</div>
                 </div>
@@ -939,6 +1033,7 @@
                 <div class="portfolio-image-container">
                   <img src="assets/img/certs/16.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/certs/17.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/certs/18.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Certifications</span>
@@ -949,6 +1044,8 @@
                         <span class="number-icon">16</span></a>
                         <a href="assets/img/certs/17.png" class="glightbox portfolio-link">
                         <span class="number-icon">17</span></a>
+                        <a href="assets/img/certs/18.png" class="glightbox portfolio-link">
+                        <span class="number-icon">18</span></a>
                       </a>
                       <a href="portfolio.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
@@ -960,6 +1057,7 @@
                   <div class="project-tags">
                     <span class="tag">Python</span>
                     <span class="tag">Git/GitHub</span>
+                    <span class="tag">Terraform</span>
                   </div>
                   <div class="project-year">2025-2026</div>
                 </div>
@@ -971,16 +1069,27 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project01">  
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/project1/1.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project1/1.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project1/2.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project1/3.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project1/4.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project1/5.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 01</span>
-                      <h4>Terraform</h4>
+                      <h4>AI-Powered Serverless Web Platform with CI/CD & Intelligent ChatBot (Amazon Lex)</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/project2/1.png" class="glightbox portfolio-link">
+                      <a href="assets/img/project1/1.png" class="glightbox portfolio-link">
                         <span class="number-icon">1</span></a>
-                      </a>
+                      <a href="assets/img/project1/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                        <a href="assets/img/project1/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                        <a href="assets/img/project1/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                        <a href="assets/img/project1/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
                       <a href="portfolio-details.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -989,8 +1098,40 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Branding</span>
-                    <span class="tag">Identity</span>
+                    <span class="tag">Amazon LEX</span>
+                    <span class="tag">Lambda</span>
+                    <span class="tag">DynamoDB</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project01">  
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project1/6.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project1/7.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 01</span>
+                      <h4>AI-Powered Serverless Web Platform with CI/CD & Intelligent ChatBot (Amazon Lex)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project1/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                      <a href="assets/img/project1/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="portfolio-details.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">API Gateway</span>
+                    <span class="tag">REST API</span>
                   </div>
                   <div class="project-year">2026</div>
                 </div>
@@ -1010,7 +1151,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 02</span>
-                      <h4>AI-Powered Serverless Web Platform with CI/CD & Intelligent ChatBot (Amazon Lex)</h4>
+                      <h4>Secure Resume Delivery Platform with Time-Limited Access</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project2/1.png" class="glightbox portfolio-link">
@@ -1040,6 +1181,76 @@
               </div>
             </div>
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project02">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project2/6.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project2/7.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project2/8.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project2/9.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project2/10.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 02</span>
+                      <h4>Secure Resume Delivery Platform with Time-Limited Access</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project2/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                      <a href="assets/img/project2/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project2/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project2/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project2/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
+                      <a href="project-02.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Amazon S3</span>
+                    <span class="tag">CloudFront</span>
+                    <span class="tag">AWS CodePipeline</span>
+                    </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project02">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project2/11.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 02</span>
+                      <h4>Secure Resume Delivery Platform with Time-Limited Access</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project2/11.png" class="glightbox portfolio-link">
+                        <span class="number-icon">11</span></a>
+                      <a href="project-02.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Amazon S3</span>
+                    <span class="tag">CloudFront</span>
+                    <span class="tag">AWS CodePipeline</span>
+                    </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
             <!--Project 03-->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project03">
               <div class="portfolio-card">
@@ -1052,7 +1263,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 03</span>
-                      <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
+                      <h4>Enterprise Serverless Lead Management Platform</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project3/1.png" class="glightbox portfolio-link">
@@ -1093,7 +1304,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 03</span>
-                      <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
+                      <h4>Enterprise Serverless Lead Management Platform</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project3/6.png" class="glightbox portfolio-link">
@@ -1104,7 +1315,7 @@
                         <span class="number-icon">8</span></a>
                       <a href="assets/img/project3/9.png" class="glightbox portfolio-link">
                         <span class="number-icon">9</span></a>
-                      <a href="assets/img/project3/10.png" class="glightbox portfolio-link">
+                        <a href="assets/img/project3/10.png" class="glightbox portfolio-link">
                         <span class="number-icon">10</span></a>
                       <a href="project-03.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
@@ -1123,48 +1334,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project03">
-              <div class="portfolio-card">
-                <div class="portfolio-image-container">
-                  <img src="assets/img/project3/11.png" alt="Creative Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project3/12.png" alt="Creative Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project3/13.png" alt="Creative Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project3/14.png" alt="Creative Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project3/15.png" alt="Creative Project" class="img-fluid" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <span class="project-category">Project 03</span>
-                      <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
-                    </div>
-                    <div class="portfolio-actions">
-                      <a href="assets/img/project3/11.png" class="glightbox portfolio-link">
-                        <span class="number-icon">11</span></a>
-                      <a href="assets/img/project3/12.png" class="glightbox portfolio-link">
-                        <span class="number-icon">12</span></a>
-                      <a href="assets/img/project3/13.png" class="glightbox portfolio-link">
-                        <span class="number-icon">13</span></a>
-                      <a href="assets/img/project3/14.png" class="glightbox portfolio-link">
-                        <span class="number-icon">14</span></a>
-                      <a href="assets/img/project3/15.png" class="glightbox portfolio-link">
-                        <span class="number-icon">15</span></a>
-                      <a href="project-03.html" class="portfolio-details">
-                        <i class="bi bi-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-meta">
-                  <div class="project-tags">
-                    <span class="tag">Code Pipeline</span>
-                    <span class="tag">SNS</span>
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JAVA Script</span>
-                  </div>
-                  <div class="project-year">2026</div>
-                </div>
-              </div>
-            </div>
+            
 
             <!--Project 04-->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project04">
@@ -1178,7 +1348,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 04</span>
-                      <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
+                      <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project4/1.png" class="glightbox portfolio-link">
@@ -1199,11 +1369,11 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">VPC</span>
-                    <span class="tag">EC2</span>
-                    <span class="tag">Linux</span>
-                    <span class="tag">Apache</span>
-                    <span class="tag">NAT Gateway</span>
+                    <span class="tag">Amazon S3</span>
+                    <span class="tag">Amazon CloudFront</span>
+                    <span class="tag">Cloud Watch</span>
+                    <span class="tag">Amazon Code Pipeline</span>
+                    
                   </div>
                   <div class="project-year">2026</div>
                 </div>
@@ -1221,7 +1391,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 04</span>
-                      <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
+                      <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project4/6.png" class="glightbox portfolio-link">
@@ -1242,10 +1412,10 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">ALB</span>
-                    <span class="tag">ASG</span>
-                    <span class="tag">Target Group </span>
-                    <span class="tag">Launch Template</span>
+                    <span class="tag">Git/GitHub</span>
+                    <span class="tag">Origin Access Control (OAC)</span>
+                    <span class="tag">IAM Policies</span>
+                    
                   </div>
                   <div class="project-year">2026</div>
                 </div>
@@ -1263,7 +1433,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 04</span>
-                      <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
+                      <h4>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project4/11.png" class="glightbox portfolio-link">
@@ -1284,9 +1454,11 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Security Group</span>
-                    <span class="tag">Golden AMI</span>
-                    <span class="tag">Snapshot</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">AWS SNS</span>
+                    <span class="tag">AWS SES</span>
                   </div>
                   <div class="project-year">2026</div>
                 </div>
@@ -1306,7 +1478,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 05</span>
-                      <h4>Web Application with Amazon RDS in Private Subnet (Secure 2-Tier Architecture)</h4>
+                      <h4>Automated Highly Available Web Infrastructure using Terraform Cloud & AWS</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project5/1.png" class="glightbox portfolio-link">
@@ -1348,7 +1520,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 05</span>
-                      <h4>Web Application with Amazon RDS in Private Subnet (Secure 2-Tier Architecture)</h4>
+                      <h4>Automated Highly Available Web Infrastructure using Terraform Cloud & AWS</h4>
                     </div>
                     <div class="portfolio-actions">
                       
@@ -1383,20 +1555,109 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project05">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/project5/10.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project5/11.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project5/12.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project5/13.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/14.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/15.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 05</span>
-                      <h4>Web Application with Amazon RDS in Private Subnet (Secure 2-Tier Architecture)</h4>
+                      <h4>Automated Highly Available Web Infrastructure using Terraform Cloud & AWS</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project5/11.png" class="glightbox portfolio-link">
                         <span class="number-icon">11</span></a>
                       <a href="assets/img/project5/12.png" class="glightbox portfolio-link">
                         <span class="number-icon">12</span></a>
+                        <a href="assets/img/project5/13.png" class="glightbox portfolio-link">
+                        <span class="number-icon">13</span></a>
+                      <a href="assets/img/project5/14.png" class="glightbox portfolio-link">
+                        <span class="number-icon">14</span></a>
+                      <a href="assets/img/project5/15.png" class="glightbox portfolio-link">
+                        <span class="number-icon">15</span></a>
+                      <a href="project-05.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">RDS</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Security Group</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project05">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project5/16.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/17.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/18.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/19.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/20.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 05</span>
+                      <h4>Automated Highly Available Web Infrastructure using Terraform Cloud & AWS</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project5/16.png" class="glightbox portfolio-link">
+                        <span class="number-icon">16</span></a>
+                      <a href="assets/img/project5/17.png" class="glightbox portfolio-link">
+                        <span class="number-icon">17</span></a>
+                        <a href="assets/img/project5/18.png" class="glightbox portfolio-link">
+                        <span class="number-icon">18</span></a>
+                      <a href="assets/img/project5/19.png" class="glightbox portfolio-link">
+                        <span class="number-icon">19</span></a>
+                      <a href="assets/img/project5/20.png" class="glightbox portfolio-link">
+                        <span class="number-icon">20</span></a>
+                      <a href="project-05.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">RDS</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Security Group</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project05">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project5/21.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/22.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/23.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/24.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project5/25.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 05</span>
+                      <h4>Automated Highly Available Web Infrastructure using Terraform Cloud & AWS</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project5/21.png" class="glightbox portfolio-link">
+                        <span class="number-icon">21</span></a>
+                      <a href="assets/img/project5/22.png" class="glightbox portfolio-link">
+                        <span class="number-icon">22</span></a>
+                        <a href="assets/img/project5/23.png" class="glightbox portfolio-link">
+                        <span class="number-icon">23</span></a>
+                      <a href="assets/img/project5/24.png" class="glightbox portfolio-link">
+                        <span class="number-icon">24</span></a>
+                      <a href="assets/img/project5/25.png" class="glightbox portfolio-link">
+                        <span class="number-icon">25</span></a>
                       <a href="project-05.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -1423,10 +1684,12 @@
                   <img src="assets/img/project6/1.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project6/2.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project6/3.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/4.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/5.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 06</span>
-                      <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>
+                      <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project6/1.png" class="glightbox portfolio-link">
@@ -1435,6 +1698,10 @@
                         <span class="number-icon">2</span></a>
                       <a href="assets/img/project6/3.png" class="glightbox portfolio-link">
                         <span class="number-icon">3</span></a>
+                      <a href="assets/img/project6/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project6/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>  
                       <a href="project-06.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -1443,9 +1710,9 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
+                    <span class="tag">Application Load Balancer (ALB)<</span>
+                    <span class="tag">Target Group</span>
                     <span class="tag">EC2</span>
-                    <span class="tag">Windows Server</span>
-                    <span class="tag">IIS Web Server</span>
                   </div>
                   <div class="project-year">2026</div>
                 </div>
@@ -1456,21 +1723,27 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project06">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/project6/4.png" alt="Development Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project6/5.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project6/6.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/7.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/8.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/9.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/10.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 06</span>
-                      <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>
+                      <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/project6/4.png" class="glightbox portfolio-link">
-                        <span class="number-icon">4</span></a>
-                      <a href="assets/img/project6/5.png" class="glightbox portfolio-link">
-                        <span class="number-icon">5</span></a>
                       <a href="assets/img/project6/6.png" class="glightbox portfolio-link">
                         <span class="number-icon">6</span></a>
+                      <a href="assets/img/project6/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project6/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project6/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project6/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
                      <a href="project-06.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -1479,8 +1752,9 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Active Directory</span>
-                    <span class="tag">Domain Controller</span>
+                    <span class="tag">Auto Scaling Group (ASG)</span>
+                    <span class="tag">Launch Templates</span>
+                    <span class="tag">Subnets</span>
                   </div>
                   <div class="project-year">2026</div>
                 </div>
@@ -1491,21 +1765,27 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project06">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/project6/7.png" alt="Development Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project6/8.png" alt="Development Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project6/9.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/11.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/12.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/13.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/14.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project6/15.png" alt="Development Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 06</span>
-                      <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>
+                      <h4>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h4>
                     </div>
                     <div class="portfolio-actions">
-                       <a href="assets/img/project6/7.png" class="glightbox portfolio-link">
-                        <span class="number-icon">7</span></a>
-                      <a href="assets/img/project6/8.png" class="glightbox portfolio-link">
-                        <span class="number-icon">8</span></a>
-                      <a href="assets/img/project6/9.png" class="glightbox portfolio-link">
-                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project6/11.png" class="glightbox portfolio-link">
+                        <span class="number-icon">11</span></a>
+                      <a href="assets/img/project6/12.png" class="glightbox portfolio-link">
+                        <span class="number-icon">12</span></a>
+                      <a href="assets/img/project6/13.png" class="glightbox portfolio-link">
+                        <span class="number-icon">13</span></a>
+                      <a href="assets/img/project6/14.png" class="glightbox portfolio-link">
+                        <span class="number-icon">14</span></a>
+                      <a href="assets/img/project6/15.png" class="glightbox portfolio-link">
+                        <span class="number-icon">15</span></a>
                       <a href="project-06.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -1515,7 +1795,9 @@
                 <div class="portfolio-meta">
                   <div class="project-tags">
                     <span class="tag">Security Group</span>
-                    <span class="tag">RDP</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">NGINX</span>
+                    <span class="tag">Apache</span>
                   </div>
                   <div class="project-year">2026</div>
                 </div>
@@ -1530,10 +1812,12 @@
                   <img src="assets/img/project7/1.png" alt="Strategy Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project7/2.png" alt="Strategy Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project7/3.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/4.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/5.png" alt="Strategy Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 07</span>
-                      <h4>Multi-OS Platform EC2 Web Hosting(Linux+Windows Server)</h4>
+                      <h4>Web Application with Amazon RDS in Private Subnet<br>(Secure 2-Tier Architecture)</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project7/1.png" class="glightbox portfolio-link">
@@ -1542,6 +1826,10 @@
                         <span class="number-icon">2</span></a>
                       <a href="assets/img/project7/3.png" class="glightbox portfolio-link">
                         <span class="number-icon">3</span></a>
+                      <a href="assets/img/project7/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project7/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
                       <a href="project-07.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -1550,9 +1838,9 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">EC2</span>
-                    <span class="tag">Linux</span>
-                    <span class="tag">Windows</span>
+                    <span class="tag">Amazon RDS (MySQL/PostgreSQL)</span>
+                    <span class="tag">Public Subnets</span>
+                    <span class="tag">Private Subnets</span>
                   </div>
                   <div class="project-year">2026</div>
                 </div>
@@ -1563,22 +1851,27 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project07">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/project7/4.png" alt="Strategy Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project7/5.png" alt="Strategy Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project7/6.png" alt="Strategy Project" class="img-fluid" loading="lazy">
-                  
+                  <img src="assets/img/project7/7.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/8.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/9.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/10.png" alt="Strategy Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 07</span>
-                      <h4>Multi-OS Platform EC2 Web Hosting(Linux+Windows Server)</h4>
+                      <h4>Web Application with Amazon RDS in Private Subnet<br>(Secure 2-Tier Architecture)</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/project7/4.png" class="glightbox portfolio-link">
-                        <span class="number-icon">4</span></a>
-                      <a href="assets/img/project7/5.png" class="glightbox portfolio-link">
-                        <span class="number-icon">5</span></a>
                       <a href="assets/img/project7/6.png" class="glightbox portfolio-link">
                         <span class="number-icon">6</span></a>
+                      <a href="assets/img/project7/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project7/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project7/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project7/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a> 
                       <a href="project-07.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -1587,8 +1880,8 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Apache</span>
-                    <span class="tag">NGINX</span>
+                    <span class="tag">Internet Gateway</span>
+                    <span class="tag">Security Groups</span>
                   </div>
                   <div class="project-year">2026</div>
                 </div>
@@ -1598,24 +1891,21 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project07">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/project7/7.png" alt="Strategy Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project7/8.png" alt="Strategy Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project7/9.png" alt="Strategy Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project7/10.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/11.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/12.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project7/13.png" alt="Strategy Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 07</span>
-                      <h4>Multi-OS Platform EC2 Web Hosting(Linux+Windows Server)</h4>
+                      <h4>Web Application with Amazon RDS in Private Subnet<br>(Secure 2-Tier Architecture)</h4>
                     </div>
                     <div class="portfolio-actions">
-                      <a href="assets/img/project7/7.png" class="glightbox portfolio-link">
-                        <span class="number-icon">7</span></a>
-                      <a href="assets/img/project7/8.png" class="glightbox portfolio-link">
-                        <span class="number-icon">8</span></a>
-                      <a href="assets/img/project7/9.png" class="glightbox portfolio-link">
-                        <span class="number-icon">9</span></a>
-                      <a href="assets/img/project7/10.png" class="glightbox portfolio-link">
-                        <span class="number-icon">10</span></a>
+                      <a href="assets/img/project7/11.png" class="glightbox portfolio-link">
+                        <span class="number-icon">11</span></a>
+                        <a href="assets/img/project7/12.png" class="glightbox portfolio-link">
+                        <span class="number-icon">12</span></a>
+                        <a href="assets/img/project7/13.png" class="glightbox portfolio-link">
+                        <span class="number-icon">13</span></a>
                       <a href="project-07.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -1624,7 +1914,7 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Security Group</span>
+                    <span class="tag">AWS EC2</span>
                     <span class="tag">VPC</span>
                   </div>
                   <div class="project-year">2026</div>
@@ -1640,23 +1930,235 @@
                   <img src="assets/img/project8/1.png" alt="Digital Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project8/2.png" alt="Digital Project" class="img-fluid" loading="lazy">
                   <img src="assets/img/project8/3.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/4.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/5.png" alt="Digital Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project-08</span>
-                      <h4>VPC with Public & Private Subnets (Production-Ready Design)</h4>
+                      <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/project8/1.png" class="glightbox portfolio-link">
-                        <span class="number-icon">1</span>
-                      </a>
+                        <span class="number-icon">1</span></a>
                       <a href="assets/img/project8/2.png" class="glightbox portfolio-link">
-                        <span class="number-icon">2</span>
-                      </a>
+                        <span class="number-icon">2</span></a>
                       <a href="assets/img/project8/3.png" class="glightbox portfolio-link">
-                        <span class="number-icon">3</span>
-                      </a>
-                      
+                        <span class="number-icon">3</span></a>
+                      <a href="assets/img/project8/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project8/5.png" class="glightbox portfolio-link"> 
+                        <span class="number-icon">5</span></a>
                       <a href="project-08.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Active Directory Domain Services (AD DS)</span>
+                    <span class="tag">Windows Server 2019/2022</span>
+                    </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project08">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project8/6.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/7.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/8.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project8/9.png" alt="Digital Project" class="img-fluid" loading="lazy"> 
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project-08</span>
+                      <h4>Windows Server Infrastructure with Active Directory & IIS Web Hosting</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project8/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                      <a href="assets/img/project8/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project8/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project8/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="project-08.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">IIS Web Server</span>
+                    <span class="tag">Security Groups</span>
+                    <span class="tag">EC2</span>
+                    <span class="tag">RDP</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+                    
+
+            <!--Project 09-->    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project09">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project9/1.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project9/2.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project9/3.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project9/4.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project9/5.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 09</span>
+                      <h4>Multi OS-Platform EC2 Web Hosting (Linux + Windows Servers)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project9/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                      <a href="assets/img/project9/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                      <a href="assets/img/project9/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                      <a href="assets/img/project9/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project9/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
+                      <a href="project-09.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">EC2</span>
+                    <span class="tag">Amazon Linux</span>
+                    <span class="tag">Windows Server</span>
+                    <span class="tag">Apache</span>
+                    <span class="tag">NGINX</span>
+                    </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project09">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project9/6.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project9/7.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project9/8.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project9/9.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project9/10.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 09</span>
+                      <h4>Multi OS-Platform EC2 Web Hosting (Linux + Windows Servers)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project9/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                      <a href="assets/img/project9/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project9/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project9/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project9/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
+                      <a href="project-09.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">VPC</span>
+                    <span class="tag">Security Groups</span>
+                    <span class="tag">Elastic IP</span>
+                    <span class="tag">Routing Table</span>
+                    <span class="tag">Internet Gateway</span>
+                    </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <!--Project 10-->    
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project10">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project10/1.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project10/2.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project10/3.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project10/4.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project10/5.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 10</span>
+                      <h4>VPC with Public & Private Subnets (Production-Ready Design)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project10/1.png" class="glightbox portfolio-link">
+                        <span class="number-icon">1</span></a>
+                      <a href="assets/img/project10/2.png" class="glightbox portfolio-link">
+                        <span class="number-icon">2</span></a>
+                      <a href="assets/img/project10/3.png" class="glightbox portfolio-link">
+                        <span class="number-icon">3</span></a>
+                      <a href="assets/img/project10/4.png" class="glightbox portfolio-link">
+                        <span class="number-icon">4</span></a>
+                      <a href="assets/img/project10/5.png" class="glightbox portfolio-link">
+                        <span class="number-icon">5</span></a>
+                      <a href="project-10.html" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">EC2</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Security Groups</span>
+                    <span class="tag">Internet Gateway</span>
+                    </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project10">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/project10/6.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project10/7.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project10/8.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project10/9.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/project10/10.png" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Project 10</span>
+                      <h4>VPC with Public & Private Subnets (Production-Ready Design)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/project10/6.png" class="glightbox portfolio-link">
+                        <span class="number-icon">6</span></a>
+                      <a href="assets/img/project10/7.png" class="glightbox portfolio-link">
+                        <span class="number-icon">7</span></a>
+                      <a href="assets/img/project10/8.png" class="glightbox portfolio-link">
+                        <span class="number-icon">8</span></a>
+                      <a href="assets/img/project10/9.png" class="glightbox portfolio-link">
+                        <span class="number-icon">9</span></a>
+                      <a href="assets/img/project10/10.png" class="glightbox portfolio-link">
+                        <span class="number-icon">10</span></a>
+                      <a href="project-10.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
                     </div>
@@ -1667,89 +2169,15 @@
                     <span class="tag">VPC</span>
                     <span class="tag">Public Subnet</span>
                     <span class="tag">Private Subnet</span>
-                  </div>
+                    <span class="tag">Route Tables</span>
+                    </div>
                   <div class="project-year">2026</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project08">
-              <div class="portfolio-card">
-                <div class="portfolio-image-container">
-                  <img src="assets/img/project8/4.png" alt="Digital Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project8/5.png" alt="Digital Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project8/6.png" alt="Digital Project" class="img-fluid" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <span class="project-category">Project-08</span>
-                      <h4>VPC with Public & Private Subnets (Production-Ready Design)</h4>
-                    </div>
-                    <div class="portfolio-actions">
-                      <a href="assets/img/project8/4.png" class="glightbox portfolio-link">
-                        <span class="number-icon">4</span>
-                      </a>
-                      <a href="assets/img/project8/5.png" class="glightbox portfolio-link"> 
-                        <span class="number-icon">5</span>
-                      </a>
-                      <a href="assets/img/project8/6.png" class="glightbox portfolio-link">
-                        <span class="number-icon">6</span>
-                      </a>
-                      
-                      <a href="project-08.html" class="portfolio-details">
-                        <i class="bi bi-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-meta">
-                  <div class="project-tags">
-                    <span class="tag">Internet Gateway</span>
-                    <span class="tag">Route Table</span>
-                  </div>
-                  <div class="project-year">2026</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project08">
-              <div class="portfolio-card">
-                <div class="portfolio-image-container">
-                  <img src="assets/img/project8/7.png" alt="Digital Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project8/8.png" alt="Digital Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project8/9.png" alt="Digital Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project8/10.png" alt="Digital Project" class="img-fluid" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <span class="project-category">Project-08</span>
-                      <h4>VPC with Public & Private Subnets (Production-Ready Design)</h4>
-                    </div>
-                    <div class="portfolio-actions">
-                      <a href="assets/img/project8/7.png" class="glightbox portfolio-link">
-                        <span class="number-icon">7</span></a>
-                      <a href="assets/img/project8/8.png" class="glightbox portfolio-link">
-                        <span class="number-icon">8</span></a>
-                      <a href="assets/img/project8/9.png" class="glightbox portfolio-link">
-                        <span class="number-icon">9</span></a>
-                      <a href="assets/img/project8/10.png" class="glightbox portfolio-link">
-                        <span class="number-icon">10</span></a>
-                      <a href="project-08.html" class="portfolio-details">
-                        <i class="bi bi-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-meta">
-                  <div class="project-tags">
-                    <span class="tag">Linux</span>
-                    <span class="tag">EC2</span>
-                    <span class="tag">Security Group</span>
-                  </div>
-                  <div class="project-year">2026</div>
-                </div>
-              </div>
-            </div>
-          </div>
           
+          </div>
           <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
             <div class="row align-items-center">
               <div class="col-lg-8">
@@ -1858,10 +2286,10 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Aspiring Cloud Engineer</span>
+            <span class="sitename">Amol Raut</span>
           </a>
-          <p>“From servers to the cloud — building my future step by step.”</p>
-          <div class="social-links d-flex mt-4">
+          <p>AWS Cloud Engineer Aspirant based in Nagpur, India. Building secure, scalable and serverless cloud solutions. Open to full time opportunities.</p>
+            <div class="social-links d-flex mt-4">
             <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -1874,47 +2302,53 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="about.html">About us</a></li>
-            <li><a href="services.html">Projects</a></li> <!--Services to Projects-->
+            <li><a href="projects.html">Projects</a></li> <!--Services to Projects-->
             <li><a href="terms.html">Terms of service</a></li>
             <li><a href="privacy.html">Privacy policy</a></li>
           </ul>
         </div>
-
-        <!--Our Services-->
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>My Focus Areas</h4>       <!--Our Services to My Focus Areas-->
+        
+        <!--Focus Areas-->
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>Quick Info</h4>
           <ul>
-            <li><a href="index.html#portfolio">Certifications</a></li>       
-            <li><a href="index.html#portfolio">Cloud Computing</a></li>
-            <li><a href="index.html#portfolio">Automation</a></li>
-            <li><a href="index.html#portfolio">Web Deployment</a></li>
-            <li><a href="index.html#portfolio">DevOps</a></li>
+            <li><a href="#" onclick="return false;">📚 AWS SAA-C03 — Studying</a></li>
+            <li><a href="#" onclick="return false;">🎯 Cloud Engineer / DevOps</a></li>
+            <li><a href="#" onclick="return false;">✅ Open to Full Time</a></li>
+            <li><a href="#" onclick="return false;">⚡ Response — 24 Hours</a></li>
           </ul>
         </div>
 
      
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>Nagpur</p> 
-          <p>Maharashtra</p>
-          <p>India</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+91 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>example@gmail.com</span></p>
-        </div>
+        <div class="col-lg-2 col-md-12 footer-contact text-center text-md-start">
+          <h4>Connect With Me</h4>
+          <div style="display:flex; flex-direction:column; gap:10px; margin-top:10px;">
+            
+            <a href="mailto:theamrual@gmail.com" style="color:#aaa; font-size:14px; text-decoration:none;">
+              <i class="bi bi-envelope" style="color:#c02b2b; margin-right:8px;"></i>theamrual@gmail.com</a>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color:#aaa; font-size:14px; text-decoration:none;">
+                <i class="bi bi-linkedin" style="color:#0077b5; margin-right:8px;"></i>LinkedIn Profile</a>
+                <a href="https://github.com/techygeekyy" target="_blank" style="color:#aaa; font-size:14px; text-decoration:none;">
+                  <i class="bi bi-github" style="color:#fff; margin-right:8px;"></i>
+                  GitHub Profile</a>
+                  
+                  <a href="https://wa.me/91" target="_blank" style="color:#aaa; font-size:14px; text-decoration:none;">
+                    <i class="bi bi-whatsapp" style="color:#25d366; margin-right:8px;"></i>
+                    WhatsApp</a>
+                  </div>
+                </div>
+
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Amol Raut</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed & Built By <a href="https://d2wzfn8f9c4zw5.cloudfront.net/">Amol Raut</a>
-      </div>
-    </div>
+  <p>© 2025 <strong class="px-1 sitename">Amol Raut</strong> — All Rights Reserved</p>
+  <div class="credits">
+    Designed & Developed by <a href="https://d2wzfn8f9c4zw5.cloudfront.net/">Amol Raut</a> &nbsp;|&nbsp;
+    Hosted on ☁️ AWS S3 &nbsp;|&nbsp; Delivered via ⚡ CloudFront
+  </div>
+</div>
 
   </footer>
 
@@ -2256,15 +2690,7 @@ document.getElementById('amolContactForm').addEventListener('submit', async func
             body: JSON.stringify(payload)
         });
 
-        if (response.ok) {
-            // Success
-            loading.style.display = 'none';
-            sentMessage.style.display = 'block';
-            this.reset();
-            setTimeout(() => { sentMessage.style.display = 'none'; }, 10000);  //<!--5000 to 10000-->
-        } else {
-            throw new Error('Server Error');
-        }
+        
             
     } catch (error) {
         // Network or Coding Error
@@ -2366,68 +2792,82 @@ function closeCVModal() {
 }
 
 // Function to handle the API call
+/* ── CONFETTI ── */
+function launchConfetti() {
+  const colors = ['#2ecc71','#27ae60','#007b9e','#2bbcff','#f1c40f','#ffffff','#1abc9c','#e74c3c'];
+  for (let i = 0; i < 120; i++) {
+    setTimeout(() => {
+      const p = document.createElement('div');
+      const size = Math.random() * 10 + 6;
+      p.style.cssText = `
+        position:fixed; top:-14px; pointer-events:none; z-index:99999;
+        left:${Math.random()*100}vw;
+        width:${size}px; height:${size}px;
+        background:${colors[Math.floor(Math.random()*colors.length)]};
+        border-radius:${Math.random()>0.5?'50%':'3px'};
+        animation:fall ${Math.random()*2.5+2}s ${Math.random()*0.5}s linear forwards;
+      `;
+      document.body.appendChild(p);
+      setTimeout(() => p.remove(), 5000);
+    }, i * 12);
+  }
+}
+
+/* ── CV REQUEST ── */
 async function sendCVRequest() {
-    const btn = document.getElementById('getCVBtn');
-    
-    // Capture Input Data
-    const name = document.getElementById('hrName').value;
-    const email = document.getElementById('hrEmail').value;
+    const name    = document.getElementById('hrName').value;
+    const email   = document.getElementById('hrEmail').value;
     const subject = document.getElementById('hrSubject').value;
     const message = document.getElementById('hrMessage').value;
 
-    if (!name || !email || !subject) {
-        alert("Please fill in Name, Email, and Subject.");
+    if (!name || !email) {
+        alert("Please fill in Name and Email.");
         return;
     }
 
-    // UI Feedback
-    btn.disabled = true;
-    btn.innerText = "Processing...";
+    const API_URL = "https://ytct5gdwjj.execute-api.us-east-1.amazonaws.com/PROD_CV";
+
+    document.getElementById('cvLoading').style.display = 'block';
 
     const payload = {
-        name: name,
-        email: email,
-        subject: subject,
-        message: message
+        name:    name,
+        email:   email,
+        subject: subject || 'CV Request',
+        message: message || 'No message provided'
     };
-
-    // Replace with your actual API Gateway Invoke URL
-    const API_URL = "https://ytct5gdwjj.execute-api.us-east-1.amazonaws.com/PROD_CV";
 
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
             mode: 'cors',
-            headers: { 'Content-Type': 'application/json',
-            'x-api-key': AWS_CONFIG.API_KEY,
-        },  
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': AWS_CONFIG.API_KEY,
+            },
             body: JSON.stringify(payload)
         });
 
-        if (response.ok) {
-            alert("Success! Please Check your inbox for the Resume link. If you don't see it in a few minutes, kindly check your spam or junk folder");
-            closeCVModal(); // Hide modal on success
-        } else {
-            alert("Error: Could not process request. Please check API settings.");
-        }
-    } catch (error) {
-        console.error("Fetch Error:", error);
-        alert("Connectivity error. Is CORS enabled?");
-    } finally {
-        btn.disabled = false;
-        btn.innerText = "Get Resume Link";
-    }
-}
+        document.getElementById('cvLoading').style.display = 'none';
 
-// Close modal if user clicks outside of the box
-window.onclick = function(event) {
-    let modal = document.getElementById('cvModal');
-    if (event.target == modal) {
-        closeCVModal();
+        if (response.ok) {
+            document.getElementById('cvFormSection').style.display = 'none';
+            document.getElementById('cvSuccess').style.display = 'block';
+            launchConfetti(); // ✅ now found!
+            setTimeout(() => { closeCVModal(); }, 9000);
+        } else {
+            throw new Error('Server Error');
+        }
+
+    } catch (error) {
+        document.getElementById('cvLoading').style.display = 'none';
+        console.error("Error:", error);
+        const successBox = document.getElementById('cvSuccess');
+        if (successBox.style.display === 'none' || successBox.style.display === '') {
+            alert("Something went wrong. Please try again.");
+        }
     }
 }
 </script>
-
 
 </body>
 

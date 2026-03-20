@@ -2352,11 +2352,12 @@ section,
 }
 
 /* ✅ Fixed frame for all slides */
-.portfolio-details .portfolio-details-slider .swiper-slide {
-  width: 100%;
+.portfolio-details-slider .swiper-slide {
   height: 450px;
   overflow: hidden;
-  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ✅ Images fill the frame */
@@ -4752,3 +4753,231 @@ blockquote:hover::before {
   transform: scale(0.96) !important;
 }
 
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes successPop {
+  0%   { opacity:0; transform:scale(0.7) translateY(20px); }
+  70%  { transform:scale(1.04) translateY(-4px); }
+  100% { opacity:1; transform:scale(1) translateY(0); }
+}
+@keyframes checkBounce {
+  0%   { transform:scale(0) rotate(-180deg); opacity:0; }
+  100% { transform:scale(1) rotate(0deg); opacity:1; }
+}
+@keyframes fall {
+  0%   { transform:translateY(0) rotate(0deg); opacity:1; }
+  85%  { opacity:1; }
+  100% { transform:translateY(108vh) rotate(800deg); opacity:0; }
+}
+
+.footer-links ul li:not(:has(a)) {
+  color: #aaa;
+  font-size: 14px;
+  padding: 4px 0;
+}
+
+
+/* ── Connect With Me hover effect ── */
+.footer-contact a {
+  transition: color 0.3s ease !important;
+}
+
+.footer-contact a:hover {
+  color: #c02b2b !important;
+}
+
+.footer-contact a:hover i {
+  color: #c02b2b !important;
+}
+
+/* ── Name Red Glow Pop ── */
+.sitename {
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.sitename:hover {
+  color: #c02b2b !important;
+  text-shadow: 
+    0 0 8px rgba(192,43,43,0.8),
+    0 0 20px rgba(192,43,43,0.5),
+    0 0 40px rgba(192,43,43,0.3);
+  transform: scale(1.08);
+}
+
+/* ── Credits link hover ── */
+.credits a {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.credits a:hover {
+  color: #c02b2b !important;
+  text-shadow:
+    0 0 8px rgba(192,43,43,0.8),
+    0 0 20px rgba(192,43,43,0.5),
+    0 0 40px rgba(192,43,43,0.3);
+  transform: scale(1.08);
+  text-decoration: none !important;
+}
+
+
+/* ── Footer logo — pointer cursor ── */
+.footer-about .logo {
+  cursor: pointer !important;
+  text-decoration: none !important;
+}
+
+/* ── Protect all videos ── */
+video {
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: auto;
+}
+
+
+/* ── About info cards ── */
+.info-card-inner {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 20px 18px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  cursor: default;
+}
+
+.info-card-inner::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #c02b2b, #ff6b6b);
+  transition: width 0.4s ease;
+  border-radius: 2px 2px 0 0;
+}
+
+.info-card-inner:hover::after {
+  width: 100%;
+}
+
+.info-card-inner:hover {
+  transform: translateY(-6px);
+  border-color: #c02b2b;
+  box-shadow: 0 8px 30px rgba(192,43,43,0.2);
+  background: #141414;
+}
+
+.info-card-inner:hover .card-label {
+  color: #c02b2b;
+}
+
+.info-card-inner:hover .card-value {
+  color: #fff;
+}
+
+.info-card-inner:hover .card-icon {
+  transform: scale(1.15);
+}
+
+.card-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card-label {
+  color: #555;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  transition: color 0.3s;
+}
+
+.card-value {
+  color: #ddd;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: color 0.3s;
+}
+
+
+/* ── About CTA Buttons ── */
+.about-btn-primary {
+  padding: 12px 60px;
+  background: linear-gradient(135deg, #c02b2b, #a01f1f);
+  color: #fff !important;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none !important;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(192,43,43,0.3);
+  display: inline-block;
+}
+
+.about-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(192,43,43,0.5);
+  color: #fff !important;
+}
+
+.about-btn-secondary {
+  padding: 12px 60px;
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none !important;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.about-btn-secondary:hover {
+  border-color: #c02b2b;
+  color: #c02b2b !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(192,43,43,0.15);
+}
+
+/* ── Logo positioning ── */
+.header .logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.header .logo {
+  margin-right: auto;
+}
+
+
+/* ── Header fix ── */
+.header {
+  height: 100px !important;
+  padding: 0 10px !important;
+  overflow: visible !important;
+}
+
+.header .logo {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+}
+
+.header .logo img {
+  height: 150px;
+  width: auto;
+}

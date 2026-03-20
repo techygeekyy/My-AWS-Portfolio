@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Craftivo Bootstrap Template</title>
+  <title>Project 04 | Amol Raut</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/1.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -42,9 +42,9 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Craftivo</h1>
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="Amol Raut" style="height:150px; width:auto; margin-right:350px;">
+        </a>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -60,19 +60,21 @@
               <li><a href="about.html">About Us</a></li>   <!--Dropdown 1 to About Us-->
               <li class="dropdown"><a href="#"><span>Quick Links</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="project-01.html">Project-01</a></li>   
-                  <li><a href="project-02.html">Project-02</a></li>
+                  <li><a href="project-01.html">Project-01</a></li>   <!--Deep Dropdown 2 to Cloud Computing-->
+                  <li><a href="project-02.html">Project-02</a></li>     <!--Deep Dropdown 2 to System Admin-->
                   <li><a href="project-03.html">Project-03</a></li>
                   <li><a href="project-04.html">Project-04</a></li>
                   <li><a href="project-05.html">Project-05</a></li>
                   <li><a href="project-06.html">Project-06</a></li>
                   <li><a href="project-07.html">Project-07</a></li>
                   <li><a href="project-08.html">Project-08</a></li>
+                  <li><a href="project-09.html">Project-09</a></li>
+                  <li><a href="project-10.html">Project-10</a></li>
                 </ul>
               </li>
-              <li><a href="index.html#portfolio">Certifications</a></li>                    
-              <li><a href="terms.html">Terms of service</a></li>                    
-              <li><a href="privacy.html">Privacy policy</a></li>     
+              <li><a href="index.html#portfolio">Certifications</a></li>                    <!--Dropdown 2 to Certifications-->
+              <li><a href="terms.html">Terms of service</a></li>                    <!--Dropdown 3 to Terms of service-->
+              <li><a href="privacy.html">Privacy policy</a></li>     <!--Dropdown 4 to Privacy policy-->
             </ul>
           </li>
 
@@ -94,7 +96,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li class="current"> Projects</li>
           </ol>
         </nav>
         <h1>Project 04</h1>
@@ -106,8 +108,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Project Details</span>
-        <h1>Application Load Balancer with Auto Scaling (Highly Available Web Application)</h1>
+        <span class="subtitle">Portfolio Details</span>
+        <h1>Smart-Static Website: Secure Global Content Delivery With Proactive Alerting</h1>
         
       </div><!-- End Section Title -->
 
@@ -123,7 +125,8 @@
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 4000
+                    "delay": 4000,
+                    "disableOnInteraction": true
                   },
                   "slidesPerView": 1,
                   "spaceBetween": 0,
@@ -135,12 +138,12 @@
                   }
                 }
               </script>
-              <div class="swiper-wrapper">
 
+              <div class="swiper-wrapper">
                 <!-- Video Slide -->
                 <div class="swiper-slide">
-                  <video id="projectVideo" width="100%" height="auto" controls controlsList="nodownload">
-                   <source src="assets/video/1.mp4" type="video/mp4">
+                  <video id="projectVideo" width="100%" height="auto" controls controlsList="nodownload" oncontextmenu="return false">
+                   <source src="assets/video/project4/static.mp4" type="video/mp4">
                    Your browser does not support the video tag.
                   </video>
                 </div>
@@ -234,7 +237,6 @@
                    <img src="assets/img/project4/15.png" alt="Portfolio Image" class="img-fluid">
                   </a>
                 </div>
-
                 
 
               </div>
@@ -242,28 +244,29 @@
             </div>
 
             <div class="portfolio-content" data-aos="fade-up" data-aos-delay="200">
-              <h2>Innovative Cloud Platform</h2>
+              <h2>AWS Cloud Platform</h2>
 
               <div class="meta-info">
-                <span class="date"><i class="bi bi-calendar"></i> January 01, 2026</span>
-                <span class="category"><i class="bi bi-tag"></i> Cloud Infrastructure | High Availability | Scalability</span>
-                <span class="client"><i class="bi bi-building"></i> Simulated Production Project</span>   
+                <span class="date"><i class="bi bi-calendar"></i>February 2025</span>
+                <span class="category"><i class="bi bi-tag"></i>Serverless Content Delivery Network (CDN)</span>
+                <span class="client"><i class="bi bi-building"></i>High-Performance Global Content Delivery</span>   
               </div>
 
               
               <h3>Project Overview</h3>
               <p>
-                This project focuses on designing and deploying a highly available and scalable web application on AWS using an Application Load Balancer (ALB) and an Auto Scaling Group (ASG). The objective was to ensure the application can handle variable traffic loads, automatically recover from failures, and remain accessible by distributing traffic across multiple EC2 instances and Availability Zones.
+                This project focuses on hosting a highly available, secure, and globally accessible static website using Amazon S3 and Amazon CloudFront. The objective was to understand how modern websites are delivered at scale using AWS managed services, while ensuring high performance, low latency, and secure access without managing servers.
               </p>
+
 
               <div class="highlights-box">
                 <h4>🎯 Objectives</h4>
                 <ul>
-                  <li><i class="bi bi-check-circle"></i> Deploy a web application using EC2 instances</li>
-                  <li><i class="bi bi-check-circle"></i> Distribute incoming traffic using an Application Load Balancer</li>
-                  <li><i class="bi bi-check-circle"></i> Automatically scale EC2 instances based on demand</li>
-                  <li><i class="bi bi-check-circle"></i> Achieve high availability using multi-AZ architecture</li>
-                  <li><i class="bi bi-check-circle"></i> Implement health checks and fault tolerance</li>
+                  <li><i class="bi bi-check-circle"></i> Host a static website using Amazon S3</li>
+                  <li><i class="bi bi-check-circle"></i> Enable global content delivery using CloudFront CDN</li>
+                  <li><i class="bi bi-check-circle"></i> Improve website performance and availability</li>
+                  <li><i class="bi bi-check-circle"></i> Secure content delivery using CloudFront</li>
+                  <li><i class="bi bi-check-circle"></i> Eliminate server management by using serverless services</li>
                 </ul>
               </div>
 
@@ -271,62 +274,43 @@
               <h3>🌍 Environment Details</h3>
               <ul>
                   <li>☁️ Cloud Provider: AWS</li>
-                  <li>☁️ Region: ap-south-1 (Mumbai).</li>
-                  <li>☁️ Availability Zones: ap-south-1a, ap-south-1b</li>
-                  <li>☁️ Network: Custom VPC with public and private subnets</li>
+                  <li>☁️Region: ap-south-1 (Mumbai).</li>
+                  <li>☁️ Service Scope: Global (via CloudFront Edge Locations)</li>
               </ul>
 
 
               <h3>🧱 Architecture Components</h3>
               <ul>
-                  <li>🏗️<b>Application Load Balancer (ALB)</b></li>
-                  <p> 🔹 Deployed in public subnets
-                  <br>🔹 Listens on HTTP (80) / HTTPS (443)
-                  <br>🔹 Distributes traffic across EC2 instances
-                  <br>🔹 Performs health checks</p>
-
-                  <li>🏗️<b>Auto Scaling Group (ASG)</b> </li>
-                  <p> 🔹 Deployed in private subnets
-                  <br>🔹 Automatically launches or terminates EC2 instances
-                  <br>🔹 Maintains desired capacity
-                  <br>🔹 Ensures fault tolerance across AZs</p>
-
-                  <li>🏗️ <b>EC2 Instances</b></li>
-                  <p> 🔹 Amazon Linux
-                  <br>🔹 Apache / NGINX web server
-                  <br>🔹 No public IPs
-                  <br>🔹 Receives traffic only from ALB</p>
-
-                  <li>🏗️<b>Launch Template</b></li>                  
-                  <p> 🔹 Defines EC2 configuration
-                  <br>🔹 Includes AMI, instance type, security groups, and user data
-                  <br>🔹 Used by Auto Scaling Group</p>
-                  
-                  <li>🏗️<b>Security Groups</b></li>
-                  <p> 🔹 ALB SG: Allows HTTP/HTTPS from internet
-                  <br>🔹 EC2 SG: Allows traffic only from ALB SG</p>
-                             
-              </ul>
+                  <li>🏗️ Amazon S3 Bucket:</li>
+                  <p>🔹Stores static website files (HTML, CSS, JS, images)<br>🔹Configured for static website hosting</p>
+                  <li>🏗️ Bucket Policy:</li>
+                  <p>🔹Allows CloudFront to securely access S3 content</p>
+                  <li>🏗️ Amazon CloudFront:</li>
+                  <p>🔹Acts as a Content Delivery Network (CDN)<br>🔹Distributes content through global edge locations</p>
+                  <li>🏗️ Origin Access Control (OAC):</li>
+                  <p>🔹Prevents direct public access to S3 bucket</p>
+                  <li>🏗️ Users / Clients:</li>
+                  <p>🔹Access website via CloudFront distribution URL</p>
+                </ul>
 
 
               <h3>🔁 Traffic Flow Explanation</h3>
               <ul>
-                  <p> 🔹 Users access the application via browser
-                  <br>🔹 Request reaches the Application Load Balancer
-                  <br>🔹 ALB forwards traffic to healthy EC2 instances
-                  <br>🔹 EC2 instances serve the web content
-                  <br>🔹 Auto Scaling adjusts capacity based on load</p>
-              </ul>
-              <ul>☑️ Users never directly access EC2 instances.</ul>
-
+                  <li>🔹 Users request the website through a browser</li>
+                  <li>🔹 Request reaches the nearest CloudFront edge location</li>
+                  <li>🔹 If content is cached, CloudFront serves it immediately</li>
+                  <li>🔹 If not cached, CloudFront fetches content from S3 origin</li>
+                  <li>🔹 Content is delivered securely back to users with low latency</li>
+                </ul>
+              
 
               <h3>🔐 Security & Best Practices Implemented</h3>
               <ul>
-                  <li>🛡️ EC2 instances placed in private subnets</li>
-                  <li>🛡️ No public IPs assigned to application servers</li>
-                  <li>🛡️ Traffic restricted using security groups</li>
-                  <li>🛡️ Health checks ensure only healthy instances receive traffic</li>
-                  <li>🛡️ Multi-AZ deployment for high availability/li>
+                  <li>🛡️ S3 bucket not publicly accessible</li>
+                  <li>🛡️ Content served only through CloudFront</li>
+                  <li>🛡️ Origin Access Control used for secure access</li>
+                  <li>🛡️ HTTPS enabled via CloudFront</li>
+                  <li>🛡️ Serverless architecture reduces attack surface</li>
               </ul>
 
 
@@ -334,7 +318,7 @@
               <blockquote>
                 <i class="bi bi-quote quote-icon"></i>
                 <p>
-                  Through this project, I learned how to design and deploy a highly available and scalable web application using AWS managed services. I gained hands-on experience with Application Load Balancers, Auto Scaling Groups, and EC2 launch templates, and understood how traffic is distributed across multiple instances and Availability Zones. The project helped me understand real-world scalability concepts, health checks, fault tolerance, and how AWS automatically maintains application availability during traffic spikes or instance failures.
+                  Through this project, I learned how to host and deliver static websites using fully managed AWS services without maintaining servers. I gained hands-on experience with Amazon S3 static website hosting, CloudFront CDN configuration, and secure content delivery using Origin Access Control. The project helped me understand how global content distribution improves performance, availability, and security while reducing operational complexity and cost.
                 </p>
                 <div class="author">
                   <img src="assets/img/person/me.jpg" alt="Author">
@@ -347,20 +331,18 @@
 
               <h3>🧪 Validation & Testing</h3>
               <ul>
-                  <li>🚀 Verified application access via ALB DNS name</li>
-                  <li>🛡️ Simulated traffic to trigger scale-out</li>
-                  <li>🚀 Confirmed new instances automatically launched</li>
-                  <li>🛡️ Tested instance termination and auto-recovery</li>
-                  <li>🛡️ Validated load distribution across instances</li>
+                  <li>✅ Verified website accessibility via CloudFront URL</li>
+                  <li>✅ Confirmed S3 bucket is not directly accessible</li>
+                  <li>✅ Tested caching behavior from CloudFront</li>
+                  <li>✅ Checked low-latency access from different locations</li>
               </ul>
 
               <h3>🏆 Why This Project Matters</h3>
               <p>
-                This project demonstrates the ability to build highly available, fault-tolerant, and scalable cloud applications, which are essential requirements for real-world production systems and highly valued skills for Cloud and DevOps Engineer roles.
+                This project demonstrates the ability to design scalable, cost-effective, and serverless web hosting solutions using AWS native services. It reflects real-world practices used by organizations to deliver fast, secure, and globally available web applications.
               </p>
 
             </div>
-
           </div>
 
           <div class="col-lg-4">
@@ -370,27 +352,27 @@
               <div class="info-card">
                 <h3>Project Details</h3>
                 <div class="info-item">
-                  <span class="label">Client</span>
-                  <span class="value">Simulated Production Project</span>
+                  <span class="label">Project Context</span>
+                  <span class="value">High-Performance Global Content Delivery</span>
                 </div>
                 <div class="info-item">
-                  <span class="label">Category</span>
-                  <span class="value">Cloud Infrastructure | High Availability | Scalability</span>
+                  <span class="label">Started In</span>
+                  <span class="value">February 2025</span>
                 </div>
                 <div class="info-item">
-                  <span class="label">Date</span>
-                  <span class="value">January 01, 2026</span>
+                  <span class="label">Timeline</span>
+                  <span class="value">3 Weeks (Edge Delivery & Security)</span>
                 </div>
                 <div class="info-item">
-                  <span class="label">Duration</span>
-                  <span class="value">1 Weeks</span>
+                  <span class="label">Environment</span>
+                  <span class="value">Serverless Content Delivery Network (CDN)</span>
                 </div>
                 <div class="info-item">
-                  <span class="label">Technologies</span>
-                  <span class="value">ELB, ASG, AWS EC2, VPC, Subnets, Linux, Security Groups</span>
+                  <span class="label">Core Tech Stack</span>
+                  <span class="value">Amazon S3, Amazon CloudFront, Cloud Watch, SNS, IAM Policies, Origin Access Control (OAC)</span>
                 </div>
-                <a href="https://github.com/" class="btn-primary" target="_blank">
-                  <i class="bi bi-box-arrow-up-right"></i> View Live Project
+                <a href="https://github.com/techygeekyy" class="btn-primary" target="_blank">
+                  <i class="bi bi-box-arrow-up-right"></i> View Project On Git/GitHub
                 </a>
               </div>
 
@@ -407,18 +389,18 @@
               <div class="tags-card" data-aos="fade-up" data-aos-delay="400">
                 <h3>Tags</h3>
                 <div class="tags">
-                  <a>Application Load Balancer (ALB)</a>
-                  <a>Target Group</a>
-                  <a>Auto Scaling Group (ASG)</a>
-                  <a>Launch Templates</a>
-                  <a>AWS EC2</a>
-                  <a>Security Groups</a>
-                  <a>VPC</a>
-                  <a>Subnets</a>
-                  <a>Linux</a>
-                  <a>NGINX</a>
-                  <a>Apache</a>
-                </div>
+                  <a>Amazon S3</a>
+                  <a>Amazon CloudFront</a>
+                  <a>Cloud Watch</a>
+                  <a>Amazon Code Pipeline</a>
+                  <a>Git/GitHub</a>
+                  <a>Origin Access Control (OAC)</a>
+                  <a>IAM Policies</a>
+                  <a>JavaScript</a>
+                  <a>HTML</a>
+                  <a>CSS</a>
+                  <a>AWS SNS</a>
+                  </div>
               </div>
 
             </div>
@@ -439,10 +421,10 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Aspiring Cloud Engineer</span>
+            <span class="sitename">Amol Raut</span>
           </a>
-          <p>“From servers to the cloud — building my future step by step.”</p>
-          <div class="social-links d-flex mt-4">
+          <p>AWS Cloud Engineer Aspirant based in Nagpur, India. Building secure, scalable and serverless cloud solutions. Open to full time opportunities.</p>
+            <div class="social-links d-flex mt-4">
             <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -453,48 +435,55 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="about.html">About us</a></li>
-            <li><a href="services.html">Projects</a></li>     <!--Services to Projects-->
+            <li><a href="projects.html">Projects</a></li> <!--Services to Projects-->
             <li><a href="terms.html">Terms of service</a></li>
             <li><a href="privacy.html">Privacy policy</a></li>
           </ul>
         </div>
-
-        <!--Our Services-->
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>My Focus Areas</h4>       <!--Our Services to My Focus Areas-->
+        
+        <!--Focus Areas-->
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>Quick Info</h4>
           <ul>
-            <li><a href="index.html#portfolio">Certifications</a></li>       
-            <li><a href="index.html#portfolio">Cloud Computing</a></li>
-            <li><a href="index.html#portfolio">Automation</a></li>
-            <li><a href="index.html#portfolio">Web Deployment</a></li>
-            <li><a href="index.html#portfolio">DevOps</a></li>
+            <li><a href="#" onclick="return false;">📚 AWS SAA-C03 — Studying</a></li>
+            <li><a href="#" onclick="return false;">🎯 oud Engineer / DevOps</a></li>
+            <li><a href="#" onclick="return false;">✅ Open to Full Time</a></li>
+            <li><a href="#" onclick="return false;">⚡ Response — 24 Hours</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>Hanuman Nagar</p>
-          <p>Nagpur, MH</p>
-          <p>India</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+91 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>example@gmail.com</span></p>
-        </div>
+     
+        <div class="col-lg-2 col-md-12 footer-contact text-center text-md-start">
+          <h4>Connect With Me</h4>
+          <div style="display:flex; flex-direction:column; gap:10px; margin-top:10px;">
+            
+            <a href="mailto:theamrual@gmail.com" style="color:#aaa; font-size:14px; text-decoration:none;">
+              <i class="bi bi-envelope" style="color:#c02b2b; margin-right:8px;"></i>theamrual@gmail.com</a>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color:#aaa; font-size:14px; text-decoration:none;">
+                <i class="bi bi-linkedin" style="color:#0077b5; margin-right:8px;"></i>LinkedIn Profile</a>
+                <a href="https://github.com/techygeekyy" target="_blank" style="color:#aaa; font-size:14px; text-decoration:none;">
+                  <i class="bi bi-github" style="color:#fff; margin-right:8px;"></i>
+                  GitHub Profile</a>
+                  
+                  <a href="https://wa.me/91" target="_blank" style="color:#aaa; font-size:14px; text-decoration:none;">
+                    <i class="bi bi-whatsapp" style="color:#25d366; margin-right:8px;"></i>
+                    WhatsApp</a>
+                  </div>
+                </div>
+
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
+  <p>© 2025 <strong class="px-1 sitename">Amol Raut</strong> — All Rights Reserved</p>
+  <div class="credits">
+    Designed & Developed by <a href="https://d2wzfn8f9c4zw5.cloudfront.net/">Amol Raut</a> &nbsp;|&nbsp;
+    Hosted on ☁️ AWS S3 &nbsp;|&nbsp; Delivered via ⚡ CloudFront
+  </div>
+</div>
 
   </footer>
 
@@ -519,6 +508,30 @@
   <script src="assets/js/main.js"></script>
 
   <script src="assets/js/particles.js"></script>
+
+  <script>    
+/* ── Stop swiper autoplay when video plays ── */
+document.querySelectorAll('.swiper-slide video').forEach(video => {
+  video.addEventListener('play', () => {
+    const swiperEl = video.closest('.swiper');
+    if (swiperEl && swiperEl.swiper) {
+      swiperEl.swiper.autoplay.stop();
+    }
+  });
+  video.addEventListener('pause', () => {
+    const swiperEl = video.closest('.swiper');
+    if (swiperEl && swiperEl.swiper) {
+      swiperEl.swiper.autoplay.start();
+    }
+  });
+  video.addEventListener('ended', () => {
+    const swiperEl = video.closest('.swiper');
+    if (swiperEl && swiperEl.swiper) {
+      swiperEl.swiper.autoplay.start();
+    }
+  });
+});
+</script>
 
 </body>
 

@@ -237,3 +237,8 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+/* ── Disable right click on all videos ── */
+document.querySelectorAll('video').forEach(video => {
+  video.addEventListener('contextmenu', e => e.preventDefault());
+});
