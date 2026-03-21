@@ -4368,13 +4368,13 @@ section,
 }
 
 
- /*ChatBot CSS */ /* Launcher container moves */
+ /*Animator Lottie*/
 #chat-launcher {
   position: fixed;
-  right: -40px;   /* 👈 move RIGHT of chatbox */
-  bottom: 05px;
-  width: 250px;
-  height: 200px;
+  right: -55px;   /* 👈 move RIGHT of chatbox */
+  bottom: 35px;
+  width: 200px;
+  height: 150px;
   z-index: 9999;
   cursor: pointer;
   pointer-events: none;
@@ -4444,8 +4444,8 @@ section,
 /* CHAT BOX */
 #chat-widget {
   position: fixed;
-  right: 200px;
-  bottom: 20px;
+  right: 90px;
+  bottom: 10px;
   width: 380px;
   height: 560px;
   background: #111;
@@ -4458,10 +4458,10 @@ section,
 
 #assistant-anim {
   position: fixed;
-  right: 10px;  /* PUSHES IT BESIDE CHATBOX */
+  right: 50px;  /* PUSHES IT BESIDE CHATBOX */
   bottom: 40px;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   z-index: 9999; /* ABOVE CHATBOX */
   cursor: pointer;
   pointer-events: none;
