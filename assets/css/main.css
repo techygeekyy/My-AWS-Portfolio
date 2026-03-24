@@ -773,7 +773,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/* Find this in main.css */
+
 .hero:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
@@ -851,11 +851,6 @@ section,
   0%   { background-position: 200% 0%; }
   50%  { background-position: -50% 0%; }
   100% { background-position: 200% 0%; }
-}
-
-.hero .container {
-  position: relative;
-  z-index: 3;
 }
 
 .hero h2 {
@@ -4953,31 +4948,29 @@ video {
 
 /* ── Logo positioning ── */
 .header .logo img {
-  height: 60px;
+  height: 100px;
   width: auto;
-  margin-right: 20px;
+  margin-right: 350px;
 }
 
-.header .logo {
-  margin-right: auto;
-}
+
 
 
 /* ── Header fix ── */
 .header {
-  height: 100px !important;
+  height: 90px !important;
   padding: 0 10px !important;
   overflow: visible !important;
 }
 
 .header .logo {
   position: absolute;
-  top: 30%;
-  left: 50px;
+  top: 200%;
+  left: 200px;
   transform: translateY(-50%);
 }
 
 .header .logo img {
-  height: 70px;
+  height: 10px;
   width: auto;
 }
