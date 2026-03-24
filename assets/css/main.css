@@ -4446,8 +4446,8 @@ section,
   position: fixed;
   right: 90px;
   bottom: 10px;
-  width: 380px;
-  height: 560px;
+  width: 340px;
+  height: 540px;
   background: #111;
   border-radius: 20px 20px 10px 10px; /* top-left, top-right, bottom-right, bottom-left */
   overflow: hidden; /* ensures children respect rounded corners */
@@ -4953,7 +4953,7 @@ video {
 
 /* ── Logo positioning ── */
 .header .logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
   margin-right: 20px;
 }
@@ -4972,12 +4972,12 @@ video {
 
 .header .logo {
   position: absolute;
-  top: 50%;
-  left: 25px;
+  top: 30%;
+  left: 50px;
   transform: translateY(-50%);
 }
 
 .header .logo img {
-  height: 150px;
+  height: 70px;
   width: auto;
 }
