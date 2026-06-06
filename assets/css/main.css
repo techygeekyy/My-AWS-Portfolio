@@ -4453,7 +4453,7 @@ section,
 
 #assistant-anim {
   position: fixed;
-  right: 50px;  /* PUSHES IT BESIDE CHATBOX */
+  right: 40px;  /* PUSHES IT BESIDE CHATBOX */
   bottom: 40px;
   width: 5px;
   height: 5px;
