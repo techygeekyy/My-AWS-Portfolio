@@ -188,23 +188,18 @@ h6 {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
+/* ── Mobile hamburger right side fix ── */
 @media (max-width: 1200px) {
-  .header .logo {
-    order: 1;
-    flex: 1 !important;
+  .mobile-nav-toggle {
+    margin-right: 15px !important;
+    font-size: 28px !important;
   }
 
-  .header .btn-getstarted {
-    order: 2;
-    margin: 0 15px 0 0;
-    padding: 6px 15px;
-    display: none !important;
+  .header .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 
-  .header .navmenu {
-    order: 3;
-    margin-right: 10px !important;
-  }
 
 }
 
