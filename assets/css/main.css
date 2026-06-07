@@ -191,17 +191,21 @@ h6 {
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
+    flex: 1 !important;
   }
 
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
     padding: 6px 15px;
+    display: none !important;
   }
 
   .header .navmenu {
     order: 3;
+    margin-right: 10px !important;
   }
+
 }
 
 .scrolled .header {
