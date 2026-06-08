@@ -4367,7 +4367,7 @@ section,
  /*Animator Lottie*/
 #chat-launcher {
   position: fixed;
-  right: -45px;   /* 👈 move RIGHT of chatbox */
+  right: -65px;   /* 👈 move RIGHT of chatbox */
   bottom: 35px;
   width: 200px;
   height: 150px;
@@ -4440,7 +4440,7 @@ section,
 /* CHAT BOX */
 #chat-widget {
   position: fixed;
-  right: 90px;
+  right: 60px;
   bottom: 10px;
   width: 340px;
   height: 540px;
