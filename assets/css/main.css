@@ -5005,11 +5005,11 @@ video {
 /* ── Chatbot mobile fix ── */
 @media (max-width: 768px) {
   #chat-widget {
-    width: 95vw !important;
-    height: 75vh !important;
+    width: 100vw !important;
+    height: 85vh !important;
     right: 2.5vw !important;
     left: 2.5vw !important;
-    bottom: 70px !important;
+    bottom: 90px !important;
     border-radius: 16px !important;
     z-index: 99999 !important;
     position: fixed !important;
