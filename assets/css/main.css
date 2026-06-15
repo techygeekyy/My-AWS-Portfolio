@@ -5094,9 +5094,9 @@ video {
   #assistant-anim {
     position: fixed;
     right: 15px;    
-    bottom: 50px;
-    width: 60px;   
-    height: 60px;
+    bottom: 60px;
+    width: 70px;   
+    height: 70px;
     z-index: 9999;
     pointer-events: none;
   }
