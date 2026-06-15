@@ -5012,7 +5012,7 @@ video {
     bottom: 90px !important;     /* 70px previous one */
     border-radius: 16px !important;
     z-index: 99999 !important;
-    position: fixed !important;
+    position: auto !important;  /* fixed previous one */
     transform: translateZ(0) !important;
     -webkit-transform: translateZ(0) !important;
   }
