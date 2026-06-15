@@ -5005,14 +5005,14 @@ video {
 /* ── Chatbot mobile fix ── */
 @media (max-width: 768px) {
   #chat-widget {
-    width: 100vw !important;      /* 95vw previous one */
-    height: 95vh !important;     /* 75vh previous one */
+    width: 95vw !important;      /* 95vw previous one */
+    height: 75vh !important;     /* 75vh previous one */
     right: 2.5vw !important;
     left: 2.5vw !important;
-    bottom: 90px !important;     /* 70px previous one */
+    bottom: 70px !important;     /* 70px previous one */
     border-radius: 16px !important;
     z-index: 99999 !important;
-    position: auto !important;  /* fixed previous one */
+    position: fixed !important;  /* fixed previous one */
     transform: translateZ(0) !important;
     -webkit-transform: translateZ(0) !important;
   }
@@ -5023,7 +5023,7 @@ video {
 
   #assistant-anim {
     right: 15px !important;
-    bottom: 15px !important;
+    bottom: 25px !important;
   }
 }
 
