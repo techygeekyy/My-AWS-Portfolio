@@ -5074,7 +5074,7 @@ video {
 
   #assistant-anim {
     right: 15px !important;
-    bottom: 15px !important;
+    bottom: 25px !important;
   }
 }
 
@@ -5084,9 +5084,9 @@ video {
   #chat-launcher {
     position: fixed;
     right: 10px;
-    bottom: 20px;
-    width: 70px;   
-    height: 70px;
+    bottom: 30px;
+    width: 80px;   
+    height: 80px;
     z-index: 9999;
     pointer-events: none;
   }
