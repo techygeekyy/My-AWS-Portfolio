@@ -5057,15 +5057,16 @@ video {
 
 /* --- For Mobile Chatbot Setting  --- */
 @media (max-width: 768px) {
-  #chat-launcher {
-    position: fixed;
-    right: 10px;
-    bottom: 30px;
-    width: 80px;   
-    height: 80px;
-    z-index: 9999;
-    pointer-events: none;
+  #assistant-anim {
+    position: fixed !important;
+    right: 5px !important;    
+    bottom: 55px !important;
+    width: 110px !important;   
+    height: 110px !important;
+    z-index: 99999 !important;
+    pointer-events: auto !important;
   }
+}
 
   #assistant-anim {
     position: fixed;
@@ -5076,7 +5077,7 @@ video {
     z-index: 9999;
     pointer-events: none;
   }
-}
+
 
 /* ── Nav gap from logo ── */
 .header .logo {
