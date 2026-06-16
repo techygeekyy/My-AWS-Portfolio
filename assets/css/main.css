@@ -5101,3 +5101,25 @@ video {
     pointer-events: none;
   }
 }
+/* ── Nav gap from logo ── */
+.header .navmenu {
+  margin-left: 450px !important;
+}
+
+/* ── Chatbot above scroll-to-top ── */
+#chat-widget {
+  z-index: 99999 !important;
+  bottom: 80px !important;
+}
+
+#assistant-anim {
+  z-index: 99999 !important;
+  bottom: 80px !important;
+  width: 80px !important;
+  height: 80px !important;
+}
+
+/* ── Scroll to top stays below chatbot ── */
+.scroll-top {
+  z-index: 9999 !important;
+}
