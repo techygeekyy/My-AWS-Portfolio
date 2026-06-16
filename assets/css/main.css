@@ -4947,34 +4947,6 @@ video {
   box-shadow: 0 8px 20px rgba(192,43,43,0.15);
 }
 
-/* ── Logo positioning ── */
-.header .logo img {
-  height: 100px;
-  width: auto;
-  margin-right: 350px;
-}
-
-
-
-
-/* ── Header fix ── */
-.header {
-  height: 90px !important;
-  padding: 0 10px !important;
-  overflow: visible !important;
-}
-
-.header .logo {
-  position: absolute;
-  top: 200%;
-  left: 200px;
-  transform: translateY(-50%);
-}
-
-.header .logo img {
-  height: 10px;
-  width: auto;
-}
 
 /* ── Mobile layout fix ── */
 @media (max-width: 768px) {
@@ -5128,3 +5100,126 @@ video {
 .scroll-top {
   z-index: 9999 !important;
 }
+
+/* ══════════════════════════════════════
+   FINAL HEADER + MOBILE FIXES
+   ══════════════════════════════════════ */
+
+/* ── Header ── */
+.header {
+  height: auto !important;
+  padding: 8px 0 !important;
+  overflow: visible !important;
+}
+
+/* ── Logo ── */
+.header .logo {
+  flex: 1 !important;
+  position: static !important;
+  transform: none !important;
+}
+
+.header .logo img {
+  height: 60px !important;
+  max-height: 60px !important;
+  width: auto !important;
+  margin-right: 0 !important;
+}
+
+/* ── Nav gap ── */
+.header .navmenu {
+  margin-left: 20px !important;
+}
+
+/* ── Scroll to top ── */
+.scroll-top {
+  z-index: 9999 !important;
+  bottom: 15px !important;
+}
+
+/* ── Chatbot above scroll button ── */
+#chat-widget {
+  z-index: 99999 !important;
+  bottom: 70px !important;
+  right: 80px !important;
+}
+
+#assistant-anim {
+  z-index: 99999 !important;
+  bottom: 70px !important;
+  right: 10px !important;
+  width: 80px !important;
+  height: 80px !important;
+}
+
+/* ── Desktop 1200px ── */
+@media (max-width: 1200px) {
+  .header .logo img {
+    height: 50px !important;
+    max-height: 50px !important;
+  }
+
+  .header .btn-getstarted {
+    order: 2;
+    margin: 0 10px 0 0 !important;
+    padding: 6px 14px !important;
+    font-size: 12px !important;
+    display: inline-block !important;
+  }
+
+  .mobile-nav-toggle {
+    margin-left: 8px !important;
+    font-size: 24px !important;
+  }
+
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ── Mobile 768px ── */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
+
+  .header .logo img {
+    height: 40px !important;
+    max-height: 40px !important;
+  }
+
+  .header .btn-getstarted {
+    display: none !important;
+  }
+
+  /* Chatbot full width on mobile */
+  #chat-widget {
+    width: 92vw !important;
+    height: 78vh !important;
+    right: 4vw !important;
+    left: 4vw !important;
+    bottom: 65px !important;
+  }
+
+  #chat-messages {
+    height: calc(78vh - 140px) !important;
+  }
+
+  /* Animation smaller on mobile */
+  #assistant-anim {
+    right: 10px !important;
+    bottom: 65px !important;
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  .message {
+    max-width: 85% !important;
+    font-size: 13px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+}
+
