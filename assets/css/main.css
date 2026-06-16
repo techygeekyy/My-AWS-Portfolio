@@ -5102,9 +5102,14 @@ video {
   }
 }
 /* ── Nav gap from logo ── */
-.header .navmenu {
-  margin-left: 450px !important;
+.header .logo {
+  flex: 1 !important;
 }
+
+.header .navmenu {
+  margin-left: 0 !important;
+}
+
 
 /* ── Chatbot above scroll-to-top ── */
 #chat-widget {
