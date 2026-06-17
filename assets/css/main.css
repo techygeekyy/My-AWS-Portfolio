@@ -5068,17 +5068,6 @@ video {
   }
 }
 
-  #assistant-anim {
-    position: fixed;
-    right: 15px;    
-    bottom: 60px;
-    width: 70px;   
-    height: 70px;
-    z-index: 9999;
-    pointer-events: none;
-  }
-
-
 /* ── Nav gap from logo ── */
 .header .logo {
   flex: 1 !important;
