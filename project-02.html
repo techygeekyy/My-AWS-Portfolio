@@ -107,7 +107,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Portfolio Details</span>
-        <h2>Secure Resume Delivery Platform with Time-Limited Access</h2>
+        <h1>Secure Resume Delivery Platform with Time-Limited Access</h1>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -228,6 +228,39 @@
                 This project implements a secure, serverless resume delivery system where HR or recruiters submit a request form to receive access to my resume. The system validates the request, stores request data securely, and generates a time-limited pre-signed URL that expires within 48 hours. The resume is delivered securely via email without exposing public access to the file.
               </p> 
 
+              
+<div class="security-info-card" style="background: rgba(255, 255, 255, 0.05); border-left: 4px solid #007bff; padding: 20px; margin-top: 40px; margin-bottom: 40px; border-radius: 5px;">
+  
+  
+  <h4 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+    <i class="bi bi-shield-check" style="color: #007bff; font-size: 1.5rem;"></i>
+    Security Implementation
+  </h4>
+  
+  <p style="font-size: 0.95rem; margin-bottom: 15px; opacity: 0.9;">Security is fully integrated into this serverless resume delivery platform:</p>
+  
+  <ul style="font-size: 0.9rem; list-style-type: none; padding-left: 0; opacity: 0.85;">
+    
+    <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+      <i class="bi bi-check2-circle text-success" style="font-size: 1.2rem; margin-top: -3px;"></i>
+      <span><strong>Bot Protection:</strong> Google reCAPTCHA v2 integrated to ensure only genuine human requests trigger the API Gateway.</span>
+    </li>
+    
+    <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+      <i class="bi bi-check2-circle text-success" style="font-size: 1.2rem; margin-top: -3px;"></i>
+      <span><strong>Time-Limited Access:</strong> Resumes are not public. They are delivered dynamically via AWS S3 Pre-signed URLs that expire automatically within 48 hours.</span>
+    </li>
+    
+    <li style="display: flex; align-items: flex-start; gap: 10px;">
+      <i class="bi bi-check2-circle text-success" style="font-size: 1.2rem; margin-top: -3px;"></i>
+      <span><strong>Least Privilege:</strong> AWS IAM roles are strictly scoped, granting Lambda functions only the exact permissions needed.</span>
+    </li>
+    
+  </ul>
+</div>
+
+              
+
               <div class="highlights-box">
                 <h4>Tools & Services Used:</h4>
                 <ul>
@@ -239,6 +272,8 @@
                   <li><i class="bi bi-check-circle"></i> Demonstrate real-world secure document sharing architecture</li>
                 </ul>
               </div>
+
+              
 
               <h3>🌍 Environment Details</h3>
               <ul>
@@ -346,6 +381,8 @@
                 This project demonstrates advanced cloud security design by implementing controlled document access, automated delivery, and time-based access management — reflecting real-world enterprise practices for secure file distribution.
               </p>
 
+              
+
             </div>
 
           </div>
@@ -404,6 +441,8 @@
         </div>
 
       </div>
+
+      
 
     </section><!-- /Portfolio Details Section -->
 

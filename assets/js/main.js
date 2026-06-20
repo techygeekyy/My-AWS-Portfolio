@@ -242,3 +242,17 @@
 document.querySelectorAll('video').forEach(video => {
   video.addEventListener('contextmenu', e => e.preventDefault());
 });
+
+
+// Google reCAPTCHA
+document.getElementById("resumeForm").addEventListener("submit", function(event) {
+      
+       
+      var recaptchaResponse = grecaptcha.getResponse();
+
+      if (recaptchaResponse.length === 0) {
+          
+          event.preventDefault();
+          alert("Please check the 'I'm not a robot' box before submitting!");
+          } 
+  });
