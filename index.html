@@ -1109,7 +1109,6 @@
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
                   <img src="assets/img/project1/6.png" alt="Creative Project" class="img-fluid" loading="lazy">
-                  <img src="assets/img/project1/7.png" alt="Creative Project" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Project 01</span>
@@ -1118,8 +1117,6 @@
                     <div class="portfolio-actions">
                       <a href="assets/img/project1/6.png" class="glightbox portfolio-link">
                         <span class="number-icon">6</span></a>
-                      <a href="assets/img/project1/7.png" class="glightbox portfolio-link">
-                        <span class="number-icon">7</span></a>
                       <a href="portfolio-details.html" class="portfolio-details">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -2261,8 +2258,15 @@
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <!--Success message with Spam Warning-->
+                  <div class="sent-message" style="line-height: 1.6; text-align: center;">
+                    <strong style="font-size: 16px;">Your message has been sent. Thank you!</strong><br>
+                    <div style="font-size: 13.5px; color: #ffffff; background-color: #212529; padding: 12px 18px; border-left: 4px solid #f39c12; margin-top: 15px; text-align: left; border-radius: 5px; display: inline-block; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                      ⚠️ <strong style="color: #f39c12;">Note:</strong> As this is an automated cloud architecture, my confirmation email might land in your <strong style="color: #f39c12;">Spam / Junk</strong> folder. Please check there!
+                    </div>
+                  </div>
 
+                  <div class="g-recaptcha" data-sitekey="6LeP4yktAAAAAGdNCQMLifOkGsXF6GWzcSu0um3j" data-theme="dark" style="margin-bottom: 15px; display: flex; justify-content: center;"></div>
                   <button type="submit">Send Message</button>
                 </div>
 
@@ -2645,13 +2649,25 @@ document.getElementById('amolContactForm').addEventListener('submit', async func
     e.preventDefault(); // Prevents the page from refreshing
     e.stopImmediatePropagation(); // To stop previous script
 
-    // Get form elements
+    // 1. CAPTCHA Validation
+    if (typeof grecaptcha === "undefined") {
+        alert("Security module is still loading. Please wait a second.");
+        return;
+    }
+
+    var recaptchaResponse = grecaptcha.getResponse(1);
+    if (recaptchaResponse.length === 0) {
+        alert("Please check the 'I'm not a robot' box before sending your message!");
+        return;
+    }
+
+    // 2. Get form elements
     const nameInput = this.querySelector('input[name="name"]');
     const emailInput = this.querySelector('input[name="email"]');
-    const subjectInput = this.querySelector('input[name="subject"]'); // Optional
+    const subjectInput = this.querySelector('input[name="subject"]'); 
     const messageInput = this.querySelector('textarea[name="message"]');
     
-    // Get UI feedback elements
+    // 3. Get UI feedback elements
     const loading = this.querySelector('.loading');
     const sentMessage = this.querySelector('.sent-message');
     const errorMessage = this.querySelector('.error-message');
@@ -2661,13 +2677,15 @@ document.getElementById('amolContactForm').addEventListener('submit', async func
     errorMessage.style.display = 'none';
     sentMessage.style.display = 'none';
 
-    // Prepare the data packet for Lambda
+
+    // 4. Prepare the data packet for Lambda
     const payload = {
         name: nameInput.value,
         email: emailInput.value,
         subject: subjectInput ? subjectInput.value : "No Subject",
         message: messageInput.value,
-        category: "GENERAL_CONTACT" // Matches the logic in your Lambda function
+        category: "GENERAL_CONTACT", // Matches the logic in your Lambda function
+        captchaToken: recaptchaResponse
     };
 
     // --- CONFIGURATION ---
@@ -2683,9 +2701,20 @@ document.getElementById('amolContactForm').addEventListener('submit', async func
             body: JSON.stringify(payload)
         });
 
-        
-            
-    } catch (error) {
+        loading.style.display = 'none'; // Close Loading
+
+        if (response.ok) {
+          sentMessage.style.display = 'block';
+          document.getElementById('amolContactForm').reset();
+          grecaptcha.reset(1);
+          setTimeout(() => {
+                sentMessage.style.display = 'none';
+            }, 30000);
+          } else {
+            throw new Error('Server Error');  
+        }
+      
+      } catch (error) {
         // Network or Coding Error
         loading.style.display = 'none';
         errorMessage.innerText = "Error sending message. Please try again.";
