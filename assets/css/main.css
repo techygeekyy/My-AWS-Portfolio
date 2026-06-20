@@ -5312,3 +5312,50 @@ video {
   }
 }
 }
+
+/* ── Hero heading split ── */
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-hi,
+.hero-name {
+  display: block;
+}
+
+/* ── Desktop — keep single line ── */
+@media (min-width: 769px) {
+  .hero-heading {
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+  }
+}
+
+/* ── Mobile — stack vertically ── */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 11vw;
+  }
+
+  .hero-hi {
+    font-size: 8vw;
+    opacity: 0.9;
+  }
+
+  .hero-name {
+    font-size: 12vw;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh !important;
+    min-height: 500px !important;
+  }
+}
