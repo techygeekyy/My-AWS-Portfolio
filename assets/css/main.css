@@ -5243,7 +5243,7 @@ video {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    object-position: center !important;
+    object-position: top center !important;
   }
 
   .hero-text-wrapper {
@@ -5265,11 +5265,50 @@ video {
     width: 100%;
   }
 
-  .hero h2 {
-    font-size: 32px !important;
+  @media (max-width: 768px) {
+  .hero-text-wrapper {
+    padding: 0 15px !important;
   }
 
-  .hero p {
-    font-size: 16px !important;
+  .hero h2 {
+    font-size: 11vw !important;
+    line-height: 1.15 !important;
+    margin-bottom: 12px !important;
   }
+
+  .hero p:nth-of-type(1) {
+    font-size: 5.5vw !important;
+    line-height: 1.4 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .hero p:nth-of-type(2) {
+    font-size: 4vw !important;
+    line-height: 1.4 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero p:nth-of-type(3) {
+    font-size: 4.5vw !important;
+    line-height: 1.4 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 12vw !important;
+  }
+
+  .hero p:nth-of-type(1) {
+    font-size: 6vw !important;
+  }
+
+  .hero p:nth-of-type(2) {
+    font-size: 4.2vw !important;
+  }
+
+  .hero p:nth-of-type(3) {
+    font-size: 5vw !important;
+  }
+}
 }
