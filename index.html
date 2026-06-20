@@ -97,12 +97,12 @@
   </video> --This Code is for Video Background-->
 
   <section id="hero" class="hero section dark-background">
-    <img src="assets/img/profile/2.jpg" alt="Profile" data-aos="fade-in" style="max-width: 100%; height: auto; object-fit: cover; object-position: center;">      
+    <img src="assets/img/profile/2.jpg" alt="Profile" data-aos="fade-in">      
 
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
-          <div class="col-lg-8 text-center" style="position: relative; top: -150px;">
+          <div class="col-lg-8 text-center hero-text-wrapper">
             <h2 style="font-size: 3rem; font-weight: 700;">Hi, I'm Amol Raut</h2>
             <p style="font-size: 1.75rem; margin-bottom: 10px;">System Administrator transitioning to Cloud Engineering</p>
             <p style="font-size: 1.3rem; opacity: 0.9; margin-bottom: 20px;">(AWS Certified Solutions Architect – Associate in Progress)</p>
@@ -2264,7 +2264,9 @@
                 </div>
 
               </div>
+
             </form>
+
           </div>
 
         </div>
@@ -2829,13 +2831,11 @@ async function sendCVRequest() {
     return; 
   }
   } catch (err) {
-        // अगर CAPTCHA में कोई भी टेक्निकल दिक्कत होगी तो स्क्रीन पर दिख जाएगी
+        
         alert("Captcha Error: " + err.message);
         console.error("Captcha Error details:", err);
         return;
     }
-
-        // 3. Old Code after this one...
     const name    = document.getElementById('hrName').value;
     const email   = document.getElementById('hrEmail').value;
     const subject = document.getElementById('hrSubject').value;
@@ -2876,7 +2876,7 @@ async function sendCVRequest() {
         if (response.ok) {
             document.getElementById('cvFormSection').style.display = 'none';
             document.getElementById('cvSuccess').style.display = 'block';
-            launchConfetti(); // ✅ now found!
+            launchConfetti(); 
             setTimeout(() => { closeCVModal(); }, 30000);
         } else {
             throw new Error('Server Error');
@@ -2891,9 +2891,6 @@ async function sendCVRequest() {
         }
     }
   }
-
 </script>
-
 </body>
-
 </html>

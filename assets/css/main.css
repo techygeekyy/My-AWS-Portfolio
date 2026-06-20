@@ -5223,3 +5223,35 @@ video {
   }
 }
 
+/* ── Hero text mobile fix ── */
+@media (max-width: 768px) {
+  .hero .col-lg-8 {
+    position: static !important;
+    top: 0 !important;
+    padding: 20px 15px !important;
+  }
+
+  .hero h2 {
+    font-size: 32px !important;
+  }
+
+  .hero p {
+    font-size: 16px !important;
+  }
+
+  .hero p:nth-of-type(2) {
+    font-size: 14px !important;
+  }
+}
+
+
+.hero-text-wrapper {
+  position: relative;
+  top: -150px;
+}
+
+@media (max-width: 768px) {
+  .hero-text-wrapper {
+    top: 0 !important;
+  }
+}
