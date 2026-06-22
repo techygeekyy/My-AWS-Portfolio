@@ -5379,3 +5379,101 @@ video {
     inset: 0 !important;
   }
 }
+
+/* ── Hero complete fix ── */
+
+/* Desktop */
+.hero {
+  min-height: 100vh !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Remove old img tag styling */
+.hero img {
+  display: none !important;
+}
+
+/* ── Mobile portrait ── */
+@media (max-width: 768px) and (orientation: portrait) {
+  .hero {
+    background-position: 30% center !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    padding-top: 100px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .hero-text-wrapper {
+    top: 0 !important;
+    padding: 0 20px !important;
+  }
+
+  /* Text fix - right side cut nahi hoga */
+  .hero-heading {
+    font-size: 10vw !important;
+    text-align: left !important;
+    word-break: keep-all !important;
+  }
+
+  .hero-hi {
+    font-size: 7vw !important;
+  }
+
+  .hero-name {
+    font-size: 10vw !important;
+  }
+
+  .hero p {
+    font-size: 4vw !important;
+    text-align: left !important;
+    padding-right: 10px !important;
+  }
+
+  .hero .col-lg-8 {
+    text-align: left !important;
+  }
+}
+
+/* ── Mobile landscape ── */
+@media (max-width: 900px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh !important;
+    padding-top: 70px !important;
+    padding-bottom: 40px !important;
+    background-position: center center !important;
+  }
+
+  .hero-text-wrapper {
+    top: 0 !important;
+  }
+
+  .hero-heading {
+    font-size: 6vw !important;
+  }
+
+  .hero-hi {
+    font-size: 5vw !important;
+  }
+
+  .hero-name {
+    font-size: 6vw !important;
+  }
+
+  .hero p {
+    font-size: 2.5vw !important;
+  }
+}
+
+/* ── Desktop browser small window ── */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .hero-heading {
+    font-size: 3.5rem !important;
+  }
+
+  .hero p {
+    font-size: 1.3rem !important;
+  }
+}
+
