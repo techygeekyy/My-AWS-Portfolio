@@ -5359,3 +5359,23 @@ video {
     min-height: 500px !important;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto !important;
+    min-height: 60vh !important;
+    padding-top: 80px !important;
+  }
+
+  .hero img {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .hero:before {
+    position: absolute !important;
+    inset: 0 !important;
+  }
+}
