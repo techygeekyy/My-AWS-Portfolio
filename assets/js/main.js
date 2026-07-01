@@ -80,6 +80,7 @@
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
+  if (scrollTop) {
   scrollTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -87,6 +88,7 @@
       behavior: 'smooth'
     });
   });
+  }
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
@@ -137,12 +139,13 @@
     });
   });
 
-  /**
-   * Initiate glightbox
-   */
+ 
+  /**Initiates Glightbox */
+  if (typeof GLightbox !== 'undefined') {
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
+}
 
   /**
    * Init isotope layout and filters
@@ -243,16 +246,35 @@ document.querySelectorAll('video').forEach(video => {
   video.addEventListener('contextmenu', e => e.preventDefault());
 });
 
+/* ── Video Play Button Logic ── */
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('video').forEach(video => {
+        
+        // प्ले होने पर Play (▶) बटन छुपाना
+        video.addEventListener('play', () => {
+            if(video.parentElement.classList.contains('custom-video-box')) {
+                video.parentElement.classList.add('is-playing');
+            }
+        });
+
+        // पॉज़ होने पर Play (▶) बटन वापस लाना
+        video.addEventListener('pause', () => {
+            if(video.parentElement.classList.contains('custom-video-box')) {
+                video.parentElement.classList.remove('is-playing');
+            }
+        });
+        
+    });
+});
 
 // Google reCAPTCHA
-document.getElementById("resumeForm").addEventListener("submit", function(event) {
-      
-       
-      var recaptchaResponse = grecaptcha.getResponse();
-
-      if (recaptchaResponse.length === 0) {
-          
-          event.preventDefault();
-          alert("Please check the 'I'm not a robot' box before submitting!");
-          } 
+var resumeForm = document.getElementById("resumeForm");
+if (resumeForm) {   
+  resumeForm.addEventListener("submit", function(event) {
+    var recaptchaResponse = grecaptcha.getResponse();
+    if (recaptchaResponse.length === 0) {
+      event.preventDefault();
+      alert("Please check the 'I'm not a robot' box before submitting!");
+    } 
   });
+} 

@@ -95,7 +95,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Projects</li>
+            <li><a href="projects.html">Projects</a></li>
           </ol>
         </nav>
         <h1>Project 10</h1>
@@ -141,10 +141,15 @@
               <div class="swiper-wrapper">
                 <!-- Video Slide -->
                 <div class="swiper-slide">
-                  <video id="projectVideo" width="100%" height="auto" controls controlsList="nodownload" oncontextmenu="return false">
-                   <source src="assets/video/project10/vpc.mp4" type="video/mp4">
-                   Your browser does not support the video tag.
-                  </video>
+                  <div class="custom-video-box">
+                    <video id="projectVideo" width="100%" height="auto" controls controlsList="nodownload" oncontextmenu="return false">
+                      <source src="assets/video/project10/vpc.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="spiral-overlay">
+                      ▶ <span class="watch-text">Watch</span>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="swiper-slide">
@@ -336,7 +341,7 @@
                   <span class="label">Core Tech Stack</span>
                   <span class="value">AWS VPC, EC2, Public & Private Subnets, Internet Gateway, Route Tables, Security Groups, Linux</span>
                 </div>
-                <a href="https://github.com/techygeekyy" class="btn-primary" target="_blank">
+                <a href="https://github.com/techygeekyy/aws-custom-vpc-setup" class="btn-primary" target="_blank">
                   <i class="bi bi-box-arrow-up-right"></i> View Project On Git/GitHub
                 </a>
               </div>
@@ -436,9 +441,7 @@
 
   </footer>
 
-  <script src="assets/js/main.js"></script>
-
-    <!-- Scroll Top -->
+  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->

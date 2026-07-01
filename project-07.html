@@ -95,7 +95,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Projects</li>
+            <li><a href="projects.html">Projects</a></li>
           </ol>
         </nav>
         <h1>Project 07</h1>
@@ -138,13 +138,17 @@
                 }
               </script>
               <div class="swiper-wrapper">
-
                 <!-- Video Slide -->
                 <div class="swiper-slide">
-                  <video id="projectVideo" width="100%" height="auto" controls controlsList="nodownload" oncontextmenu="return false">
-                   <source src="assets/video/project7/rds.mp4" type="video/mp4">
-                   Your browser does not support the video tag.
-                  </video>
+                  <div class="custom-video-box">
+                    <video id="projectVideo" width="100%" height="auto" controls controlsList="nodownload" oncontextmenu="return false">
+                      <source src="assets/video/project7/rds.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="spiral-overlay">
+                      ▶ <span class="watch-text">Watch</span>
+                    </div>
+                  </div>
                 </div>
                 
                 <div class="swiper-slide">
@@ -372,7 +376,7 @@
                   <span class="label">Core Tech Stack</span>
                   <span class="value">AWS EC2, Amazon RDS (MySQL / PostgreSQL), VPC, Security Groups</span>
                 </div>
-                <a href="https://github.com/techygeekyy" class="btn-primary" target="_blank">
+                <a href="https://github.com/techygeekyy/aws-2tier-rds-architecture" class="btn-primary" target="_blank">
                   <i class="bi bi-box-arrow-up-right"></i> View Project On Git/GitHub
                 </a>
               </div>

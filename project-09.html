@@ -94,7 +94,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current"> Projects</li>
+            <li><a href="projects.html">Projects</a></li>
           </ol>
         </nav>
         <h1>Project 09</h1>
@@ -138,12 +138,17 @@
 
               <div class="swiper-wrapper">
                 <!-- Video Slide -->
-                 <div class="swiper-slide">
-                  <video id="projectVideo" width="100%" height="auto" controls controlsList="nodownload" oncontextmenu="return false">
-                    <source src="assets/video/project9/os.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                 </div>
+                <div class="swiper-slide">
+                  <div class="custom-video-box">
+                    <video id="projectVideo" width="100%" height="auto" controls controlsList="nodownload" oncontextmenu="return false">
+                      <source src="assets/video/project9/os.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="spiral-overlay">
+                      ▶ <span class="watch-text">Watch</span>
+                    </div>
+                  </div>
+                </div>
 
                 <div class="swiper-slide">
                   <a href="assets/img/project9/1.png" class="glightbox" data-gallery="portfolio-gallery">
@@ -335,7 +340,7 @@
                   <span class="label">Core Tech Stack</span>
                   <span class="value">AWS EC2, Amazon Linux, Windows Server, Apache Web Server, NGINX</span>
                 </div>
-                <a href="https://github.com/techygeekyy" class="btn-primary" target="_blank">
+                <a href="https://github.com/techygeekyy/aws-multi-os-web-hosting" class="btn-primary" target="_blank">
                   <i class="bi bi-box-arrow-up-right"></i> View Project On Git/GitHub
                 </a>
               </div>
